@@ -1076,7 +1076,7 @@ MAINTAINERS:
 <!ATTLIST note %common.att;>
 ]]>
 <!-- ............................................................... -->
-<!-- Translator nootes .............................................. -->
+<!-- Translator notes .............................................. -->
 <!-- ............................................................... -->
 <!ENTITY % trnote.element "INCLUDE">
 <![%trnote.element;[
@@ -1085,6 +1085,17 @@ MAINTAINERS:
 <!ENTITY % trnote.attlist "INCLUDE">
 <![%trnote.attlist;[
 <!ATTLIST trnote %common.att;>
+]]>
+<!-- ............................................................... -->
+<!-- Translator credit .............................................. -->
+<!-- ............................................................... -->
+<!ENTITY % translationcredit.element "INCLUDE">
+<![%translationcredit.element;[
+<!ELEMENT translationcredit (%obj.mix;)+>
+]]>
+<!ENTITY % translationcredit.attlist "INCLUDE">
+<![%translationcredit.attlist;[
+<!ATTLIST translationcredit %common.att;>
 ]]>
 <!--
 #1998-05-14: maler: Declared issue element.
@@ -2665,7 +2676,7 @@ for conversion of Hebrew and Arabic text to x/html -->
 <!-- technique: main element for grouping information related to a particular technique -->
 <!-- Used by: %div.mix; -->
 <!--ELEMENT technique (short-name, applies-to, checklist-item+, description, technology+, ua-issues*, eg-group*, resources*, test*, admin*)-->
-<!ELEMENT technique (issue*, short-name, applicability, applies-to+, checklist-item*, task*, ua-issues*, description, examples*, resources*, related-techniques*, tests, admin*)>
+<!ELEMENT technique (issue*, short-name, applicability, applies-to+, checklist-item*, task*, ua-issues*, description, examples*, resources*, related-techniques*, tests, admin*, translationcredit*)>
 <!-- June 30 2004 BBC - added diff attribute as valid for technique (to highlight changes and addtions) -->
 <!ATTLIST technique
 	id ID #REQUIRED

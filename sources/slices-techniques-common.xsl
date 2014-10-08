@@ -8,7 +8,7 @@
   <xsl:template name="href.target">
     <xsl:param name="target" select="."/>
     <xsl:variable name="slice" select="($target/ancestor-or-self::div1[not(@diff = 'del')] | 
-    $target/ancestor-or-self::inform-div1[not(@diff = 'del')]  | $target/ancestor-or-self::technique[not(@diff = 'del')]  | $target/ancestor-or-self::spec)[last()]"/>
+    $target/ancestor-or-self::inform-div1[not(@diff = 'del')]  | $target/ancestor-or-self::technique[not(@diff = 'del')] | $target/ancestor-or-self::div2[not(@diff = 'del')][ancestor::body]  | $target/ancestor-or-self::spec)[last()]"/>
     <xsl:apply-templates select="$slice" mode="slice-techniques-filename"/>
     <xsl:if test="$target != $slice">
       <xsl:text>#</xsl:text>
@@ -17,6 +17,7 @@
           <xsl:value-of select="$target/@id"/>
         </xsl:when>
         <xsl:otherwise>
+        	<xsl:message terminate="yes">Generating ID for <xsl:value-of select="."/></xsl:message>
           <xsl:value-of select="generate-id($target)"/>
         </xsl:otherwise>
       </xsl:choose>
@@ -30,7 +31,7 @@
       <xsl:when test="$slices= '0'"/>
       <xsl:otherwise>
     <xsl:variable name="prev" select="(preceding::div1)[last()]"/>
-    <xsl:variable name="next" select="(following::technique)[1]"/>
+    <xsl:variable name="next" select="(following::technique | following::div2)[1]"/>
       	<xsl:variable name="filename"><xsl:apply-templates select="." mode="slice-techniques-filename"/></xsl:variable>
       	<xsl:result-document method="xml" href="{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
         <html>
@@ -40,7 +41,7 @@
         	</xsl:if>
         	<head>
             <title>
-              <xsl:value-of select="head"/>  | Techniques for WCAG 2.0
+              <xsl:value-of select="head"/>  | WCAG 2.0実装方法集
             </title>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
             <xsl:if test="$show.diff.markup != '0'">
@@ -64,7 +65,7 @@
             
             <xsl:call-template name="navigation.bottom">
               <xsl:with-param name="prev" select="(preceding::div1)[last()]"/>
-              <xsl:with-param name="next" select="(following::technique)[1]"/>
+              <xsl:with-param name="next" select="(following::technique | following::div2)[1]"/>
             </xsl:call-template>
             <xsl:call-template name="footer"></xsl:call-template>
           </body>
@@ -85,7 +86,7 @@
         	</xsl:if>
         	<head>
             <title>
-              <xsl:value-of select="head"/>  | Techniques for WCAG 2.0
+              <xsl:value-of select="head"/>  | WCAG 2.0実装方法集
             </title>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
             <xsl:if test="$show.diff.markup != '0'">
@@ -116,10 +117,12 @@
           </body>
         </html>
   		</xsl:result-document>
+  	<xsl:apply-templates select="div2 | technique"/>
+  </xsl:template>
     <!-- Create pages for the techniques chunks-->
-    <xsl:for-each select="technique">
-      <xsl:variable name="prev" select="(preceding::div1[not(@diff = 'del')] | preceding::technique[not(@diff = 'del')] | preceding::div1[@id!='placeholders'])[last()]"/>
-      <xsl:variable name="next" select="(following::technique[not(@diff = 'del')]|following::inform-div1[not(@diff = 'del')])[1]"/>
+    <xsl:template match="technique">
+      <xsl:variable name="prev" select="(preceding::div1[not(@diff = 'del')] | preceding::technique[not(@diff = 'del')] | preceding::div2[not(@diff = 'del')] | preceding::div1[@id!='placeholders'])[last()]"/>
+      <xsl:variable name="next" select="(following::technique[not(@diff = 'del')] | following::div2[not(@diff = 'del')] | following::inform-div1[not(@diff = 'del')])[1]"/>
     	<xsl:variable name="filename">
     		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
     	</xsl:variable>
@@ -131,7 +134,7 @@
     	    	</xsl:if>
     	    	<head>
               <title>
-								<xsl:value-of select="@id"></xsl:value-of>:<xsl:text> </xsl:text><xsl:value-of select="short-name"/> | Techniques for WCAG 2.0
+								<xsl:value-of select="@id"></xsl:value-of>:<xsl:text> </xsl:text><xsl:value-of select="short-name"/> | WCAG 2.0実装方法集
               </title>
               <xsl:call-template name="css"/>
               <link rel="stylesheet" type="text/css" href="slicenav.css"/>
@@ -150,7 +153,7 @@
               </xsl:call-template>
 <!-- Quick TOC for Techniques (@@ needs update) -->
 <div class="navtoc">
-<p>On this page:</p>    
+<p>このページのコンテンツ:</p>    
                 <xsl:apply-templates mode="techniquetoc" select=".">
                   <xsl:with-param name="just.filename" select="'1'"/>
                 </xsl:apply-templates>
@@ -158,21 +161,67 @@
               <xsl:apply-templates/>
              
               <xsl:call-template name="navigation.bottom">
-                <xsl:with-param name="prev" select="(preceding::div1[not(@diff = 'del')] | preceding::technique[not(@diff = 'del')] | preceding::div1[@id!='placeholders'])[last()]"/>
-                <xsl:with-param name="next" select="(following::technique[not(@diff = 'del')]|following::inform-div1[not(@diff = 'del')])[1]"/>
+                <xsl:with-param name="prev" select="(preceding::div1[not(@diff = 'del')] | preceding::technique[not(@diff = 'del')] | preceding::div2[not(@diff = 'del')] | preceding::div1[@id!='placeholders'])[last()]"/>
+                <xsl:with-param name="next" select="(following::technique[not(@diff = 'del')] | following::div2[not(@diff = 'del')] |following::inform-div1[not(@diff = 'del')])[1]"/>
               </xsl:call-template>
               <xsl:call-template name="footer"></xsl:call-template>
             </body>
           </html>
     		</xsl:result-document>
-    </xsl:for-each>
-  </xsl:template>
-  <xsl:template match="back/div1 | back/inform-div1">
+    </xsl:template>
+
+    <!-- Create pages for techniques intro-->
+    <xsl:template match="body/div1/div2">
+      <xsl:variable name="prev" select="(preceding::div1[not(@diff = 'del')] | preceding::technique[not(@diff = 'del')] | preceding::div2[not(@diff = 'del')] | preceding::div1[@id!='placeholders'])[last()]"/>
+      <xsl:variable name="next" select="(following::technique[not(@diff = 'del')] | following::div2[not(@diff = 'del')] | following::inform-div1[not(@diff = 'del')])[1]"/>
+    	<xsl:variable name="filename">
+    		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
+    	</xsl:variable>
+    	<xsl:result-document method="xml" href="{$output.dir}/{$filename}" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" indent="no">
+    	    <html>
+    	    	<xsl:if test="/spec/header/langusage/language">
+    	    		<xsl:attribute name="lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
+    	    		<xsl:attribute name="xml:lang"><xsl:value-of select="/spec/header/langusage/language/@id"/></xsl:attribute>
+    	    	</xsl:if>
+    	    	<head>
+              <title>
+				<xsl:value-of select="head"/> | WCAG 2.0実装方法集
+              </title>
+              <xsl:call-template name="css"/>
+              <link rel="stylesheet" type="text/css" href="slicenav.css"/>
+              <xsl:if test="$show.diff.markup != '0'">
+              <script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
+            </xsl:if>
+            </head>
+            <body class="slices">
+          <xsl:if test="$show.diff.markup != '0'">
+            <xsl:attribute name="onload">jscheck()</xsl:attribute>
+          </xsl:if>
+<xsl:call-template name="skipnav"></xsl:call-template>
+              <xsl:call-template name="navigation.top">
+                <xsl:with-param name="prev" select="$prev"/>
+                <xsl:with-param name="next" select="$next"/>
+              </xsl:call-template>
+            	
+            	<!-- This template is the same as the technique template, except removed the quick nav from here -->
+              <xsl:apply-templates/>
+             
+              <xsl:call-template name="navigation.bottom">
+                <xsl:with-param name="prev" select="(preceding::div1[not(@diff = 'del')] | preceding::technique[not(@diff = 'del')] | preceding::div2[not(@diff = 'del')] | preceding::div1[@id!='placeholders'])[last()]"/>
+                <xsl:with-param name="next" select="(following::technique[not(@diff = 'del')] | following::div2[not(@diff = 'del')] |following::inform-div1[not(@diff = 'del')])[1]"/>
+              </xsl:call-template>
+              <xsl:call-template name="footer"></xsl:call-template>
+            </body>
+          </html>
+    		</xsl:result-document>
+    </xsl:template>
+
+	<xsl:template match="back/div1 | back/inform-div1">
     <xsl:choose>
       <xsl:when test="$slices= '0'"/>
       <xsl:otherwise>
-    <xsl:variable name="prev" select="(preceding::technique[not(@diff = 'del')]|preceding::inform-div1[not(@diff = 'del')])[last()]"/>
-    <xsl:variable name="next" select="(following::div1[not(@diff = 'del')]|following::inform-div1[not(@diff = 'del')])[1]"/>
+    <xsl:variable name="prev" select="(preceding::technique[not(@diff = 'del')] | preceding::div2[not(@diff = 'del')] | preceding::inform-div1[not(@diff = 'del')])[last()]"/>
+    <xsl:variable name="next" select="(following::div1[not(@diff = 'del')] | following::div2[not(@diff = 'del')] | following::inform-div1[not(@diff = 'del')])[1]"/>
       	<xsl:variable name="filename">
       		<xsl:apply-templates select="." mode="slice-techniques-filename"/>
       	</xsl:variable>
@@ -185,7 +234,7 @@
       	    	<head>
             <title>
               <xsl:value-of select="head"/>
-              <xsl:text> </xsl:text> | Techniques for WCAG 2.0
+              <xsl:text> </xsl:text> | WCAG 2.0実装方法集
             </title>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
             <xsl:if test="$show.diff.markup != '0'">
@@ -208,8 +257,8 @@
             
 
             <xsl:call-template name="navigation.bottom">
-              <xsl:with-param name="prev" select="(preceding::technique[not(@diff = 'del')]|preceding::inform-div1[not(@diff = 'del')])[last()]"/>
-              <xsl:with-param name="next" select="(following::div1[not(@diff = 'del')]|following::inform-div1[not(@diff = 'del')])[1]"/>
+              <xsl:with-param name="prev" select="(preceding::technique[not(@diff = 'del')] | preceding::div2[not(@diff = 'del')] | preceding::inform-div1[not(@diff = 'del')])[last()]"/>
+              <xsl:with-param name="next" select="(following::div1[not(@diff = 'del')] | following::div2[not(@diff = 'del')] | following::inform-div1[not(@diff = 'del')])[1]"/>
             </xsl:call-template>
             <xsl:call-template name="footer"></xsl:call-template>
           </body>
@@ -234,7 +283,7 @@
       	    	</xsl:if>
       	    	<head>
             <title>
-              <xsl:value-of select="head"/> | Techniques for WCAG 2.0
+              <xsl:value-of select="head"/> | WCAG 2.0実装方法集
 						</title>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
             <xsl:if test="$show.diff.markup != '0'">
@@ -276,7 +325,7 @@
         	</xsl:if>
         	<head>
             <title>
-              <xsl:apply-templates select="header/title"/>
+              <xsl:value-of select="header/title"/>
               <xsl:if test="header/version">
                 <xsl:text> </xsl:text>
                 <xsl:apply-templates select="header/version"/>
@@ -301,7 +350,7 @@
                 </dl>
               </div>
             </xsl:if>
-            <xsl:variable name="next" select="(descendant::technique[not(@diff = 'del')])[1]"/>
+            <xsl:variable name="next" select="(descendant::technique[not(@diff = 'del')] | descendant::div2[not(@diff = 'del')])[1]"/>
             <xsl:call-template name="navigation.bottom">
               <xsl:with-param name="next" select="$next"/>
             </xsl:call-template>
@@ -320,10 +369,10 @@
     <xsl:comment> TOP NAVIGATION BAR </xsl:comment>
     <ul id="navigation" >
       <li>
-        <strong><a href="Overview.html#contents" title="Table of Contents">Contents</a></strong>
+        <strong><a href="Overview.html#contents" title="目次">目次</a></strong>
       </li>
       <li>
-        <strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong>
+        <strong><a href="intro.html" title="WCAG 2.0実装方法集のイントロダクション">イントロダクション</a></strong>
       </li>
       <xsl:choose>
         <xsl:when test="$prev">
@@ -331,7 +380,7 @@
             <a>
               <xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$prev"/></xsl:call-template></xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$prev"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
-             <xsl:element name="strong">Previous:<xsl:text> </xsl:text></xsl:element>
+             <xsl:element name="strong">前:<xsl:text> </xsl:text></xsl:element>
                 <xsl:call-template name="href.nav.short">
                 <xsl:with-param name="target" select="$prev"/>
               </xsl:call-template>
@@ -346,7 +395,7 @@
             <a>
               <xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$next"/></xsl:call-template></xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$next"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
-              <xsl:element name="strong">Next:<xsl:text> </xsl:text></xsl:element>
+              <xsl:element name="strong">次:<xsl:text> </xsl:text></xsl:element>
               <xsl:call-template name="href.nav.short">
                 <xsl:with-param name="target" select="$next"/>
               </xsl:call-template>
@@ -373,13 +422,13 @@
     <xsl:comment> BOTTOM NAVIGATION BAR </xsl:comment>
     <ul id="navigationbottom" >
       <li>
-        <strong><a href="#top">Top</a></strong>
+        <strong><a href="#top">ページの先頭へ</a></strong>
       </li>
       <li>
-        <strong><a href="Overview.html#contents" title="Table of Contents">Contents</a></strong>
+        <strong><a href="Overview.html#contents" title="目次">目次</a></strong>
       </li>
       <li>
-        <strong><a href="intro.html" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong>
+        <strong><a href="intro.html" title="WCAG 2.0実装方法集のイントロダクション">イントロダクション</a></strong>
       </li>
       <xsl:choose>
         <xsl:when test="$prev">
@@ -387,7 +436,7 @@
             <a>
               <xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$prev"/></xsl:call-template></xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$prev"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
-              <xsl:element name="strong">Previous:<xsl:text> </xsl:text></xsl:element>
+              <xsl:element name="strong">前:<xsl:text> </xsl:text></xsl:element>
               <xsl:call-template name="href.nav.short">
                 <xsl:with-param name="target" select="$prev"/>
               </xsl:call-template>
@@ -402,7 +451,7 @@
             <a>
               <xsl:attribute name="title"><xsl:call-template name="href.nav"><xsl:with-param name="target" select="$next"/></xsl:call-template></xsl:attribute>
               <xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="$next"/><!--<xsl:with-param name="just.filename" select="1"/>--></xsl:call-template></xsl:attribute>
-              <xsl:element name="strong">Next:<xsl:text> </xsl:text></xsl:element>
+              <xsl:element name="strong">次:<xsl:text> </xsl:text></xsl:element>
               <xsl:call-template name="href.nav.short">
                 <xsl:with-param name="target" select="$next"/>
               </xsl:call-template>
@@ -431,39 +480,44 @@
     </li>
   </xsl:template>
   <!-- No need for a horizontal rule divider in the sliced version -->
+	<!-- comment out assuming this carried over from Understanding
   <xsl:template match="div2[not(@role='glintent')]">
     <xsl:apply-templates/>
   </xsl:template>
+   -->
   <!-- BBC This template generates the TOC for the techniques pages (in-page anchors) -->
   <xsl:template mode="techniquetoc" match="technique[not(@diff = 'del')]">
     <xsl:variable name="gl" select="$gl-src//*[@id = current()/@id]"/>
     <ul id="navbar" >
         <li>
-          <a href="#{@id}-applicability">Applicability</a>
+          <a href="#{@id}-applicability">適用 (対象)</a>
         </li>
                 <li>
-          <a href="#{@id}-description">Description</a>
+          <a href="#{@id}-description">解説</a>
         </li>
       <xsl:if test="examples">
         <li>
-          <a href="#{@id}-examples">Examples</a>
+          <a href="#{@id}-examples">事例</a>
         </li>
       </xsl:if>
             <xsl:if test="resources">
         <li>
-          <a href="#{@id}-resources">Resources</a>
+          <a href="#{@id}-resources">参考リソース</a>
         </li>
       </xsl:if>
             <xsl:if test="related-techniques">
         <li>
-          <a href="#{@id}-related-techs">Related Techniques</a>
+          <a href="#{@id}-related-techs">関連する実装方法</a>
         </li>
       </xsl:if>
             <xsl:if test="tests">
         <li>
-          <a href="#{@id}-tests">Tests</a>
+          <a href="#{@id}-tests">検証</a>
         </li>
-      </xsl:if>
+            </xsl:if>
+    	<xsl:if test="tech-info">
+    		<li><a href="#{@id}-info">Technique Information</a></li>
+    	</xsl:if>
     </ul>
   </xsl:template>
   <!-- BBC This template gives us some control over the previous/next links in the navigation -->
@@ -484,10 +538,10 @@
     <xsl:choose>
       <xsl:when test="$target/@id='references'"> <xsl:value-of select="$target/head"/></xsl:when>
       <xsl:when test="$target/@id='intro'"> <xsl:value-of select="$target/head"/></xsl:when>
-      <xsl:when test="$target/../@role='failures'">Failure <xsl:value-of select="$target/@id"/></xsl:when>
+      <xsl:when test="$target/../@role='failures'">不適合事例<xsl:value-of select="$target/@id"/></xsl:when>
       <xsl:when test="$target/@id">
         <xsl:value-of select="$target/head"/>
-        Technique <xsl:value-of select="$target/@id"/>
+        実装方法<xsl:value-of select="$target/@id"/>
       </xsl:when>
       <xsl:otherwise>
 			</xsl:otherwise>
@@ -533,6 +587,7 @@
   
   <!-- mode: toc Same as techniques single HTML except technologies level isn't linked-->
 	<xsl:template mode="toc" match="div1">
+		<xsl:param name="local.toc.level" select="$toc.level"/>
 		<li>
 		<xsl:choose>
     <xsl:when test="@id='intro'">
@@ -540,11 +595,11 @@
 				</xsl:when>
     <xsl:otherwise>
       <!-- @@ check on parenthetical - seems less than ideal -->
-      <xsl:apply-templates select="head" mode="text"/> (<a><xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="."/></xsl:call-template></xsl:attribute>all <xsl:apply-templates select="head" mode="text"/> on one page</a>)
+      <xsl:apply-templates select="head" mode="text"/> (<a><xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="."/></xsl:call-template></xsl:attribute>全ての<xsl:apply-templates select="head" mode="text"/>を1ページにまとめて表示</a>)
     </xsl:otherwise>
   </xsl:choose>
 						
-			<xsl:if test="$toc.level &gt; 1">
+			<xsl:if test="$local.toc.level &gt; 1">
 				<xsl:variable name="children1">
 					<xsl:value-of select="count(div2 | technique)"/>
 				</xsl:variable>
@@ -552,20 +607,20 @@
 					<xsl:when test="$children1 = 0"/>
 					<xsl:otherwise>
 						<ul>
+							<xsl:for-each select="div2[not(@diff = 'del')]">
+								<li>
+									<a>
+										<xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="."/></xsl:call-template></xsl:attribute>
+											<xsl:apply-templates select="head" mode="text"/>
+										</a>
+								</li>
+							</xsl:for-each>
 							<xsl:for-each select="technique[not(@diff = 'del')]">
 								<li>
 									<a>
 										<xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="."/></xsl:call-template></xsl:attribute>
 											<xsl:value-of select="@id"/>:<xsl:text> </xsl:text>
 												<xsl:apply-templates select="head | short-name" mode="text"/>
-										</a>
-								</li>
-							</xsl:for-each>
-							<xsl:for-each select="div2">
-								<li>
-									<a>
-										<xsl:attribute name="href"><xsl:call-template name="href.target"><xsl:with-param name="target" select="."/></xsl:call-template></xsl:attribute>
-											<xsl:apply-templates select="head" mode="text"/>
 										</a>
 								</li>
 							</xsl:for-each>
@@ -577,8 +632,8 @@
 	</xsl:template>
 
 <xsl:template name="skipnav">
-<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home" /></a></p><p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div>
-<div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p>	</div>
+<div id="masthead"><p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home" /></a></p><p class="collectiontitle"><a href="./">WCAG 2.0実装方法集</a></p></div>
+<div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へ(Enterキーを押してください)</a></p>	</div>
 
 <xsl:if test="$show.diff.markup != '0'">
               <div id="diffexp">
@@ -590,10 +645,13 @@
 
 <xsl:template name="footer">
 <div class="footer">
-<p class="copyright">This Web page is part of <a href="Overview.html">Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
- </p>
-	<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div>
+		<p class="copyright">このページは、「<a href="Overview.html">WCAG 2.0 実装方法集 -- WCAG 2.0の実装方法と不適合事例</a>」の一部である。また、文書全体を<a href="complete.html">単一のHTMLファイルにしたもの</a>も提供している。Web Content Accessibility Guidelines (WCAG) 2.0 関連文書群において、この「WCAG 2.0 実装方法集」がその他の文書とどのような関係にあるかは、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents（英語）</a>を参照のこと。<span class="diff-add"><span class="difftext">[begin add]</span><span>パブリック・コメントの提出に当たっては、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents (英語)</a>を参照のこと。</span><span class="difftext">[end add]</span></span></p>
+		<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © 2008 <a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.org/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+</div>
+<xsl:apply-templates select="translationcredit"/>
+  <xsl:apply-templates select="//trdisclaimer"/>
 </xsl:template>
+
 
 <xsl:template match="relatedtech">
 	<xsl:variable name="id" select="@idref"/>

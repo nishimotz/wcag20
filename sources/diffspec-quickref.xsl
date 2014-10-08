@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 
-<!-- Version: $Id: diffspec-quickref.xsl,v 1.3 2007/12/03 17:35:29 bcaldwel Exp $ -->
+<!-- Version: $Id: diffspec-quickref.xsl,v 1.6 2011/05/27 20:40:54 cooper Exp $ -->
 
 <!-- Stylesheet for @diff markup in XMLspec -->
 <!-- Author: Norman Walsh (Norman.Walsh@East.Sun.COM) -->
@@ -500,22 +500,17 @@ BBC: added "item" here to address problems with ordered lists-->
       </xsl:when>
       <xsl:otherwise>
 	<xsl:choose>
-      <xsl:when test="@role='css' or @role='script' or @role='smil' or @role='aria' or @role='server' or p/loc[@linktype='css'] or p/loc[@linktype='script'] or p/loc[@linktype='smil'] or p/loc[@linktype='aria'] or p/loc[@linktype='server']">
-        <xsl:variable name="liclass">base<xsl:value-of select="p/loc/@linktype"/>base</xsl:variable>
-        <xsl:if test="@role='css' or p/loc[@linktype='css']">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && !$bCSSBase) { ]]></xsl:processing-instruction>
+	<!-- BBC: test for role values that require AND or OR relationships that fall outside the norm -->
+	<xsl:when test="@role='htmlorflash' or @role='htmlorscript' or @role='htmlorcss'">
+        <xsl:variable name="liclass">base<xsl:value-of select="@role"/>base</xsl:variable>
+        <xsl:if test="@role='htmlorflash'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML || $bFlash) { ]]></xsl:processing-instruction>
         </xsl:if>
-        <xsl:if test="@role='script' or p/loc[@linktype='script']">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bScript && !$bScriptBase) { ]]></xsl:processing-instruction>
+        <xsl:if test="@role='htmlorscript'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML || $bScript) { ]]></xsl:processing-instruction>
         </xsl:if>
-       <xsl:if test="@role='aria' or p/loc[@linktype='aria']">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bARIA && !$bARIABase) { ]]></xsl:processing-instruction>
-        </xsl:if>
-         <xsl:if test="@role='server' or p/loc[@linktype='server']">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bServerSide && !$bServerSideBase) { ]]></xsl:processing-instruction>
-        </xsl:if>
-        <xsl:if test="@role='smil' or p/loc[@linktype='smil']">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bSMIL && !$bSMILBase) { ]]></xsl:processing-instruction>
+        <xsl:if test="@role='htmlorcss'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML || $bCSS) { ]]></xsl:processing-instruction>
         </xsl:if>
         <li xmlns="http://www.w3.org/1999/xhtml">
           <xsl:if test="@id">
@@ -526,34 +521,45 @@ BBC: added "item" here to address problems with ordered lists-->
         </li>
         <xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction>
       </xsl:when>
-      <xsl:when test="@role='css' or @role='script' or @role='smil' or @role='aria' or @role='server'">
-        <xsl:variable name="liclass">base<xsl:value-of select="@role"/>base</xsl:variable>
-        	<!-- put role on items where quickref display needs to be adjusted -->
-        <xsl:if test="@role='css'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && !$bCSSBase) { ]]></xsl:processing-instruction>
+      <xsl:when test="@role='html' or @role='css' or @role='script' or @role='smil' or @role='flash' or @role='pdf' or @role='silverlight' or @role='aria' or @role='server' or p/loc[@linktype='html'] or p/loc[@linktype='css'] or p/loc[@linktype='script'] or p/loc[@linktype='smil'] or p/loc[@linktype='flash'] or p/loc[@linktype='pdf'] or p/loc[@linktype='silverlight'] or p/loc[@linktype='aria'] or p/loc[@linktype='server']">
+        <xsl:variable name="liclass">base<xsl:value-of select="p/loc/@linktype"/>base</xsl:variable>
+        <xsl:if test="@role='html' or p/loc[@linktype='html']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML) { ]]></xsl:processing-instruction>
         </xsl:if>
-        <xsl:if test="@role='smil'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bSMIL && !$bSMILBase) { ]]></xsl:processing-instruction>
+        <xsl:if test="@role='css' or p/loc[@linktype='css']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bCSS) { ]]></xsl:processing-instruction>
         </xsl:if>
-        <xsl:if test="@role='script'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bScript && !$bScriptBase) { ]]></xsl:processing-instruction>
+        <xsl:if test="@role='script' or p/loc[@linktype='script']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bScript) { ]]></xsl:processing-instruction>
         </xsl:if>
-        <xsl:if test="@role='aria'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bARIA && !$bARIABase) { ]]></xsl:processing-instruction>
+        <xsl:if test="@role='flash' or p/loc[@linktype='flash']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bFlash) { ]]></xsl:processing-instruction>
         </xsl:if>
-        <xsl:if test="@role='server'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bServerSide && !$bServerSideBase) { ]]></xsl:processing-instruction>
+        <xsl:if test="@role='pdf' or p/loc[@linktype='pdf']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bPDF) { ]]></xsl:processing-instruction>
         </xsl:if>
-               <li xmlns="http://www.w3.org/1999/xhtml">
+        <xsl:if test="@role='silverlight' or p/loc[@linktype='silverlight']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bSilverlight) { ]]></xsl:processing-instruction>
+        </xsl:if>
+       <xsl:if test="@role='aria' or p/loc[@linktype='aria']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bARIA) { ]]></xsl:processing-instruction>
+        </xsl:if>
+         <xsl:if test="@role='server' or p/loc[@linktype='server']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bServerSide) { ]]></xsl:processing-instruction>
+        </xsl:if>
+        <xsl:if test="@role='smil' or p/loc[@linktype='smil']">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bSMIL) { ]]></xsl:processing-instruction>
+        </xsl:if>
+        <li xmlns="http://www.w3.org/1999/xhtml">
           <xsl:if test="@id">
             <xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
           </xsl:if>
           <xsl:attribute name="class"><xsl:value-of select="$liclass"/></xsl:attribute>
-          <xsl:apply-templates/>
+          <xsl:apply-templates/> 
         </li>
         <xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction>
-
       </xsl:when>
+     
       <xsl:otherwise>
         <li xmlns="http://www.w3.org/1999/xhtml">
           <xsl:if test="@id">

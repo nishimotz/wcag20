@@ -1,0 +1,123 @@
+#!/bin/bash
+# This is a simple shell script used build WCAG 2.0 and its supporting documents
+# Before running this script, you'll need to install saxon, create the directories 
+# to be written to and copy over the relevant CSS and supporting files.
+# Update the date variable to control where the output goes.
+#echo "Enter today's date (YYYYMMDD)"
+
+pubdate=20090105
+datespace=2009/01
+basedir=.
+
+echo "Understanding, Techniques, QuickRef, All? (U/T/Q/A)"
+read docs
+
+if test $docs == "A"
+then 
+U=y
+T=y
+Q=y
+elif test $docs == "U"
+then 
+U=y
+T=n
+Q=n
+elif test $docs == "T"
+then 
+U=n
+T=y
+Q=n
+elif test $docs == "Q"
+then 
+U=n
+T=n
+Q=y
+else
+echo "Unknown option"
+fi
+
+echo "Commit Changes? (y/n)"
+read commit
+
+# Combine Tech-Specific XML Technqiques into merged-techs.xml
+# This is done first so merged file will have correct publoc, needed for links from other docs
+if test $T == y
+then
+java com.icl.saxon.StyleSheet -o sources/merged-techs.xml sources/wcag20-merged-techs.xml sources/techs-merge.xslt 
+echo "Techniques Source Merge Complete"
+cd $basedir/NOTE-WCAG20-TECHS-$pubdate/
+java com.icl.saxon.StyleSheet ../sources/merged-techs.xml ../sources/slices-techniques.xsl show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o complete.html ../sources/merged-techs.xml ../sources/diffspec-tech.xsl show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o aria.html ../sources/ARIA-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o html.html ../sources/html-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o css.html ../sources/css-tech.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o client-side-script.html ../sources/script-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o server-side-script.html ../sources/server-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o smil.html ../sources/SMIL-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o text.html ../sources/plain-text-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o failures.html ../sources/failure-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+java com.icl.saxon.StyleSheet -o general.html ../sources/general-tech-src.xml ../sources/diffspec-tech.xsl bytech=1 show.diff.markup=0 show.issue.links=0
+
+# Generate the diff-marked version and copy it to datespace
+java com.icl.saxon.StyleSheet -o complete-diff.html ../sources/merged-techs.xml ../sources/diffspec-tech.xsl show.diff.markup=1 show.issue.links=1
+cp complete-diff.html print.css additional.css ../../$datespace/DIFF-WCAG20-TECHS-$pubdate/.
+rm complete-diff.html
+mv ../../$datespace/DIFF-WCAG20-TECHS-$pubdate/complete-diff.html ../../$datespace/DIFF-WCAG20-TECHS-$pubdate/Overview.html 
+cvs commit -m "" ../../$datespace/DIFF-WCAG20-TECHS-$pubdate/*.* 
+cd ../
+else
+
+sleep 1s
+fi
+
+if test $U == y
+then
+# monolithic file
+java com.icl.saxon.StyleSheet  -o $basedir/NOTE-UNDERSTANDING-WCAG20-$pubdate/complete.html sources/guide-to-wcag2-src.xml sources/diffspec-howto.xsl show.diff.markup=0 show.issue.links=0 
+# monolithic file with diff
+java com.icl.saxon.StyleSheet -o $basedir/NOTE-UNDERSTANDING-WCAG20-$pubdate/complete-diff.html sources/guide-to-wcag2-src.xml sources/diffspec-howto.xsl show.diff.markup=1 show.issue.links=1 
+
+# sliced files 
+# note param output.dir is relative to XSLT location
+cd $basedir/NOTE-UNDERSTANDING-WCAG20-$pubdate/
+cp complete-diff.html print.css additional.css ../../$datespace/DIFF-WCAG20-UNDERSTANDING-$pubdate/.
+mv ../../$datespace/DIFF-WCAG20-UNDERSTANDING-$pubdate/complete-diff.html ../../$datespace/DIFF-WCAG20-UNDERSTANDING-$pubdate/Overview.html 
+cvs commit -m "" ../../$datespace/DIFF-WCAG20-UNDERSTANDING-$pubdate/*.* 
+rm complete-diff.html
+
+java com.icl.saxon.StyleSheet ../sources/guide-to-wcag2-src.xml ../sources/slices-understanding.xsl show.diff.markup=0 show.issue.links=0
+echo "Understanding Doc Build Complete"
+cd ../
+else
+sleep 1s
+fi
+
+if test $Q == y
+then
+echo "Building QuickRef"
+java com.icl.saxon.StyleSheet -o quickref-temp.php sources/wcag2-quickref.xml sources/diffspec-quickref.xsl show.diff.markup=0
+cat sources/quickref-leadin.php quickref-temp.php > ../../WCAG20/quickref/$pubdate/Overview.php
+ cp ../../WCAG20/quickref/$pubdate/Overview.php ../../../../../../../../Program\ Files/xampp/htdocs/quickref/.
+echo "QuickRef Build Complete" 
+else
+sleep 1s
+fi
+
+# Now Check in the updated files 
+if test $commit == y
+then
+
+cd NOTE-UNDERSTANDING-WCAG20-$pubdate/
+cvs commit -m "" *.* 
+echo "Understanding Changes Committed!"
+
+cd ../NOTE-WCAG20-TECHS-$pubdate
+cvs commit -m "" *.* 
+echo "Techniques Changes Committed!"
+
+cd ../../../WCAG20/quickref/$pubdate/
+cvs commit -m "" Overview.php
+echo "Quck Ref. Changes Committed!"
+else
+echo "Done!"
+fi

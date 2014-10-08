@@ -15,7 +15,7 @@
     <xsl:text> </xsl:text>
     <xsl:value-of select="//pubdate/year"/>
   </xsl:variable>
-  <xsl:output method="xml" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" indent="no" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"/>
+  <xsl:output method="xml" encoding="UTF-8" doctype-public="-//W3C//DTD XHTML 1.0 Transitional//EN" indent="no" doctype-system="http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" omit-xml-declaration="yes"/>
   <!-- BBC: added link to guidelines -->
   <!-- BBC: pulled this in to call a variation on the "css" template with custom styles -->
   <xsl:template match="spec">
@@ -26,7 +26,7 @@
       </xsl:if>
       <head>
         <title>
-          <xsl:apply-templates select="header/title"/>
+          <xsl:value-of select="header/title"/>
           <xsl:if test="header/version">
             <xsl:text> </xsl:text>
             <xsl:apply-templates select="header/version"/>
@@ -117,7 +117,7 @@ Editors: Gregg Vanderheiden, Loretta Guarino Reid, Ben Caldwell, Shawn Lawton He
               </a>, <a href="http://www.ercim.eu/" shape="rect">
                 <acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym>
               </a>,
-<a href="http://www.keio.ac.jp/" shape="rect">Keio</a>), All Rights Reserved. W3C
+            	<a href="http://www.keio.ac.jp/" shape="rect">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C
 <a href="/Consortium/Legal/ipr-notice#Legal_Disclaimer" shape="rect">liability</a>,
 
 <a href="/Consortium/Legal/ipr-notice#W3C_Trademarks" shape="rect">trademark</a>,
@@ -241,12 +241,19 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
         <legend>
           <strong>Technologies:</strong>
         </legend>
-        <ul><li>
-            <input type="checkbox" name="defaultopt" id="defaultopt" value="Y" checked="checked" disabled="disabled"/>
-            <label for="defaultopt">HTML Techniques (always shown)</label>
+        <ul>
+          <xsl:processing-instruction name="php"><![CDATA[ if($bHTML) { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="htmlopt" id="htmlopt" value="Y" checked="checked" />
+            <label for="htmlopt">Show <acronym title="Hypertext Markup Language">HTML</acronym> techniques and failures</label>
           </li>
-        
-          <xsl:processing-instruction name="php"><![CDATA[ if($bCSS) { ]]></xsl:processing-instruction>
+          <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="htmlopt" id="htmlopt" value="Y" />
+            <label for="htmlopt">Show <acronym title="Hypertext Markup Language">HTML</acronym> techniques and failures</label>
+          </li>
+          <xsl:processing-instruction name="php"><![CDATA[ } if($bCSS) { ]]></xsl:processing-instruction>
+          
           <li>
             <input type="checkbox" name="cssopt" id="cssopt" value="Y" checked="checked"/>
             <label for="cssopt">Show <acronym title="Cascading Style Sheets (CSS)">CSS</acronym> techniques and failures</label>
@@ -305,6 +312,36 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
           <li>
             <input type="checkbox" name="serversideopt" id="serversideopt" value="Y"/>
             <label for="serversideopt">Show Server-side Scripting techniques and failures</label>
+          </li> 
+          <xsl:processing-instruction name="php"><![CDATA[ } if($bFlash) { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="flashopt" id="flashopt" value="Y" checked="checked"/>
+            <label for="flashopt">Show Flash techniques and failures</label>
+          </li>
+          <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="flashopt" id="flashopt" value="Y"/>
+            <label for="flashopt">Show Flash techniques and failures</label>
+          </li>
+          <xsl:processing-instruction name="php"><![CDATA[ } if($bPDF) { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="pdfopt" id="pdfopt" value="Y" checked="checked"/>
+            <label for="pdfopt">Show PDF techniques and failures</label>
+          </li>
+          <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="pdfopt" id="pdfopt" value="Y"/>
+            <label for="pdfopt">Show PDF techniques and failures</label>
+          </li>
+          <xsl:processing-instruction name="php"><![CDATA[ } if($bSilverlight) { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="silverlightopt" id="silverlightopt" value="Y" checked="checked"/>
+            <label for="silverlightopt">Show Silverlight techniques and failures</label>
+          </li>
+          <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>
+          <li>
+            <input type="checkbox" name="silverlightopt" id="silverlightopt" value="Y"/>
+            <label for="silverlightopt">Show Silverlight techniques and failures</label>
           </li>
           <xsl:processing-instruction name="php"><![CDATA[ } if($bARIA) { ]]></xsl:processing-instruction>
           <li>
@@ -440,12 +477,10 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
         <h5 id="{ancestor::div2/@id}-{../@role}-head" xmlns="http://www.w3.org/1999/xhtml">Sufficient Techniques for <xsl:value-of select="../../../head"/><xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="../../../@id"/>
     </xsl:call-template>
-<xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && $bSMIL && $bScript && $bARIA && $bServerSide) { ]]></xsl:processing-instruction>  
-<xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>        
-          <xsl:text> </xsl:text>
-          <span class="AsCTlist">(for the technologies you checked above)</span>
-         <xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction>
+    <xsl:call-template name="fortechschecked" />
+
          </h5>
+      	<p>Note: <a href="#about-techs">Other techniques may also be sufficient if they meet the success criterion</a>.</p>
       </xsl:when>
       <xsl:when test="../@role='failures'">
         <!-- test to determine whether there are actually failures -->
@@ -455,6 +490,7 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
             <h5 id="{ancestor::div2/@id}-{../@role}-head" xmlns="http://www.w3.org/1999/xhtml">Failures for <abbr title="Success Criterion">SC</abbr><xsl:text> </xsl:text><xsl:value-of select="../../../head"/><xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="../../../@id"/>
     </xsl:call-template>
+    <xsl:call-template name="fortechschecked" />
             </h5>
           </xsl:otherwise>
         </xsl:choose>
@@ -466,6 +502,7 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
             <h5 id="{ancestor::div2/@id}-{../@role}-head" xmlns="http://www.w3.org/1999/xhtml">Advisory Techniques	for <xsl:value-of select="../../../head"/><xsl:text> </xsl:text> - <xsl:call-template name="sc-handle">
       <xsl:with-param name="handleid" select="../../../@id"/>
     </xsl:call-template>
+    <xsl:call-template name="fortechschecked" />
             </h5>
           </xsl:otherwise>
         </xsl:choose>
@@ -476,23 +513,53 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
     </xsl:choose>
   </xsl:template>
   <xsl:template match="div5/head">
+  <!-- BBC Update test to find out if it contains the string we're interested-->
     <xsl:choose>
-      <xsl:when test="@role='css' or @role='script' or @role='smil' or @role='aria' or @role='server'">
+    <!-- First, test for specific groupings where the enitre block should be hidden -->
+    <xsl:when test="@role='htmlorflash' or @role='htmlorscript'">
         <xsl:variable name="liclass">base<xsl:value-of select="@role"/>base</xsl:variable>
+        <xsl:if test="@role='htmlorflash'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML || $bFlash) { ]]></xsl:processing-instruction>
+        </xsl:if>
+        <xsl:if test="@role='htmlorscript'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML || $bScript) { ]]></xsl:processing-instruction>
+        </xsl:if>
+        <div xmlns="http://www.w3.org/1999/xhtml">
+          <xsl:attribute name="class"><xsl:value-of select="$liclass"/></xsl:attribute>
+          <h6 class="situation" xmlns="http://www.w3.org/1999/xhtml">
+            <xsl:apply-templates/>
+          </h6>
+        </div>
+        <xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction>
+      </xsl:when>
+      <xsl:when test="@role='html' or @role='css' or @role='script' or @role='smil' or @role='aria' or @role='flash' or @role='pdf' or @role='silverlight' or @role='server'">
+        <xsl:variable name="liclass">base<xsl:value-of select="@role"/>base</xsl:variable>
+        <xsl:if test="@role='html'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML) { ]]></xsl:processing-instruction>
+        </xsl:if>
         <xsl:if test="@role='css'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && !$bCSSBase) { ]]></xsl:processing-instruction>
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bCSS) { ]]></xsl:processing-instruction>
         </xsl:if>
         <xsl:if test="@role='smil'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bSMIL && !$bSMILBase) { ]]></xsl:processing-instruction>
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bSMIL) { ]]></xsl:processing-instruction>
         </xsl:if>
         <xsl:if test="@role='script'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bScript && !$bScriptBase) { ]]></xsl:processing-instruction>
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bScript) { ]]></xsl:processing-instruction>
+        </xsl:if>
+        <xsl:if test="@role='flash'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bFlash) { ]]></xsl:processing-instruction>
+        </xsl:if>
+        <xsl:if test="@role='pdf'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bPDF) { ]]></xsl:processing-instruction>
+        </xsl:if>
+        <xsl:if test="@role='silverlight'">
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bSilverlight) { ]]></xsl:processing-instruction>
         </xsl:if>
         <xsl:if test="@role='aria'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bARIA && !$bARIABase) { ]]></xsl:processing-instruction>
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bARIA) { ]]></xsl:processing-instruction>
         </xsl:if>
         <xsl:if test="@role='server'">
-          <xsl:processing-instruction name="php"><![CDATA[ if ($bServerside && !$bServersideBase) { ]]></xsl:processing-instruction>
+          <xsl:processing-instruction name="php"><![CDATA[ if ($bServerSide) { ]]></xsl:processing-instruction>
         </xsl:if>
         <div xmlns="http://www.w3.org/1999/xhtml">
           <xsl:attribute name="class"><xsl:value-of select="$liclass"/></xsl:attribute>
@@ -610,9 +677,6 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
       </xsl:if>
     </p>
   </xsl:template>
-  <xsl:template name="sc-number-link">
-    <a href="{$glthisversion}#{../@id}"><xsl:call-template name="sc-number"/></a>
-  </xsl:template>
 
   <xsl:template match="header">
     <!--p xmlns="http://www.w3.org/1999/xhtml" align="center">[<a href="#contents">contents</a>]<xsl:text> </xsl:text>[<a href="#customize">customize</a>]
@@ -695,8 +759,8 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
     </div>
     <xsl:apply-templates select="notice"/>
     <!--xsl:apply-templates select="abstract"/>
-    <xsl:apply-templates select="status"/>
-    <xsl:apply-templates select="revisiondesc"/-->
+    <xsl:apply-templates select="status"/-->
+    <xsl:apply-templates select="revisiondesc"/>
     
   </xsl:template>
   
@@ -799,7 +863,7 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
 <xsl:processing-instruction name="php"><![CDATA[ if ($bIntroduction) { ]]></xsl:processing-instruction>
 <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>
 <xsl:text> </xsl:text><span class="showhideR">(Hidden)</span>
-<xsl:processing-instruction name="php"><![CDATA[ }]]></xsl:processing-instruction>
+<xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction>
 </h2>
         <xsl:processing-instruction name="php"><![CDATA[ if($bIntroduction) { ]]></xsl:processing-instruction>
             <p><span class="showhideinline">[<a href="Overview.php?introopt=N">Hide Introduction</a>]</span> </p>
@@ -813,6 +877,10 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
   <p>This document lists all of the requirements (called "success criteria") from <a href="{$gl-src//latestloc/loc[@href]}">Web Content Accessibility Guidelines (WCAG) 2.0</a>. It also lists techniques to meet the requirements, which link to more details. The "Understanding" links go to descriptions, examples, and resources. </p>
   
   <p>You can customize the list by selecting the technologies that apply to your Web project, and the <a href="{$guide-src//latestloc/loc[@href]}#uc-levels-head">levels</a> and techniques that you want included in the list. </p>
+	
+	<p>Technology-specific techniques do not supplant the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p>
+
+<div class="note"><p><strong>Note: </strong>In some customized views, no techniques will be listed under some headings. This indicates that there are no documented techniques for the technologies chosen.</p></div>
 
     <p>See the <a href="http://www.w3.org/WAI/intro/wcag.php">WCAG Overview</a> for an introduction to WCAG and supporting documents, including more information about this document. </p>
 
@@ -832,7 +900,7 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
  <xsl:template match="div1[@id='guidelines']/head">
  
  <!--Insert "Your customized" before heading if any settings have been modified from default. -->
- <h2 id="guidelines"><xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && $bSMIL && $bScript && $bARIA && $bServerSide && $bLevel1 && $bLevel2 && $bLevel3 && $bSufficient && $bAdvisory && $bIntroduction && $bConformance ) { ]]></xsl:processing-instruction>  
+ <h2 id="guidelines"><xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && $bSMIL && $bScript && $bFlash && $bPDF && $bSilverlight && $bARIA && $bServerSide && $bLevel1 && $bLevel2 && $bLevel3 && $bSufficient && $bAdvisory && $bIntroduction && $bConformance ) { ]]></xsl:processing-instruction>  
 <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>        
           Your Customized<xsl:text> </xsl:text>
          <xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction><xsl:apply-templates /></h2>
@@ -841,11 +909,11 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
 
               <xsl:processing-instruction name="php"><![CDATA[ 
               		   $technologies_array = array(
-		   		"true" => array($bHTML, $bCSS, $bSMIL, $bScript, $bServerSide, $bARIA),
-				"readable" => array("HTML", "CSS", "SMIL", "Client-side Scripting", "Server-side Scripting", "WAI-ARIA")
+		   		"true" => array($bHTML, $bCSS, $bSMIL, $bScript, $bServerSide, $bFlash, $bPDF, $bSilverlight, $bARIA),
+				"readable" => array("HTML", "CSS", "SMIL", "Client-side Scripting", "Server-side Scripting", "Flash", "PDF", "Silverlight", "WAI-ARIA")
 				);
 		   
-								for ($i = 0; $i < 6; $i++)
+								for ($i = 0; $i < 7; $i++)
 								{
 								 	if ($technologies_array['true'][$i] == "Y")
 								 	{
@@ -854,9 +922,17 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
 								}
 								
 								echo "<ul class=\"showhideR\"><li><strong>Techniques and Failures: </strong>";
-								echo implode(", ", $true) . " ";
+									if (count($true) != 0) 
+									{
+										echo "General, ";
+										echo implode(", ", $true) . " ";
+									}
+									else
+									{
+										echo "General ";
+									}
 								
-								for ($i = 0; $i < 6; $i++)
+								for ($i = 0; $i < 7; $i++)
 								{
 								 	if ($technologies_array['true'][$i] == "Y")
 								 	{
@@ -962,7 +1038,8 @@ script type="text/javascript" src="annotate.js" xmlns="http://www.w3.org/1999/xh
 <xsl:processing-instruction name="php"><![CDATA[ if ($bConformance) { ]]></xsl:processing-instruction>
 <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>
 <xsl:text> </xsl:text><span class="showhideR">(Hidden)</span>
-<xsl:processing-instruction name="php"><![CDATA[ }]]></xsl:processing-instruction>
+<xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction>
+
 </h2>
         <xsl:processing-instruction name="php"><![CDATA[ if($bConformance) { ]]></xsl:processing-instruction>
             <p><span class="showhideinline">[<a href="Overview.php?confreqs=N#conformance-reqs">Hide Conformance Requirements</a>]</span> </p>
@@ -1002,7 +1079,8 @@ if(stristr($uaString, "/TR/") || stristr($uaString, "WCAG20/WD-WCAG20"))	{
  echo "<input type=\"hidden\" name=\"smilopt\" value=\"" . $HTTP_COOKIE_VARS["smilopt"] . "\" />";
  echo "<input type=\"hidden\" name=\"scriptopt\" value=\"" . $HTTP_COOKIE_VARS["scriptopt"] . "\" />";
  echo "<input type=\"hidden\" name=\"serversideopt\" value=\"" . $HTTP_COOKIE_VARS["serversideopt"] . "\" />";
-  echo "<input type=\"hidden\" name=\"ariaopt\" value=\"" . $HTTP_COOKIE_VARS["ariaopt"] . "\" />";
+ echo "<input type=\"hidden\" name=\"flashopt\" value=\"" . $HTTP_COOKIE_VARS["flashopt"] . "\" />";
+ echo "<input type=\"hidden\" name=\"ariaopt\" value=\"" . $HTTP_COOKIE_VARS["ariaopt"] . "\" />";
  echo "<input type=\"hidden\" name=\"level1opt\" value=\"" . $HTTP_COOKIE_VARS["level1opt"] . "\" />";
  echo "<input type=\"hidden\" name=\"level2opt\" value=\"" . $HTTP_COOKIE_VARS["level2opt"] . "\" />";
  echo "<input type=\"hidden\" name=\"level3opt\" value=\"" . $HTTP_COOKIE_VARS["level3opt"] . "\" />";
@@ -1051,7 +1129,7 @@ if(stristr($uaString, "/TR/") || stristr($uaString, "WCAG20/WD-WCAG20"))	{
                 <xsl:processing-instruction name="php"><![CDATA[ if($bSufficient) { ]]></xsl:processing-instruction>   
                 <div class="sufficient"><div class="boxed">
                 <h5 id="cc1-{@role}-head" xmlns="http://www.w3.org/1999/xhtml">Sufficient Techniques for Conformance Requirement<xsl:text> </xsl:text><xsl:call-template name="cc-number"/>  -  Conformance Level
-                    <xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && $bSMIL && $bScript && $bARIA && $bServerSide) { ]]></xsl:processing-instruction>  
+                    <xsl:processing-instruction name="php"><![CDATA[ if ($bCSS && $bSMIL && $bScript && $bFlash && $bPDF && $bSilverlight && $bARIA && $bServerSide) { ]]></xsl:processing-instruction>  
                     <xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>        
                     <xsl:text> </xsl:text>
                     <span class="AsCTlist">(for the technologies you checked above)</span>
@@ -1095,7 +1173,15 @@ if(stristr($uaString, "/TR/") || stristr($uaString, "WCAG20/WD-WCAG20"))	{
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
-        
+    
+    <!-- BBC: Added a template to genearte the "(for the technologies checked above)" text on each level of techniques -->
+    <xsl:template name="fortechschecked">
+	    <xsl:processing-instruction name="php"><![CDATA[ if ($bHTML && $bCSS && $bSMIL && $bScript && $bFlash && $bPDF && $bSilverlight && $bARIA && $bServerSide) { ]]></xsl:processing-instruction>  
+		<xsl:processing-instruction name="php"><![CDATA[ } else { ]]></xsl:processing-instruction>        
+	          <xsl:text> </xsl:text>
+	          <span class="AsCTlist">(for the technologies you checked above)</span>
+	         <xsl:processing-instruction name="php"><![CDATA[ } ]]></xsl:processing-instruction>
+     </xsl:template>    
                 
     
 </xsl:transform>

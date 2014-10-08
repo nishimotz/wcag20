@@ -1,36 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE spec SYSTEM "xmlspec.dtd">
 <!-- edited with XMLSpy v2006 rel. 3 sp1 (http://www.altova.com) by Ben Caldwell (W3C) -->
 <?xml-stylesheet type="text/xsl" href="techs-merge.xslt"?>
-<spec status="int-review" w3c-doctype="review" role="editors-copy" xmlns:xi="http://www.w3.org/2001/XInclude">
+<spec status="final" w3c-doctype="wgnote" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<header>
-		<title>Techniques for WCAG 2.0 </title>
-		<subtitle>Techniques and Failures for Web Content Accessibility Guidelines 2.0</subtitle>
-		<w3c-designation>WD-WCAG20-TECHS</w3c-designation>
+<trdisclaimer>
+<p>【重要】 この文書は、W3Cワーキンググループノート「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="http://www.w3.org/TR/WCAG20-TECHS/">Techniques for WCAG 2.0</loc>」（原文は英語: 2012年1月3日公開）を情報通信アクセス協議会の「<loc xmlns:xlinkhref="http://www.w3.org/1999/xlink" href="/committee/wg2/">ウェブアクセシビリティ基盤委員会（WAIC） 実装ワーキンググループ（WG2）</loc>」が翻訳と修正をおこなって公開しているものです。この文書の正式版は、あくまで W3Cのサイト内にある英語版であり、この文書には翻訳上の間違い、あるいは不適切な表現が含まれている可能性がありますのでご注意ください。最新で正確な情報は、W3Cが公開している原文（英語）にてご確認ください。</p>
+<p>【注意】 実装方法のタイトルが英語のままになっているものは、日本語訳を行っていないため、原文（英語）にリンクしています。</p>
+</trdisclaimer>
+		<title><abbr expansion="Web Content Accessibility Guidelines">WCAG</abbr> 2.0 実装方法集 </title>
+		<subtitle>WCAG 2.0の実装方法と不適合事例</subtitle>
+		<w3c-designation>WCAG20-TECHS</w3c-designation>
 		<w3c-doctype>W3C Working Group Note</w3c-doctype>
 		<pubdate>
-			<month>January - March</month>
-			<year>2010</year>
+			<day>3</day>
+			<month>January</month>
+			<year>2012</year>
 		</pubdate>
 		<publoc>
-			<loc href="http://www.w3.org/WAI/GL/2010/WD-WCAG20-TECHS-20100128/">http://www.w3.org/WAI/GL/2010/WD-WCAG20-TECHS-200100128/</loc>
+			<!-- <loc href="http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110929/">http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110929/</loc> -->
+			<loc href="http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/">http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/</loc>
 		</publoc>
 		<altlocs>
 			<loc href="complete.html">Single file version</loc>
-			<!--loc href="complete-diff.html">Single file diff-marked version showing revisions since 03 November 2008</loc-->
+			<loc href="complete-diff.html">Single file diff-marked version showing revisions since 14 October 2010</loc>
 			<loc href="/WAI/WCAG20/versions/techniques/">Alternate Versions of Techniques for WCAG 2.0</loc>
 		</altlocs>
 		<latestloc>
 			<loc href="http://www.w3.org/TR/WCAG20-TECHS/">http://www.w3.org/TR/WCAG20-TECHS/</loc>
+			<!-- <loc href="http://www.w3.org/WAI/GL/WCAG20-TECHS/">http://www.w3.org/WAI/GL/WCAG20-TECHS/</loc> -->
 		</latestloc>
 		<prevlocs>
-			<loc href="http://www.w3.org/WAI/GL/NOTE-WCAG20-TECHS-20090105/">http://www.w3.org/WAI/GL/NOTE-WCAG20-TECHS-20090105/</loc>
+			<!--
+				<loc href="http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110621/">http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110621/ (public review copy)</loc>
+		  	<loc href="http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110310/">http://www.w3.org/WAI/GL/2011/WD-WCAG20-TECHS-20110310/ (internal review copy)</loc>
+			-->
+			<loc href="http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/">http://www.w3.org/TR/2010/NOTE-WCAG20-TECHS-20101014/</loc>
 		</prevlocs>
 		<authlist>
-			<author role="current">
-				<name>Ben Caldwell</name>
-				<affiliation>Trace R&amp;D Center, University of
-					Wisconsin-Madison</affiliation>
-			</author>
 			<author role="current">
 				<name>Michael Cooper</name>
 				<affiliation>W3C</affiliation>
@@ -45,6 +52,11 @@
 					Wisconsin-Madison</affiliation>
 			</author>
 			<author role="past">
+				<name>Ben Caldwell</name>
+				<affiliation>(until September 2010 while at Trace R&amp;D Center, University of
+					Wisconsin-Madison)</affiliation>
+			</author>
+			<author role="past">
 				<name>Wendy Chisholm</name>
 				<affiliation>(until July 2006 while at W3C)</affiliation>
 			</author>
@@ -55,64 +67,22 @@
 			</author>
 		</authlist>
 		<status>
-			<p><emph>This section describes the status of this document at the time of its
-				publication. Other documents may supersede this document. A list of current
-				W3C publications and the latest revision of this technical report can be
-				found in the <loc href="http://www.w3.org/TR/">W3C technical reports index</loc> at <loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc>.</emph></p>
-			<p>This is a Working Group Note &quot;Techniques for WCAG 2.0&quot;. These
-				techniques are produced by the <loc href="http://www.w3.org/WAI/GL/">Web
-					Content Accessibility Guidelines Working Group</loc> to provide guidance about
-				how to conform to the <loc
-					href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">Web Content
-					Accessibility Guidelines (WCAG) 2.0  Recommendation</loc>.
-				Techniques are referenced from <loc
-					href="http://www.w3.org/TR/2008/NOTE-UNDERSTANDING-WCAG20-20081211/">Understanding
-					WCAG 2.0</loc> and <loc
-						href="http://www.w3.org/WAI/WCAG20/quickref/20081211/">How to Meet WCAG
-						2.0</loc>. Please note that the contents of this document are informative (they
-				provide guidance), and not normative (they do not set requirements for
-				conforming to WCAG 2.0).</p>
-			<p>The Working Group requests that any comments be made using the provided <loc
-				href="http://www.w3.org/WAI/WCAG20/comments/">online comment
-				form</loc>. If this is not possible, comments can also be sent to <loc
-					href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc>.
-				The <loc
-					href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">archives
-					for the public comments list</loc> are publicly available. Comments received on this document may be addressed in future versions of this document, or in another manner. The Working Group does not plan to make formal responses to comments. Archives of the <loc
-						href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG WG mailing list
-						discussions</loc> are  publicly available, and future work undertaken by the Working Group may address comments received on this document.</p>
-			<p>Materials from the public to assist in documenting 
-				techniques are particularly welcomed. Please use the <loc
-					href="http://www.w3.org/WAI/WCAG1-Conformance">Techniques Submission
-					Form</loc> to submit techniques. </p>
-			<p>This document has been produced as part of the W3C <loc
-				href="http://www.w3.org/WAI/">Web Accessibility Initiative</loc> (WAI). The
-				goals of the WCAG Working Group are discussed in the <loc
-					href="http://www.w3.org/WAI/GL/new-charter-2000.html">WCAG Working Group
-					charter</loc>. The WCAG Working Group is part of the <loc
-						href="http://www.w3.org/WAI/Technical/Activity">WAI Technical
-						Activity</loc>.</p>
-			<p> Publication as a Working Group Note does not imply endorsement by the            W3C Membership.  This is a draft document and may be updated, replaced            or obsoleted by other documents at any time. It is inappropriate to cite            this document as other than work in progress. </p>
-			<p>This document was produced by a group operating under the <loc
-				href="http://www.w3.org/Consortium/Patent-Policy-20040205/">5 February 2004
-				W3C Patent Policy</loc>. W3C maintains a <loc
-					role="disclosures" href="http://www.w3.org/2004/01/pp-impl/35422/status">public
-					list of any patent disclosures</loc> made in connection with the deliverables
-				of the group; that page also includes instructions for disclosing a patent.
-				An individual who has actual knowledge of a patent which the individual
-				believes contains <loc
-					href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">Essential
-					Claim(s)</loc> must disclose the information in accordance with <loc
-						href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">section
-						6 of the W3C Patent Policy</loc>. </p>
+			<p><emph>この節では、この文書の発行された時点でのステータスを説明する。他の文書が、この文書にとって代わっている場合もある。現行のW3Cの発行文書、及び、この技術レポートの改訂版は、<loc href="http://www.w3.org/TR/">http://www.w3.org/TR/</loc> にある <loc href="http://www.w3.org/TR/">W3C テクニカルレポート・インデックス（英語）</loc>で参照可能である。</emph></p>
+	<p>これは、ワーキンググループ・ノートの「WCAG 2.0 実装方法集」である。この実装方法集は、<loc href="http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html">WCAG 2.0 勧告</loc>に適合する方法に関するガイダンスを提供するために、<loc href="http://www.w3.org/WAI/GL/">WCAG (Web Content Accessibility Guidelines) ワーキンググループ（英語）</loc>によって作成されたものである。各実装方法は、<loc href="http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/Overview.html">WCAG 2.0 解説書</loc>及び<loc href="http://www.w3.org/WAI/WCAG20/quickref/20081211/">How to Meet WCAG	2.0（英語）</loc>から参照されている。この文書のコンテンツはガイダンスを提供する参考情報であり、WCAG 2.0 に適合するための要件を定めた規定文書ではないことに留意してほしい。</p>
+	<p>ワーキンググループへのコメントは、<loc href="http://www.w3.org/WAI/WCAG20/comments/">オンライン・コメントフォーム（英語）</loc>を使って送っていただきたい。もしそれができない場合は、<loc href="mailto:public-comments-wcag20@w3.org">public-comments-wcag20@w3.org</loc>宛に電子メールで送信することもできる。<loc href="http://lists.w3.org/Archives/Public/public-comments-wcag20/">公開メーリングリストのアーカイブ（英語）</loc>は一般に公開されている。この文書に関して寄せられたコメントは、この文書の将来のバージョン、もしくは、他の方法で対処されるかもしれない。なお、コメントに対して、ワーキンググループが正式な返答をする予定はない。<loc href="http://lists.w3.org/Archives/Public/w3c-wai-gl/">WCAG ワーキンググループのメーリングリスト（英語）</loc>での議論のアーカイブは一般に公開されており、この文書に関して寄せられたコメントについては、ワーキンググループが将来的に対処することがあるかもしれない。</p>
+	<p>実装方法を新たに文書化する上で手助けとなる皆さんからの提案を特に歓迎している。実装方法を提案する際には、<loc href="http://www.w3.org/WAI/WCAG1-Conformance">実装方法提案フォーム（英語）</loc>を使っていただきたい。</p>
+	<p>この文書は、W3Cの <loc href="http://www.w3.org/WAI/">ウェブアクセシビリティ・イニシアティブ（英語）</loc>(WAI)の活動の一環として作成されたものである。WCAG ワーキンググループの目的は、<loc href="http://www.w3.org/WAI/GL/new-charter-2000.html">ワーキンググループ趣意書（英語）</loc>に記載されている。WCAG ワーキンググループは、<loc href="http://www.w3.org/WAI/Technical/Activity">WAI テクニカル・アクティビティ（英語）</loc>の一つである。</p>
+	<p>ワーキンググループ・ノートとしての公開は、W3C 会員による承認されたものという意味ではない。これはドラフト文書であり、いつでも更新されたり、いつでも他の文書に置き換えられたりすることがある。この文書を、作成作業中のものとして引用すること以外は不適切である。</p>
+	<p>この文書は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/">2004年2月5日付W3C特許ポリシー（英語）</loc>に則って運営するワーキンググループによって作成された。W3C では、ワーキンググループの成果物に関係する<loc href="http://www.w3.org/2004/01/pp-impl/35422/status" rel="disclosure">一般公開されている特許のリスト（英語）</loc>を管理しており、そのページには特許開示にあたっての指示も含まれている。<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#def-essential">基本的な請求項（英語）</loc>を含む特許について実際に知識のある人は、<loc href="http://www.w3.org/Consortium/Patent-Policy-20040205/#sec-Disclosure">W3C 特許ポリシー 第6章（英語）</loc>に従って、その情報を開示することが求められる。</p>
 		</status>
 		<abstract>
-			<p>&quot;Techniques for WCAG 2.0&quot;  provides information to Web content developers who wish to  satisfy the success criteria of <loc href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/>. Techniques are specific authoring practices that may be used in support of the WCAG 2.0 success criteria. This document provides &quot;General Techniques&quot; that describe basic practices that are applicable to any technology, and technology-specific techniques that provide information applicable to specific technologies. The World Wide Web Consortium  only documents techniques for non-proprietary technologies; the WCAG Working Group hopes vendors of other technologies will provide similar techniques to describe how to conform to WCAG 2.0 using those technologies. Use of the techniques provided in this document makes it easier for Web  content to demonstrate conformance to WCAG 2.0 success criteria than if  these techniques are not used.</p>
-			<p>Besides the techniques provided in this document, there may be other techniques that  can be used to  implement conformance to WCAG 2.0. The WCAG WG encourages submission of such techniques so they can be considered for  inclusion in this document, in order to make the set of techniques maintained by the  WCAG WG as comprehensive as possible.  Please submit techniques for  consideration using the &quot;<loc href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc>.&quot;</p>
-			<p>This document is part of a series of documents published by the W3C Web  Accessibility Initiative (WAI) to support WCAG 2.0. This document was published as a Working Group Note at the same time WCAG 2.0 was published as a W3C Recommendation. Unlike WCAG 2.0, is expected that the information in Understanding WCAG 2.0 will be updated from time to time. See <loc href="http://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG) Overview</loc> for an introduction to WCAG, supporting technical documents, and educational material.</p> 
+			<p>&quot;Techniques for WCAG 2.0&quot; は、<loc href="http://www.w3.org/TR/WCAG20/">Web Content Accessibility Guidelines (WCAG) 2.0</loc> <bibref ref="WCAG20"/>の達成基準を満たしたいと考えるウェブコンテンツ制作者に情報を提供する文書である。実装方法は、WCAG 2.0の達成基準を満たすために用いることができる具体的なコンテンツ制作方法である。この文書では、あらゆるウェブコンテンツ技術に適用可能で基本的な方法を説明する &quot;General Techniques&quot;、そして特定のウェブコンテンツ技術に適用可能な情報を提供するウェブコンテンツ技術特有の実装方法を提供している。<phrase diff="del">W3Cでは、独自仕様でないウェブコンテンツ技術の実装方法のみを文書化しており、WCAGワーキンググループはその他のウェブコンテンツ技術のベンダーが、その技術を用いたWCAG 2.0への適合のしかたを説明する同様の実装方法を文書化することを望んでいる。 </phrase><phrase diff="add">ウェブコンテンツ技術特有の実装方法は、「一般（General）」の実装方法に取って代わるものではない。コンテンツ制作者は適合に向けて作業する際には、「一般（General）」の実装方法とウェブコンテンツ技術特有の実装方法の双方を考慮に入れる必要がある。</phrase>この文書で提供されている実装方法を用いることによって、ウェブコンテンツはそれらを用いない場合よりも容易にWCAG 2.0の達成基準に適合することができる。</p>
+			<p>この文書で提供されている実装方法以外にも、WCAG 2.0に適合するために用いることのできる実装方法があるかもしれない。WCAGワーキンググループがメンテナンスする実装方法集ができるかぎり包括的なものになるように、そのような実装方法の追加をWCAGワーキンググループが検討できるように、WCAGワーキンググループに対して提案することを奨励する。是非 &quot;<loc href="http://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form（英語）</loc>&quot; を使って、追加すべき実装方法を提案していただきたい。</p>
+			<p diff="add">いくつかの実装方法には、「ユーザーエージェント及び支援技術によるサポート」のセクションがある。時間の経過に伴い、ユーザーエージェントや支援技術のバージョンは最新版ではなくなることがある。しかし、新しいバージョンがリリースされるたびに、このセクションを更新することは約束できない。コンテンツ制作者は、その時点でユーザーが使用しているユーザーエージェント及び支援技術を用いて各実装方法を検証する必要がある。 <loc href="accessibility-support" linktype="understanding">アクセシビリティサポートを理解する</loc>を参照のこと。</p>
+			<p>この文書は、W3C Web Accessibility Initiative (WAI)が提供する WCAG 2.0 関連文書群の一つである。この文書は、WCAG 2.0 が W3C 勧告として公開されたのと同時に、ワーキンググループ・ノートとして公開されたものである。WCAG 2.0 とは異なり、「WCAG 2.0 実装方法集」の情報は随時更新されていく予定である。WCAG、関連技術文書、教育用素材へのイントロダクションは、<loc href="http://www.w3.org/WAI/intro/wcag.php">ウェブコンテンツ・アクセシビリティ・ガイドライン (WCAG) 概要（英語）</loc>を参照のこと。</p>
 		</abstract>
 		<langusage>
-			<language id="en-US"/>
+			<language id="ja"/>
 		</langusage>
 		<revisiondesc>
 			<p>
@@ -123,38 +93,55 @@
 	<front>
 		<div1 id="intro">
 			<head>Introduction to Techniques for WCAG 2.0</head>
+			<p>This document is part of a series of documents published by the W3C Web Accessibility Initiative (WAI) to support WCAG 2.0 <bibref ref="WCAG20"></bibref>. It includes a variety of techniques which include specific authoring practices and examples for developing more accessible Web content. As well, it lists failures, which describe common mistakes that are considered failures of WCAG 2.0 Success Criteria.</p>
+			<p diff="add">Techniques are specific authoring practices that may be used in support of the WCAG 2.0 success criteria. This document provides "General Techniques" that describe basic practices that are applicable to any technology, and technology-specific techniques that provide information applicable to specific technologies. Technology-specific techniques do not supplant the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p>
+			<p>This is not an introductory document. It is a detailed technical description of techniques that can be used to address the requirements in WCAG 2.0. See <loc href="http://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG) Overview</loc> for an introduction to WCAG, supporting  technical documents, and educational material.</p>
+			<p>In order to make the set of techniques maintained by the WCAG WG as comprehensive as possible, the WCAG WG encourages submission of new techniques so they can be considered for inclusion in this document. Please submit techniques for consideration using the "<loc href="/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc>."</p>
 			<div2 id="suff-adv-techs" role="normal">
-				<p>This document is part of a series of documents published by the W3C Web Accessibility Initiative (WAI) to support WCAG 2.0 <bibref ref="WCAG20"></bibref>. It includes a variety of techniques which include specific authoring practices and examples for developing more accessible Web content. As well, it lists failures, which describe common mistakes that are considered failures of WCAG 2.0 Success Criteria.</p>
-				<p>This is not an introductory document. It is a detailed technical description of techniques that can be used to address the requirements in WCAG 2.0. See <loc href="http://www.w3.org/WAI/intro/wcag.php">Web Content Accessibility Guidelines (WCAG) Overview</loc> for an introduction to WCAG, supporting  technical documents, and educational material.</p>
-				<p>In order to make the set of techniques maintained by the WCAG WG as comprehensive as possible, the WCAG WG encourages submission of new techniques so they can be considered for inclusion in this document. Please submit techniques for consideration using the "<loc href="/WAI/GL/WCAG20/TECHS-SUBMIT/">Techniques Submission Form</loc>."</p>
-				
 				<head>Sufficient and Advisory Techniques</head>
-				<p>Rather than having technology specific techniques in WCAG 2.0, the guidelines and success criteria themselves have been written in a technology neutral fashion. In order to provide guidance and examples for meeting the guidelines using specific technologies (for example HTML) the working group has identified <emph role="bolditalic">sufficient techniques</emph> for each Success Criterion that are sufficient to meet that Success Criterion. The list of sufficient techniques is maintained in the "Understanding WCAG 2.0" (and mirrored in How to Meet WCAG 2.0). In this way it is possible to update the list as new techniques are discovered, and as Web Technologies and Assistive Technologies progress.</p>
-				<p>Note that all techniques are <loc href="informativedef" linktype="glossary">informative</loc>. The "sufficient techniques" are
-					considered sufficient by the WCAG Working Group to meet the success criteria. However, it is not necessary to use these particular techniques. If techniques are used other than those listed by the Working Group, then some other method for establishing the technique's ability to meet the success criteria would be needed</p>
-				<p>Most success criteria have multiple sufficient techniques listed. Any of the listed sufficient techniques can be used to meet the Success Criterion. There may be other techniques which are not documented by the working group that could also meet the Success Criterion. As new sufficient techniques are identified they will be added to the listing.</p>
-				<p>In addition to the sufficient techniques, there are a number of <emph role="bolditalic">advisory techniques</emph> that can enhance accessibility, but did not qualify as sufficient techniques because are not sufficient to meet the full requirements of the success criteria, they are not testable, and/or are good and effective techniques in some circumstances but not effective or helpful in others. These are listed as advisory techniques and are right below the sufficient techniques. Authors are encouraged to use these techniques wherever appropriate to increase accessibility of their Web pages.</p>
-				
+				<p>Rather than having technology specific techniques in WCAG 2.0, the guidelines and Success Criteria themselves have been written in a technology neutral fashion. In order to provide guidance and examples for meeting the guidelines using specific technologies (for example HTML) the working group has identified <emph role="bolditalic">sufficient techniques</emph> for each Success Criterion that are sufficient to meet that Success Criterion. <phrase diff="add">Sufficient techniques are provided in a numbered list where each list item provides the technique or combination of techniques that can be used to meet the Success Criterion. When there are multiple techniques on a numbered list item connected by "AND" then all of the techniques must be used. For example, Situation B in Understanding Success Criterion 2.2.1 lists as the third sufficient technique: SCR16: Providing a script that warns the user a time limit is about to expire (Scripting) AND  SCR1: Allowing the user to extend the default time limit  (Scripting).</phrase></p>
+			  <p>The list of sufficient techniques is maintained in the "Understanding WCAG 2.0" (and mirrored in How to Meet WCAG 2.0). <phrase diff="chg">By separating the WCAG 2 normative guidelines document from the techniques used to meet the success criteria in those guidelines</phrase> it is possible to update the list as new techniques are discovered, and as Web Technologies and Assistive Technologies progress.</p>
+				<p>Note that all techniques are <loc href="informativedef" linktype="glossary">informative</loc>. The "sufficient techniques" are considered sufficient by the WCAG Working Group to meet the success criteria. <phrase diff="chg">However, failure of a test procedure for a sufficient technique does not necessarily mean that the success criterion has not been satisfied in some other way, only that this technique has not been successfully implemented and can not be used to claim conformance.</phrase> If techniques are used other than those listed by the Working Group, then some other method for establishing the technique's ability to meet the Success Criteria would be needed.</p>
+			  <p>Most Success Criteria have multiple sufficient techniques listed. Any of the listed sufficient techniques can be used to meet the Success Criterion. There may be other techniques which are not documented by the working group that could also meet the Success Criterion. As new sufficient techniques are identified they will be added to the listing.</p>
+			  <p>In addition to the sufficient techniques, there are a number of <emph role="bolditalic">advisory techniques</emph> that can enhance accessibility, but did not qualify as sufficient techniques because they are not sufficient to meet the full requirements of the Success Criteria, they are not testable, and/or because they are good and effective techniques in some circumstances but not effective or helpful in others. These are listed as advisory techniques and are right below the sufficient techniques. Authors are encouraged to use these techniques wherever appropriate to increase accessibility of their Web pages.</p>
+			  <note diff="add">
+			  	<p>Code examples found in the sufficient techniques are intended to demonstrate the principle discussed in the description of the technique. The code is not intended to demonstrate other aspects of accessibility, usability or best coding practices not related to the technique.</p>
+			  	<p>All of our techniques assume that people needing special user agents (including AT or special plug-ins) will get and be using that type user agent (eg screen reader, or plug-in that allows keyboard navigation of properly marked up content, etc).</p>
+			  </note>
+			</div2>
+			<div2 id="intro_testing_techs" diff="add">
+				<head>Testing Techniques</head>
+				<p>Test procedures are provided in techniques to help verify that the technique has been properly implemented. Test procedures do not, however, imply success or failure beyond the particular technique. In particular, test procedures for individual techniques should not be taken as test procedures for the WCAG 2.0 success criteria overall. While the test procedure for a given technique may produce a fail result, because the technique was not used, the success criterion may be met via another technique. It is even possible that the success criterion is met via a technique that is not documented in this collection, so failing test procedures for all documented sufficient techniques may not mean that the success criterion is not met.</p>
+				<p>Because of the limited applicability of technique test procedures, they should be used only with caution in conformance evaluation. A passing result for a sufficient technique may indicate that the technique has been successfully applied and therefore the success criterion has been met, but a failing result does not necessarily imply the opposite. By contrast, failure techniques do mean that a failure condition has occurred, in spite of any proper application of sufficient techniques. In this case only, the positive test for the failure technique does indicate that the success criterion is not met, which is a valid result in conformance evaluation.</p>
+				<ednote>
+					<edtext><loc href="http://www.w3.org/WAI/GL/track/actions/125">ACTION-125</loc> is to gain WG approval of the above text. It has not yet passed that step.</edtext>
+				</ednote>
+			</div2>
+			<div2 id="intro_tech_application" diff="add">
+				<head>Application of Techniques</head>
+				<p>Techniques in this suite often contain code samples to show the technique in practice. These samples exemplify the technique but do not necessarily exemplify all aspects of good code practice or features needed to conform to other success criteria. This is to keep the examples brief and facilitate understanding of the central point of the sample. Accordingly, authors should not copy these examples in production code unless they provide the missing functionality. In addition to inline code samples, many techniques provide "working examples" that are more complete. Such samples are more appropriate as a starting point for production code, although even these may have minimal content.</p>
+				<p>Many techniques describe how to provide alternate mechanisms to access content. It is important to remember that such alternate functionality must itself conform to WCAG 2.0. A given technique may focus on the basic way to provide the alternate mechanism, but authors need to follow additional relevant techniques to ensure the alternate mechanism meets requirements.</p>
+				<p>Some techniques use the word "must". Because the techniques document is not a normative document, this word is not used in the sense of RFC 2119. The colloquial use of the word "must" describes proper application of the specific technique under consideration. It does not imply requirements beyond the scope of the technique. This does not mean the technique is required to meet the Success Criterion. Further, the word "should" in the techniques indicates best practice, not a requirement for that technique.</p>
 			</div2>
 			<div2 id="intro-tech-types" role="normal">
 				<head>Technique Collections</head>
 				<p>The following list includes links to a series of techniques document collections. </p>
 				<!-- This list was created by XSLT, but is generated manually here. -->
-				<ul>
-					<li><p><a href="complete.html">Techniques for WCAG 2.0 (includes all techniques and failures as a single file)</a></p></li>
-					<li><p><a href="general.html">General Techniques</a></p></li>
-					<li><p><a href="html.html">HTML and XHTML Techniques</a></p></li>
-					<li><p><a href="css.html">CSS Techniques</a></p></li>
-					<li><p><a href="client-side-script.html">Client-side Script Techniques</a></p></li>
-					<li><p><a href="server-side-script.html">Server-side Script Techniques</a></p></li>
-					<li><p><a href="smil.html">SMIL Techniques</a></p></li>
-					<li><p><a href="text.html">Plain Text Techniques</a></p></li>
-					<li><p><a href="aria.html">WAI-ARIA Techniques</a></p></li>
-					<li><p><a href="flash.html">Flash Techniques</a></p></li>
-					<li><p><a href="pdf.html">PDF Techniques</a></p></li>
-					<li><p><a href="pdf.html">ARIA Techniques</a></p></li>
-					<li><p><a href="failure.html">Common Failures</a></p></li>
-				</ul>
+				<ulist>
+					<item><p><loc href="complete.html">Techniques for WCAG 2.0 (includes all techniques and failures as a single file)</loc></p></item>
+					<item><p><loc href="general.html">General Techniques</loc></p></item>
+					<item><p><loc href="html.html">HTML and XHTML Techniques</loc></p></item>
+					<item><p><loc href="css.html">CSS Techniques</loc></p></item>
+					<item><p><loc href="client-side-script.html">Client-side Script Techniques</loc></p></item>
+					<item><p><loc href="server-side-script.html">Server-side Script Techniques</loc></p></item>
+					<item><p><loc href="smil.html">SMIL Techniques</loc></p></item>
+					<item><p><loc href="text.html">Plain Text Techniques</loc></p></item>
+					<item><p><loc href="aria.html">WAI-ARIA Techniques</loc></p></item>
+					<item><p><loc href="flash.html">Flash Techniques</loc></p></item>
+					<item><p><loc href="silverlight.html">Silverlight Techniques</loc></p></item>
+					<item><p><loc href="pdf.html">PDF Techniques</loc></p></item>
+					<item><p><loc href="failures.html">Common Failures</loc></p></item>
+				</ulist>
 			</div2>
 		</div1>
 	</front>
@@ -168,6 +155,7 @@
 		<xi:include href="plain-text-tech-src.xml" xpointer="text"/>
 		<xi:include href="ARIA-tech-src.xml" xpointer="aria"/>
 		<xi:include href="flash-tech-src.xml" xpointer="flash"/>
+<!--		<xi:include href="silverlight-tech-src.xml" xpointer="silverlight"/> -->
 		<xi:include href="pdf-tech-src.xml" xpointer="pdf"/>
 		<xi:include href="failure-tech-src.xml" xpointer="failures"/>
 	</body>
@@ -182,10 +170,10 @@
 				</bibl>
 				<bibl id="CSS3" key="CSS3">
 					<titleref href="http://www.w3.org/Style/CSS/current-work">[CSS 2.1 and CSS 3] Roadmap</titleref>, CSS WG's table of modules and publication dates.</bibl>
-				<bibl id="FLASH" key="FLASH">"Flash", Adobe Systems. Available at <loc href="http://www.adobe.com/devnet/swf/">http://www.adobe.com/devnet/swf/</loc>.</bibl>
+				<bibl id="FLASH" key="FLASH">"Flash", Adobe Systems. Available at <loc href="http://www.adobe.com/devnet/swf.html">http://www.adobe.com/devnet/swf.html</loc>.</bibl>
 				<bibl id="HTML4" key="HTML4">"HTML 4.01 Specification," D. Raggett, A. Le Hors, I. Jacobs, eds.,  W3C Recommendation 24 December 1999. Available at <loc href="http://www.w3.org/TR/html401/">http://www.w3.org/TR/html401/</loc>
 				</bibl>
-				<bibl id="PDF" key="PDF">"PDF", Adobe Systems. Available at <loc href="http://www.adobe.com/devnet/pdf/">http://www.adobe.com/devnet/pdf/</loc>.</bibl>
+				<bibl id="PDF" key="PDF">"PDF", Adobe Systems. Available at <loc href="http://www.adobe.com/devnet/pdf.html">http://www.adobe.com/devnet/pdf.html</loc>.</bibl>
 				<bibl id="WCAG20" key="WCAG20">"Web Content Accessibility Guidelines 2.0,"  B. Caldwell, M Cooper, L Guarino Reid, and G. Vanderheiden, eds., W3 Recommendation 12 December 2008, <loc href="http://www.w3.org/TR/2008/REC-WCAG20-20081211/">http://www.w3.org/TR/2008/REC-WCAG20-20081211</loc>.  The latest version of WCAG 2.0 is available at <loc href="http://www.w3.org/TR/WCAG20/">http://www.w3.org/TR/WCAG20/</loc>.
 				</bibl>
 				<bibl id="XHTML1" key="XHTML1">"XHTML 1.0 The Extensible HyperText Markup Language (Second Edition)," S. Pemberton, et al.,  W3C Recommendation 26 January 2000, revised 1 August 2002. Available at:  <loc href="http://www.w3.org/TR/xhtml1/">http://www.w3.org/TR/xhtml1/</loc>.</bibl>

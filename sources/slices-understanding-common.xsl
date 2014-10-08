@@ -19,6 +19,7 @@
   						<xsl:value-of select="$target/@id"/>
   					</xsl:when>
   					<xsl:otherwise>
+  						<xsl:message terminate="yes">Generating ID for <xsl:value-of select="$target"/></xsl:message>
   						<xsl:value-of select="generate-id($target)"/>
   					</xsl:otherwise>
   				</xsl:choose>
@@ -47,6 +48,7 @@
   				<link rel="stylesheet" type="text/css" href="slicenav.css"/>
   				<xsl:if test="$show.diff.markup != '0'">
   					<script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
+  					<link rel="stylesheet" type="text/css" href="diffs.css" />
   				</xsl:if>
   			</head>
   			<body class="slices">
@@ -107,6 +109,7 @@
   				
   				<xsl:if test="$show.diff.markup != '0'">
   					<script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
+  					<link rel="stylesheet" type="text/css" href="diffs.css" />
   				</xsl:if>
   			</head>
   			<body class="slices">
@@ -197,6 +200,7 @@
     				<link rel="stylesheet" type="text/css" href="slicenav.css"/>
     				<xsl:if test="$show.diff.markup != '0'">
     					<script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
+    					<link rel="stylesheet" type="text/css" href="diffs.css" />
     				</xsl:if>
     			</head>
     			<body class="slices">
@@ -263,6 +267,7 @@
   				<link rel="stylesheet" type="text/css" href="slicenav.css"/>
   				<xsl:if test="$show.diff.markup != '0'">
   					<script type="text/javascript" src="diffmarks.js"><xsl:text> </xsl:text></script>
+  					<link rel="stylesheet" type="text/css" href="diffs.css" />
   				</xsl:if>
   			</head>
   			<body class="slices">
@@ -305,7 +310,7 @@
   	    	<head>
                   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
   				<title>
-  					<xsl:apply-templates select="header/title"/>
+  					<xsl:value-of select="header/title"/>
   					<xsl:if test="header/version">
   						<xsl:text> </xsl:text>
   						<xsl:apply-templates select="header/version"/>
@@ -662,16 +667,22 @@
         </h2>
         <xsl:choose>
           <xsl:when test="../@role='techniques'">
-            <p>この節にある番号付の項目は、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<a href="{$glthisversion}#conformance-reqs">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる実装方法により、この達成基準を満たすことができる。</p>
+        <p  >この節にある番号付の項目は、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<span class="diff-change"><span class="difftext">[ここから変更]</span><span>しかし、必ずしもこれらの実装方法を用いる必要はない。どのような実装方法を用いる場合も、<a href="{$glthisversion}#conformance-reqs">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、この達成基準を満たすことができる。</span><span class="difftext">[変更ここまで]</span></span>
+</p>
           </xsl:when>
         </xsl:choose>
         <xsl:choose>
           <xsl:when test="../@role='resources'">
             <p>リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
-            <xsl:if test="count(../ulist) + count(../div4) = 0">
+          	<xsl:if test="not(../p or ../olist or ../ulist or ../div4)">
               <p>（まだ文書化されていない）</p>
             </xsl:if>
           </xsl:when>
+        	<xsl:when test="../@role='examples'">
+        		<xsl:if test="not(../p or ../olist or ../ulist or ../div4)">
+        			<p  >(none currently documented)</p>
+        		</xsl:if>
+        	</xsl:when>
         </xsl:choose>
       </xsl:otherwise>
     </xsl:choose>
@@ -727,13 +738,13 @@
     <xsl:choose>
       <xsl:when test="../@role='failures'">
         <p>以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準  <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> に適合していないとみなした、よくある不適合事例である。</p>
-        <xsl:if test="count(../ulist) = 0">
+      	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
           <p>（今のところ、文書化されている不適合事例がない）</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">
         <p>適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。</p>
-        <xsl:if test="count(../ulist) + count(../div5) = 0">
+      	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
           <p>（まだ文書化されていない）</p>
         </xsl:if>
       </xsl:when>
@@ -753,6 +764,15 @@
           <xsl:call-template name="anchor">
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="node" select=".."/>
+          	<xsl:with-param name="default.id">
+          		<xsl:choose>
+          			<xsl:when test="../@id"><xsl:value-of select="ancestor::div2/@id"/>-<xsl:value-of select="../@id"/>-head</xsl:when>
+          			<xsl:otherwise><xsl:value-of select="ancestor::div2/@id"/>-<xsl:choose>
+          				<xsl:when test="../@role"><xsl:value-of select="../@role"/></xsl:when>
+          				<xsl:otherwise>section</xsl:otherwise>
+          			</xsl:choose>-<xsl:value-of select="count(preceding::div5) +1"/>-head</xsl:otherwise>
+          		</xsl:choose>
+          	</xsl:with-param>
           </xsl:call-template>
           <xsl:apply-templates select=".." mode="divnum"/>
           <xsl:apply-templates/>
@@ -829,17 +849,19 @@
 
 <xsl:if test="$show.diff.markup != '0'">
               <div id="diffexp">
-              <p class="screenreader">This document is a draft, and is designed to show changes from a previous version. It is presently showing <span class="diff-add">added text,</span> <span class="diff-change">changed text,</span> <span class="diff-delete">deleted text,</span><span class="difftext">[start]/[end] markers,</span> <span class="issue">and Issue Numbers</span>.</p>
-                <p class="options"><a href="#" onclick="javascript:hideClass('diff-delete'); hideClass('issue'); hideClass('difftext');showClean('diff-change');showClean('diff-add')">Hide<!--Show-->&#160;All&#160;Edits</a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('diff-delete')">Toggle&#160;Deletions</a>&#160; | &#160; <a href="#"  onclick="javascript:toggleClass('issue')">Toggle&#160;Issue&#160;Numbers</a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('difftext')">Toggle<!--Hide-->&#160;[start]/[end]&#160;Markers</a> <!--&#160; | &#160; <a href="#">Show&#160;All&#160;Edits</a>-->&#160; | &#160; <a href="#" onclick="javascript:showClass('issue');showClass('diff-delete');showClass('difftext');showChange('diff-change');showAdd('diff-add')">Show&#160;All&#160;Edits</a></p><p class="state">Changes are displayed as follows:</p><ul>     <li> <span class="diff-add"><span class="difftext"> [begin add]</span> new, added text <span class="difftext">[end add] </span></span></li>     <li><span class="diff-change"><span class="difftext"> [begin change]</span> changed text <span class="difftext">[end change], </span></span></li>     <li><span class="diff-delete"><span class="difftext"> [begin delete]</span> deleted text <span class="difftext">[end delete] </span></span></li></ul>        
+                <p class="screenreader">この文書は草案で、前バージョンの日本語訳）からの変更点を表示できるようになっています。現在、<span class="diff-add">追加された箇所</span>、<span class="diff-change">変更された箇所</span>、<span class="diff-delete">削除された箇所</span>、<span class="difftext">[ここから]/[ここまで]のマーカー</span>、<span class="issue">問題No.</span>が表示されています。</p>
+
+                <p class="options"><a href="#" onclick="javascript:hideClass('diff-delete'); hideClass('issue'); hideClass('difftext');showClean('diff-change');showClean('diff-add')">全ての変更を非表示<!--表示--></a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('diff-delete')">削除箇所を表示／非表示</a>&#160; | &#160; <a href="#"  onclick="javascript:toggleClass('issue')">問題No.の表示／非表示</a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('difftext')">[ここから]/[ここまで]のマーカーを表示／非表示</a> <!--&#160; | &#160; <a href="#">Show&#160;All&#160;Edits</a>-->&#160; | &#160; <a href="#" onclick="javascript:showClass('issue');showClass('diff-delete');showClass('difftext');showChange('diff-change');showAdd('diff-add')">全ての変更を表示</a></p><p class="state">修正箇所は次のように表示されます:</p><ul>     <li> <span class="diff-add"><span class="difftext"> [ここから追加]</span> 新たに追加されたテキスト <span class="difftext">[追加ここまで] </span></span></li>     <li><span class="diff-change"><span class="difftext"> [ここから変更]</span> 変更されたテキスト <span class="difftext">[変更ここまで], </span></span></li>     <li><span class="diff-delete"><span class="difftext"> [ここから削除]</span> 削除されたテキスト <span class="difftext">[削除ここまで] </span></span></li></ul>        
               </div>
             </xsl:if>
 </xsl:template>
 
 <xsl:template name="footer">
 <div class="footer">
-    <p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a>の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。
+    <p class="copyright">このウェブページは、<a href="Overview.html">WCAG 2.0 解説書: WCAG 2.0 を理解して実装するためのガイド</a>の一部です。文書全体を<a href="complete.html">単一HTMLファイルにしたもの</a>もご利用いただけます。この文書と、ウェブ・コンテンツ・アクセシビリティ・ガイドライン (WCAG) 2.0に関連する他の文書との関係については、<a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents (英語)</a>をご覧ください。<span class="diff-add"><span class="difftext">[ここから追加]</span><span>パブリック・コメントを提出する場合は、<a href="http://www.w3.org/WAI/WCAG20/comments/">Instructions for Commenting on WCAG 2.0 Documents (英語)</a>に従って提出してください。</span><span class="difftext">[追加ここまで]</span></span>
  </p>
-	<p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+	<p class="copyright"><a
+                                 href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
    <xsl:apply-templates select="//trdisclaimer"/>
 
 </div>

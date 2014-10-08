@@ -3,27 +3,32 @@
   <!--BBC: For non-visual diff-marked versions, change thefollowing back to xmlspec.xsl-->
   <xsl:import href="xmlspec.xsl"/>
   <xsl:param name="slices" select="0"/>
-  <xsl:param name="bytech" select="0"/>
+  <xsl:param name="bytech">0</xsl:param>
   <xsl:param name="guide" select="1"/>
   <xsl:param name="show.diff.markup" select="1"/>
   <xsl:param name="show.issue.links" select="1"/>
   <xsl:param name="quickref" select="0"/>
   <!-- create some variables to allow for extracting headings from various techniques documents -->
-  <xsl:param name="gl-src" select="document('wcag2-src.xml')"/>
-  <xsl:param name="guide-src" select="document('guide-to-wcag2-src.xml')"/>
-  <xsl:param name="techs-src" select="document('merged-techs.xml')"/>
-  <xsl:param name="quickref-src" select="document('wcag2-quickref.xml')"/>
+	<xsl:param name="guidelines.file">wcag2-src.xml</xsl:param>
+	<xsl:param name="understanding.file">guide-to-wcag2-src.xml</xsl:param>
+	<xsl:param name="techniques.file">wcag20-merged-techs.xml</xsl:param>
+	<xsl:param name="quickref.file">wcag2-quickref.xml</xsl:param>
+	<xsl:param name="refs.file">refs.xml</xsl:param>
+  <xsl:param name="gl-src" select="document($guidelines.file)"/>
+  <xsl:param name="guide-src" select="document($understanding.file)"/>
+  <xsl:param name="techs-src" select="document($techniques.file)"/>
+  <xsl:param name="quickref-src" select="document($quickref.file)"/>
   <!--define variables for various versions of guidelines and techniques documents used-->
   <xsl:param name="thisversion">
     <xsl:value-of select="//publoc/loc[@href]"/>
   </xsl:param>
-  <xsl:param name="glthisversion">../WCAG20/Overview.html</xsl:param>
+  <xsl:param name="glthisversion">http://www.ciaj.or.jp/access/web/docs/WCAG20/Overview.html</xsl:param>
 <!--
   <xsl:param name="glthisversion">
     <xsl:value-of select="$gl-src//publoc/loc[@href]"/>
   </xsl:param>
 -->
-  <xsl:param name="guidethisversion">../UNDERSTANDING-WCAG20/</xsl:param>
+  <xsl:param name="guidethisversion">http://www.ciaj.or.jp/access/web/docs/UNDERSTANDING-WCAG20/</xsl:param>
 <!--
   <xsl:param name="guidethisversion">
 -->
@@ -32,9 +37,13 @@
     <xsl:value-of select="$guide-src//latestloc/loc[@href]"/>
   </xsl:param>
 -->
+  <xsl:param name="techsthisversion">http://www.ciaj.or.jp/access/web/docs/WCAG-TECHS/</xsl:param>
+
+<!--
   <xsl:param name="techsthisversion">
     <xsl:value-of select="$techs-src//publoc/loc[@href]"/>
   </xsl:param>
+-->
     <xsl:param name="quickrefthisversion">http://www.w3.org/WAI/WCAG20/quickref/</xsl:param>
   <!-- BBC: added link to TOC -->
   <xsl:template match="header">
@@ -149,7 +158,7 @@
               <acronym title="Massachusetts Institute of Technology">MIT</acronym>
             </a>, <a href="http://www.ercim.eu/">
               <acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym>
-            </a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
+            </a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p>
         </xsl:otherwise>
       </xsl:choose>
     </div>
@@ -161,7 +170,12 @@
     <xsl:apply-templates select="revisiondesc"/>
       </xsl:otherwise>
     </xsl:choose>
-    <xsl:if test="$toc.level &gt; 0">
+  	
+  	<xsl:call-template name="toc"/>
+  </xsl:template>
+	
+	<xsl:template name="toc">
+		    <xsl:if test="$toc.level &gt; 0">
       <div class="toc">
         <xsl:text>
 </xsl:text>
@@ -179,8 +193,8 @@
               <xsl:apply-templates select="//div1" mode="tocquickref"/>
             </xsl:when>
             <xsl:otherwise>
-                <!--BBC: @@ Comment this in pending judy/shawn discussion with Ian about these linksli><a href="#abstract">Abstract </a></li>
-                <li><a href="#status">Status of this Document </a></li-->
+                <li><a href="#abstract">Abstract </a></li>
+            	<li><a href="#status">Status of This Document </a></li>
               <xsl:apply-templates select="//div1[not(@id = 'placeholders')]" mode="toc"/>
             </xsl:otherwise>
           </xsl:choose>
@@ -223,13 +237,13 @@
             </xsl:if>
           </xsl:otherwise>
         </xsl:choose>
-        
-    
       </div>
       <hr/>
     </xsl:if>
-  </xsl:template>
-  <xsl:template match="revisiondesc">
+
+	</xsl:template>
+
+	<xsl:template match="revisiondesc">
     <xsl:if test="/spec/@w3c-doctype = 'review'">
       <xsl:apply-templates/>
     </xsl:if>
@@ -297,6 +311,11 @@
       </xsl:choose>
       <xsl:apply-templates/>
     </p>
+  </xsl:template>
+  <xsl:template match="translationcredit">
+    <div class="translationcredit">
+      <xsl:apply-templates/>
+    </div>
   </xsl:template>
   <!-- note: an example in the spec -->
   <!-- see also note/p -->
@@ -455,7 +474,7 @@
         	<head>
                   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
             <title>
-              <xsl:value-of select="//header/title"/>  | Techniques for WCAG 2.0
+              <xsl:value-of select="//header/title"/>  | WCAG 2.0 実装方法集
             </title>
             <link rel="stylesheet" type="text/css" href="slicenav.css"/>
             
@@ -468,19 +487,20 @@
           <body class="slices">
             <div id="masthead">
               <p class="logo"><a href="http://www.w3.org/"><img width="72" height="48" alt="W3C" src="http://www.w3.org/Icons/w3c_home"/></a></p>
-              <p class="collectiontitle"><a href="./">Techniques for WCAG 2.0</a></p></div>
-            <div id="skipnav"><p class="skipnav"><a href="#maincontent">Skip to Content (Press Enter)</a></p></div>
+              <p class="collectiontitle"><a href="./">WCAG 2.0実装方法集</a></p></div>
+            <div id="skipnav"><p class="skipnav"><a href="#maincontent">本文へ (Enterキーを押してください)</a></p></div>
             <a name="top"><xsl:text> </xsl:text> </a>
             <!-- TOP NAVIGATION BAR
             <ul id="navigation"><li><strong><a href="Overview#contents"
             title="Table of Contents">目次</a></strong></li><li><strong><a href="intro" title="Introduction to Techniques for WCAG 2.0"><abbr title="Introduction">Intro</abbr></a></strong></li></ul> -->
             <div class="div1"><a name="maincontent"> </a>
-              <h1 id="techs"> <xsl:value-of select="//header/title"/> for WCAG 2.0</h1>
-              <p>This Web page lists <xsl:value-of select="//header/title"/> from <a href="Overview.html">Techniques for WCAG 2.0: Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. For information about the techniques, see <a href="intro.html">Introduction to Techniques for WCAG 2.0</a>. For a list of techniques for other technologies, see the <a href="Overview.html#contents">Table of Contents</a>.</p>
+              <h1 id="techs">WCAG 2.0の<xsl:value-of select="//header/title"/></h1>
+            	<p>This Web page lists <xsl:value-of select="//header/title"/> from <a href="Overview.html">Techniques for WCAG 2.0: Techniques and Failures for Web Content Accessibility Guidelines 2.0</a>. Technology-specific techniques do not supplant the general techniques: content developers should consider both general techniques and technology-specific techniques as they work toward conformance.</p>
+            	<p>For information about the techniques, see <a href="intro.html">Introduction to Techniques for WCAG 2.0</a>. For a list of techniques for other technologies, see the <a href="Overview.html#contents">Table of Contents</a>.</p>
             <xsl:apply-templates/>
             </div>
               <hr /><div class="footer"><p class="copyright">This Web page is part of <a href="Overview.html">Techniques for WCAG 2.0</a>. The entire document is also available as a <a href="complete.html">single HTML file</a>. See the <a href="http://www.w3.org/WAI/intro/wcag20">The WCAG 2.0 Documents</a> for an explanation of how this document fits in with other Web Content Accessibility Guidelines (WCAG) 2.0 documents.
-              </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
+              </p><p class="copyright"><a href="http://www.w3.org/Consortium/Legal/ipr-notice#Copyright">Copyright</a> © <xsl:apply-templates select="//pubdate/year"/><xsl:text> </xsl:text><a href="http://www.w3.org/"><acronym title="World Wide Web Consortium">W3C</acronym></a><sup>®</sup> (<a href="http://www.csail.mit.edu/"><acronym title="Massachusetts Institute of Technology">MIT</acronym></a>, <a href="http://www.ercim.eu/"><acronym title="European Research Consortium for Informatics and Mathematics">ERCIM</acronym></a>, <a href="http://www.keio.ac.jp/">Keio</a>, <a href="http://ev.buaa.edu.cn/">Beihang</a>), All Rights Reserved. W3C <a href="http://www.w3.org/Consortium/Legal/ipr-notice#Legal_Disclaimer">liability</a>, <a href="http://www.w3.org/Consortium/Legal/ipr-notice#W3C_Trademarks">trademark</a> and <a href="http://www.w3.org/Consortium/Legal/copyright-documents">document use</a> rules apply.</p></div></body></html>
       </xsl:when>
       <xsl:otherwise>
         <html>
@@ -491,10 +511,10 @@
         	<head>
                   <meta http-equiv="content-type" content="text/html;charset=utf-8" />
             <title>
-              <xsl:apply-templates select="header/title"/>
+              <xsl:value-of select="header/title"/>
               <xsl:if test="header/version">
                 <xsl:text> </xsl:text>
-                <xsl:apply-templates select="header/version"/>
+                <xsl:value-of select="header/version"/>
               </xsl:if>
               <xsl:if test="$additional.title != ''">
                 <xsl:text> -- </xsl:text>
@@ -513,8 +533,9 @@
             </xsl:if>
             <xsl:if test="$show.diff.markup != 0">
               <div id="diffexp">
-                <p class="screenreader">This document is a draft, and is designed to show changes from a previous version. It is presently showing <span class="diff-add">added text,</span> <span class="diff-change">changed text,</span> <span class="diff-delete">deleted text,</span><span class="difftext">[start]/[end] markers,</span> <span class="issue">and Issue Numbers</span>.</p>
-                <p class="options"><a href="#" onclick="javascript:hideClass('diff-delete'); hideClass('issue'); hideClass('difftext');showClean('diff-change');showClean('diff-add')">Hide<!--Show-->&#160;All&#160;Edits</a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('diff-delete')">Toggle&#160;Deletions</a>&#160; | &#160; <a href="#"  onclick="javascript:toggleClass('issue')">Toggle&#160;Issue&#160;Numbers</a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('difftext')">Toggle<!--Hide-->&#160;[start]/[end]&#160;Markers</a> <!--&#160; | &#160; <a href="#">Show&#160;All&#160;Edits</a>-->&#160; | &#160; <a href="#" onclick="javascript:showClass('issue');showClass('diff-delete');showClass('difftext');showChange('diff-change');showAdd('diff-add')">Show&#160;All&#160;Edits</a></p><p class="state">Changes are displayed as follows:</p><ul>     <li> <span class="diff-add"><span class="difftext"> [begin add]</span> new, added text <span class="difftext">[end add] </span></span></li>     <li><span class="diff-change"><span class="difftext"> [begin change]</span> changed text <span class="difftext">[end change], </span></span></li>     <li><span class="diff-delete"><span class="difftext"> [begin delete]</span> deleted text <span class="difftext">[end delete] </span></span></li></ul>        
+                <p class="screenreader">この文書は草案で、前バージョンの日本語訳）からの変更点を表示できるようになっています。現在、<span class="diff-add">追加された箇所</span>、<span class="diff-change">変更された箇所</span>、<span class="diff-delete">削除された箇所</span>、<span class="difftext">[ここから]/[ここまで]のマーカー</span>、<span class="issue">問題No.</span>が表示されています。</p>
+
+                <p class="options"><a href="#" onclick="javascript:hideClass('diff-delete'); hideClass('issue'); hideClass('difftext');showClean('diff-change');showClean('diff-add')">全ての変更を非表示<!--表示--></a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('diff-delete')">削除箇所を表示／非表示</a>&#160; | &#160; <a href="#"  onclick="javascript:toggleClass('issue')">問題No.の表示／非表示</a> &#160; | &#160; <a href="#" onclick="javascript:toggleClass('difftext')">[ここから]/[ここまで]のマーカーを表示／非表示</a> <!--&#160; | &#160; <a href="#">Show&#160;All&#160;Edits</a>-->&#160; | &#160; <a href="#" onclick="javascript:showClass('issue');showClass('diff-delete');showClass('difftext');showChange('diff-change');showAdd('diff-add')">全ての変更を表示</a></p><p class="state">修正箇所は次のように表示されます:</p><ul>     <li> <span class="diff-add"><span class="difftext"> [ここから追加]</span> 新たに追加されたテキスト <span class="difftext">[追加ここまで] </span></span></li>     <li><span class="diff-change"><span class="difftext"> [ここから変更]</span> 変更されたテキスト <span class="difftext">[変更ここまで], </span></span></li>     <li><span class="diff-delete"><span class="difftext"> [ここから削除]</span> 削除されたテキスト <span class="difftext">[削除ここまで] </span></span></li></ul>        
               </div>
             </xsl:if>
             <!-- BBC a plain old apply-templates item here will put things back the way they're supposed to be... 
@@ -661,6 +682,7 @@
         <xsl:value-of select="$node/@id"/>
       </xsl:when>
       <xsl:otherwise>
+      	<xsl:message terminate="yes">Generating ID for <!-- <xsl:value-of select="$node"/> --><xsl:call-template name="genPath"/></xsl:message>
         <xsl:value-of select="generate-id($node)"/>
       </xsl:otherwise>
     </xsl:choose>
@@ -1072,7 +1094,7 @@
   <xsl:template match="loc">
     <xsl:variable name="techanchor"><xsl:choose>
       <xsl:when test="@locn-note">#<xsl:value-of select="@locn-note"/></xsl:when>
-      <xsl:otherwise></xsl:otherwise>
+      <xsl:otherwise>.html</xsl:otherwise>
     </xsl:choose></xsl:variable>
     <xsl:choose>
       <xsl:when test="@linktype='general'">
@@ -1103,14 +1125,16 @@
         </a>
       </xsl:when>
       <xsl:when test="@linktype='techniques'">
-        <a href="{$techsthisversion}#{@href}">
+      	<xsl:variable name="filename"><xsl:apply-templates select="$techs-src//*[@id = current()/@href]" mode="slice-techniques-filename"/></xsl:variable>
+      	<xsl:variable name="fragment"><xsl:if test="@href != substring-before($filename, '.')">#<xsl:value-of select="@href"/></xsl:if><xsl:if test="@locn-note">#<xsl:value-of select="@locn-note"/></xsl:if></xsl:variable>
+      	<a href="{$techsthisversion}{$filename}{$fragment}">
           <xsl:apply-templates/>
         </a>
       </xsl:when>
       <xsl:when test="@linktype='text'">
         <a href="{$techsthisversion}{@href}{$techanchor}">
           <xsl:value-of select="@href"/>: <xsl:apply-templates select="$techs-src//technique[@id=current()/@href]/short-name" mode="text"/>
-        </a>  (TXT)
+        </a>  (Text)
 			</xsl:when>
       <xsl:when test="@linktype='css'">
         <a href="{$techsthisversion}{@href}{$techanchor}">
@@ -1137,7 +1161,22 @@
           <xsl:value-of select="@href"/>: <xsl:apply-templates select="$techs-src//technique[@id=current()/@href]/short-name" mode="text"/>
         </a> (SMIL)
 			</xsl:when>
-      <xsl:when test="@linktype='examples'">
+    	<xsl:when test="@linktype='flash'">
+    		<a href="{$techsthisversion}{@href}{$techanchor}">
+    			<xsl:value-of select="@href"/>: <xsl:apply-templates select="$techs-src//technique[@id=current()/@href]/short-name" mode="text"/>
+    		</a> (Flash)
+    	</xsl:when>
+    	<xsl:when test="@linktype='pdf'">
+    		<a href="{$techsthisversion}{@href}{$techanchor}">
+    			<xsl:value-of select="@href"/>: <xsl:apply-templates select="$techs-src//technique[@id=current()/@href]/short-name" mode="text"/>
+    		</a> (PDF)
+    	</xsl:when>
+    	<xsl:when test="@linktype='silverlight'">
+    		<a href="{$techsthisversion}{@href}{$techanchor}">
+    			<xsl:value-of select="@href"/>: <xsl:apply-templates select="$techs-src//technique[@id=current()/@href]/short-name" mode="text"/>
+    		</a> (Silverlight)
+    	</xsl:when>
+    	<xsl:when test="@linktype='examples'">
           <xsl:choose>
               <xsl:when test="$show.diff.markup = '1'">
                   <a href="{$techsthisversion}working-examples/{ancestor::technique/@id}/{@href}">
@@ -1186,7 +1225,7 @@
   </xsl:template>
   <xsl:template match="altlocs">
       <!-- BBC: Suppress output of these links in diff-marked version -->
-      <xsl:if test="$show.diff.markup = '0'">
+      <!--xsl:if test="$show.diff.markup = '1'"-->
     <p>
       <xsl:text>この文書は、以下の規定ではないフォーマットでも提供されている: </xsl:text>
     </p>
@@ -1206,7 +1245,7 @@
         </li>
       </xsl:for-each>
     </ul>
-          </xsl:if>
+          <!--/xsl:if-->
   </xsl:template>
   <xsl:template match="p" mode="label">
     <p class="sctxt">
@@ -1346,7 +1385,7 @@
   <xsl:template match="front/div1[@id='intro']" mode="slice-techniques-filename">
     <xsl:text>intro.html</xsl:text>
   </xsl:template>
-  <xsl:template match="body/div1| body/div1/technique" mode="slice-techniques-filename">
+  <xsl:template match="body/div1| body/div1/technique | body/div1/div2" mode="slice-techniques-filename">
     <xsl:value-of select="@id"/>
     <xsl:text>.html</xsl:text>
   </xsl:template>
@@ -1410,4 +1449,10 @@
             <xsl:apply-templates select="$gl-src//gitem[@id='reliedupondef']"/>
         </dl>
     </xsl:template>
-  </xsl:transform>
+	
+	<!-- The use-id attribute allows a substitute, complete element to replace a placeholder, so common content only needs to be edited once -->
+	<xsl:template match="*[@use-id]" priority="1">
+		<xsl:apply-templates select="id(@use-id)"/>
+	</xsl:template>
+
+</xsl:transform>

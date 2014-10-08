@@ -151,16 +151,22 @@
     </h3>
     <xsl:choose>
       <xsl:when test="../@role='techniques'">
-        <p  >この節にある番号付の項目は、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<a href="{$glthisversion}#conformance-reqs">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、次に挙げる実装方法により、この達成基準を満たすことができる。</p>
+        <p  >この節にある番号付の項目は、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループがこの達成基準を満たすのに十分であると判断する実装方法、又は複数の実装方法の組合せを表している。<span class="diff-change"><span class="difftext">[変更箇所開始]</span><span>しかし、必ずしもこれらの実装方法を用いる必要はない。どのような実装方法を用いる場合も、<a href="{$glthisversion}#conformance-reqs">WCAG 2.0 適合要件</a>のすべてが満たされている場合にのみ、この達成基準を満たすことができる。</span><span class="difftext">[変更箇所終了]</span></span>
+</p>
       </xsl:when>
     </xsl:choose>
     <xsl:choose>
       <xsl:when test="../@role='resources'">
         <p  >リソースは、情報提供のみを目的としており、推奨を意味するものではない。</p>
-        <xsl:if test="count(../ulist) + count(../div4) = 0">
+      	<xsl:if test="not(../p or ../olist or ../ulist or ../div4)">
           <p  >（まだ文書化されていない）</p>
         </xsl:if>
       </xsl:when>
+    	<xsl:when test="../@role='examples'">
+    		<xsl:if test="not(../p or ../olist or ../ulist or ../div4)">
+    			<p  >(none currently documented)</p>
+    		</xsl:if>
+    	</xsl:when>
     </xsl:choose>
     </xsl:otherwise>  </xsl:choose>
   </xsl:template>
@@ -213,13 +219,13 @@
     <xsl:choose>
       <xsl:when test="../@role='failures'">
         <p >以下に挙げるものは、<acronym title="Web Content Accessibility Guidelines">WCAG</acronym> ワーキンググループが達成基準  <xsl:call-template name="sc-number"><xsl:with-param name="id" select="../../../@id"/></xsl:call-template> に適合していないとみなした、よくある不適合事例である。</p>
-        <xsl:if test="count(../ulist) = 0">
+      	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
           <p  >（今のところ、文書化されている不適合事例がない）</p>
         </xsl:if>
       </xsl:when>
       <xsl:when test="../@role='tech-optional'">
         <p >適合するためには必須ではないが、コンテンツをよりアクセシブルにするためには、次の付加的な実装方法もあわせて検討するとよい。ただし、すべての状況において、すべての実装方法が使用可能、または効果的であるとは限らない。</p>
-        <xsl:if test="count(../ulist) + count(../div5) = 0">
+      	<xsl:if test="not(../p or ../olist or ../ulist or ../div5)">
           <p  >（まだ文書化されていない）</p>
         </xsl:if>
       </xsl:when>
@@ -398,10 +404,19 @@
       <xsl:when test="../@role='sc'">
 		</xsl:when>
       <xsl:otherwise>
-        <h5>
+      	<h5>
           <xsl:call-template name="anchor">
             <xsl:with-param name="conditional" select="0"/>
             <xsl:with-param name="node" select=".."/>
+          	<xsl:with-param name="default.id">
+          		<xsl:choose>
+          			<xsl:when test="../@id"><xsl:value-of select="ancestor::div2/@id"/>-<xsl:value-of select="../@id"/>-head</xsl:when>
+          			<xsl:otherwise><xsl:value-of select="ancestor::div2/@id"/>-<xsl:choose>
+          				<xsl:when test="../@role"><xsl:value-of select="../@role"/></xsl:when>
+          				<xsl:otherwise>section</xsl:otherwise>
+          			</xsl:choose>-<xsl:value-of select="count(preceding::div5) +1"/>-head</xsl:otherwise>
+          		</xsl:choose>
+          	</xsl:with-param>
           </xsl:call-template>
           <xsl:apply-templates select=".." mode="divnum"/>
           <xsl:apply-templates/>
