@@ -239,10 +239,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -250,25 +251,25 @@ been met.
  1.
 
     H57: Using language attributes on the html element
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H57> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H57> (HTML)
 
  2.
 
     FLASH13: Using HTML language attributes to specify language in Flash
     content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH13> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH13> (Flash)
 
  3.
 
     PDF16: Setting the default language using the /Lang entry in the
     document catalog of a PDF document
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF16> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF16> (PDF)
 
  4.
 
     PDF19: Specifying the language for a passage or phrase with the Lang
     entry in PDF documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF19> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF19> (PDF)
 
 
         Additional Techniques (Advisory) for 3.1.1
@@ -281,7 +282,7 @@ situations.
   *
 
     SVR5: Specifying the default language in the HTTP header
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR5> (SERVER)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SVR5> (SERVER)
 
   *
 
@@ -539,10 +540,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -550,26 +552,26 @@ been met.
  1.
 
     H58: Using language attributes to identify changes in the human
-    language <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H58>
+    language <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H58>
     (HTML)
 
  2.
 
     FLASH13: Using HTML language attributes to specify language in Flash
     content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH13> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH13> (Flash)
 
  3.
 
     PDF19: Specifying the language for a passage or phrase with the Lang
     entry in PDF documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF19> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF19> (PDF)
 
  4.
 
     SL4: Declaring Discrete Silverlight Objects to Specify Language
     Parts in the HTML DOM
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL4>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL4>
     (Silverlight)
 
 
@@ -584,7 +586,7 @@ situations.
 
     SL27: Using Language/Culture Properties as Exposed by Silverlight
     Applications and Assistive Technologies
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL27>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL27>
     (Silverlight)
 
   *
@@ -759,10 +761,11 @@ and to give users an idea of what resources may be available
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -780,73 +783,73 @@ situation.
 
     G101: Providing the definition of a word or phrase used in an
     unusual or restricted way
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G101> for the
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G101> for the
     first occurrence of the word or phrase in a Web page using one of
     the following techniques:
 
       *
 
         G55: Linking to definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G55>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G55>
 
           o
 
             H40: Using definition lists
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H40>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H40>
             (HTML)
 
           o
 
             H60: Using the link element to link to a glossary
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H60>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H60>
             (HTML)
 
       *
 
         G112: Using inline definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G112>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G112>
 
           o
 
             H54: Using the dfn element to identify the defining instance
             of a word
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H54>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H54>
             (HTML)
 
  2.
 
     G101: Providing the definition of a word or phrase used in an
     unusual or restricted way
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G101> for each
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G101> for each
     occurrence of the word or phrase in a Web page using one of the
     following techniques:
 
       *
 
         G55: Linking to definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G55>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G55>
 
           o
 
             H40: Using definition lists
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H40>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H40>
             (HTML)
 
           o
 
             H60: Using the link element to link to a glossary
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H60>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H60>
             (HTML)
 
       *
 
         G62: Providing a glossary
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G62>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G62>
 
       *
 
         G70: Providing a function to search an online dictionary
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G70>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G70>
 
 
           Situation B: If the word or phrase means different things
@@ -856,37 +859,37 @@ situation.
 
     G101: Providing the definition of a word or phrase used in an
     unusual or restricted way
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G101> for each
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G101> for each
     occurrence of the word or phrase in a Web page using one of the
     following techniques:
 
       *
 
         G55: Linking to definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G55>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G55>
 
           o
 
             H40: Using definition lists
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H40>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H40>
             (HTML)
 
           o
 
             H60: Using the link element to link to a glossary
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H60>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H60>
             (HTML)
 
       *
 
         G112: Using inline definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G112>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G112>
 
           o
 
             H54: Using the dfn element to identify the defining instance
             of a word
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H54>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H54>
             (HTML)
 
 
@@ -1147,10 +1150,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -1167,71 +1171,71 @@ situation.
  1.
 
     G102: Providing the expansion or explanation of an abbreviation
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G102> for the
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G102> for the
     first occurrence of the abbreviation in a Web page using one of the
     following techniques:
 
       *
 
         G97: Providing the first use of an abbreviation immediately
-        before or afterfollowing the expanded form
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G97>
+        before or after the expanded form
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G97>
 
       *
 
         G55: Linking to definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G55>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G55>
 
       *
 
         H28: Providing definitions for abbreviations by using the abbr
-        and acronym elements
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H28> (HTML)
+        element
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H28> (HTML)
 
       *
 
         PDF8: Providing definitions for abbreviations via an E entry for
         a structure element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF8> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF8> (PDF)
 
  2.
 
     G102: Providing the expansion or explanation of an abbreviation
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G102> for all
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G102> for all
     occurrences of the abbreviation in a Web page using one of the
     following techniques:
 
       *
 
         G55: Linking to definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G55>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G55>
 
       *
 
         G62: Providing a glossary
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G62>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G62>
 
       *
 
         H60: Using the link element to link to a glossary
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H60> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H60> (HTML)
 
       *
 
         G70: Providing a function to search an online dictionary
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G70>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G70>
 
       *
 
         H28: Providing definitions for abbreviations by using the abbr
-        and acronym elements
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H28> (HTML)
+        element
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H28> (HTML)
 
       *
 
         PDF8: Providing definitions for abbreviations via an E entry for
         a structure element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF8> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF8> (PDF)
 
 
           Situation B: If the abbreviation means different things within
@@ -1240,26 +1244,26 @@ situation.
  1.
 
     G102: Providing the expansion or explanation of an abbreviation
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G102> for all
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G102> for all
     occurrences of abbreviations in a Web page using one of the
     following techniques:
 
       *
 
         G55: Linking to definitions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G55>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G55>
 
       *
 
         H28: Providing definitions for abbreviations by using the abbr
-        and acronym elements
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H28> (HTML)
+        element
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H28> (HTML)
 
       *
 
         PDF8: Providing definitions for abbreviations via an E entry for
         a structure element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF8> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF8> (PDF)
 
 
         Additional Techniques (Advisory) for 3.1.4
@@ -1573,8 +1577,8 @@ This Success Criterion may help people who:
 
     Now let's think about what you've found.
 
-    (Source: Howard Hughes Medical Institute
-    http://www.hhmi.org/coolscience/forkids/inchsquare/)
+    (Source: Howard Hughes Medical Institute "CoolScience for Kids"
+    Project)
 
 
       Related Resources
@@ -1583,18 +1587,10 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    A Plain Language Audit Tool provides a checklist for determining
-    whether documents can be edited for clarity and "plain language."
-    The checklist includes a readability assessment. Available from the
-    Northwest Territories (Canada) Literacy Council at
-    http://www.nwt.literacy.ca/resources/plainlang/auditool/cover.htm.
-
-  *
-
     The Plain Language Association INternational (PLAIN) Web site
     provides many useful resources to help writers produce documents
     that communicate clearly in a variety of cultural and rhetorical
-    contexts. Refer to: http://www.plainlanguagenetwork.org/.
+    contexts. Refer to: http://plainlanguagenetwork.org/.
 
   *
 
@@ -1617,15 +1613,6 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Hall, T., and Strangman, N. CAST: Graphic organizers
-    <http://aim.cast.org/learn/historyarchive/backgroundpapers/graphic_organizers>.
-    Retrieved 5 April 2005. This article illustrates several different
-    kinds of graphic organizers, explains how each type may be useful,
-    and summarizes research findings that graphic organizers support
-    learning, especially among students with learning disabilities.
-
-  *
-
     Entry for Audience Education Level. Using Dublin Core – Dublin Core
     Qualifiers
     <http://dublincore.org/documents/usageguide/qualifiers.shtml>
@@ -1639,14 +1626,15 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    TextQuest.de <http://www.textquest.de/lesbar.htm> lists references
-    for readability formulas for different languages, including English,
-    German, Spanish, Dutch, French, and Swedish.
+    TextQuest.de
+    <http://www.textquest.de/pages/en/analysis-of-texts/readability-analysis.php>
+    lists references for readability formulas for different languages,
+    including English, German, Spanish, Dutch, French, and Swedish.
 
   *
 
     Richtlijnen Keurmerk Makkelijk Lezen
-    <http://taalunieversum.org/onderwijs/publicaties/geletterd_in_de_lage_landen/richtlijnen.php>
+    <http://taalunieversum.org/publicaties/geletterd_in_de_lage_landen/richtlijnen.php>
     are the guidelines used by the Stichting Makkelijk Lezen (Easy
     Reading Foundation).
 
@@ -1659,61 +1647,55 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Wetenschappelijke verantwoording van de toetsserie Leestechniek &
-    Leestempo <http://toetswijzer.kennisnet.nl/html/tg/4.pdf> describes
-    the CILT (CITO index voor leestechniek - CITO index for reading
-    ability), the formulas developed by the Dutch organization CITO
-    <http://www.cito.nl/> that relate readability to education level.
-
-  *
-
-    European Easy-to-Read Guidelines <http://www.inclusion-europe.org/etr/>
+    European Easy-to-Read Guidelines <http://inclusion-europe.eu/>
 
   *
 
     Flesch-Kincaid Readability Test
-    <http://en.wikipedia.org/wiki/Flesch-Kincaid_Readability_Test>
+    <https://en.wikipedia.org/wiki/Flesch%E2%80%93Kincaid_readability_tests>
+
 
 
       Techniques and Failures for Success Criterion 3.1.5 - Reading Level
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
 
  1.
 
-    G86: Providing a text summary that requires reading ability less
-    advanced than the upper secondary education level
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G86>
+    G86: Providing a text summary that can be understood by people with
+    lower secondary education level reading ability
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G86>
 
  2.
 
     G103: Providing visual illustrations, pictures, and symbols to help
     explain ideas, events, and processes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G103>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G103>
 
  3.
 
     G79: Providing a spoken version of the text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G79>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G79>
 
  4.
 
     G153: Making the text easier to read
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G153>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G153>
 
  5.
 
     G160: Providing sign language versions of information, ideas, and
     processes that must be understood in order to use the content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G160>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G160>
 
 /Note: /Different sites may address this Success Criterion in different
 ways. An audio version of the content may be helpful to some users. For
@@ -1995,10 +1977,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2006,17 +1989,17 @@ been met.
  1.
 
     G120: Providing the pronunciation immediately following the word
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G120>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G120>
 
  2.
 
     G121: Linking to pronunciations
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G121>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G121>
 
  3.
 
     G62: Providing a glossary
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G62> that
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G62> that
     includes pronunciation information for words that have a unique
     pronunciation in the content and have meaning that depends on
     pronunciation
@@ -2024,12 +2007,12 @@ been met.
  4.
 
     G163: Using standard diacritical marks that can be turned off
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G163>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G163>
 
  5.
 
     H62: Using the ruby element
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H62> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H62> (HTML)
     (XHTML 1.1)
 
 
@@ -2167,6 +2150,9 @@ this behavior. Note that for some types of controls, clicking on a
 control may also activate the control (e.g. button), which may, in turn,
 initiate a change in context.
 
+/Note: /What is meant by "component" here is also sometimes called "user
+interface element" or "user interface component''.
+
 
         Specific Benefits of Success Criterion 3.2.1
 
@@ -2212,10 +2198,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2223,7 +2210,7 @@ been met.
  1.
 
     G107: Using "activate" rather than "focus" as a trigger for changes
-    of context <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G107>
+    of context <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G107>
 
 /Note: /A change of content is not always a change of context
 <http://www.w3.org/TR/2008/REC-WCAG20-20081211/#context-changedef>. This
@@ -2247,12 +2234,12 @@ situations.
   *
 
     G200: Opening new windows and tabs from a link only when necessary
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G200>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G200>
 
   *
 
     G201: Giving users advanced warning when opening a new window
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G201>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G201>
 
 
         Common Failures for SC 3.2.1
@@ -2264,13 +2251,13 @@ Success Criterion 3.2.1 by the WCAG Working Group.
 
     F52: Failure of Success Criterion 3.2.1 and 3.2.5 due to opening a
     new window as soon as a new page is loaded
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F52>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F52>
 
   *
 
     F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to
     using script to remove focus when focus is received
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F55>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F55>
 
 
       Key Terms
@@ -2335,17 +2322,21 @@ changes of context
 
 The intent of this Success Criterion is to ensure that entering data or
 selecting a form control has predictable effects. Changing the setting
-of any user interface component is changing some state in the control
+of any user interface component is changing some aspect in the control
 that will persist when the user is no longer interacting with it. So
-checking a checkbox or entering text into a text field changes its
-setting, but activating a link or a button does not. Changes in context
-can confuse users who do not easily perceive the change or are easily
-distracted by changes. Changes of context are appropriate only when it
-is clear that such a change will happen in response to the user's action.
+checking a checkbox, entering text into a text field, or changing the
+selected option in a list control changes its setting, but activating a
+link or a button does not. Changes in context can confuse users who do
+not easily perceive the change or are easily distracted by changes.
+Changes of context are appropriate only when it is clear that such a
+change will happen in response to the user's action.
 
 /Note: /This Success Criterion covers changes in context due to changing
 the setting of a control. Clicking on links or tabs in a tab control is
 activating the control, not changing the setting of that control.
+
+/Note: /What is meant by "component" and "user interface component" here
+is also sometimes called "user interface element".
 
 
         Specific Benefits of Success Criterion 3.2.2
@@ -2416,10 +2407,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2427,48 +2419,48 @@ been met.
  1.
 
     G80: Providing a submit button to initiate a change of context
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G80> using a
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G80> using a
     technology-specific technique listed below
 
       *
 
         H32: Providing submit buttons
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H32> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H32> (HTML)
 
       *
 
         H84: Using a button with a select element to perform an action
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H84> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H84> (HTML)
 
       *
 
         FLASH4: Providing submit buttons in Flash
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH4>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH4>
         (Flash)
 
       *
 
         PDF15: Providing submit buttons with the submit-form action in
         PDF forms
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF15> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF15> (PDF)
 
       *
 
         SL10: Implementing a Submit-Form Pattern in Silverlight
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL10>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL10>
         (Silverlight)
 
  2.
 
     G13: Describing what will happen before a change to a form control
     that causes a change of context to occur is made
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G13>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G13>
 
  3.
 
     SCR19: Using an onchange event on a select element without causing a
     change of context
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR19>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR19>
     (Scripting)
 
 /Note: /A change of content is not always a change of context
@@ -2487,7 +2479,7 @@ situations.
   *
 
     G201: Giving users advanced warning when opening a new window
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G201>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G201>
 
 
         Common Failures for SC 3.2.2
@@ -2500,21 +2492,14 @@ Success Criterion 3.2.2 by the WCAG Working Group.
     F36: Failure of Success Criterion 3.2.2 due to automatically
     submitting a form and presenting new content without prior warning
     when the last field in the form is given a value
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F36>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F36>
 
   *
 
     F37: Failure of Success Criterion 3.2.2 due to launching a new
-    window without prior warning when the status of a radio button,
+    window without prior warning when the selection of a radio button,
     check box or select list is changed
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F37>
-
-  *
-
-    F76: Failure of Success Criterion 3.2.2 due to providing instruction
-    material about the change of context by change of setting in a user
-    interface element at a location that users may bypass
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F76>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F37>
 
 
       Key Terms
@@ -2689,10 +2674,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2701,17 +2687,7 @@ been met.
 
     G61: Presenting repeated components in the same relative order each
     time they appear
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G61>
-
- 2.
-
-    PDF14: Providing running headers and footers in PDF documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF14> (PDF)
-
- 3.
-
-    PDF17: Specifying consistent page numbering for PDF documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF17> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G61>
 
 
         Additional Techniques (Advisory) for 3.2.3
@@ -2720,6 +2696,16 @@ Although not required for conformance, the following additional
 techniques should be considered in order to make content more
 accessible. Not all techniques can be used or would be effective in all
 situations.
+
+  *
+
+    PDF14: Providing running headers and footers in PDF documents
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF14> (PDF)
+
+  *
+
+    PDF17: Specifying consistent page numbering for PDF documents
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF17> (PDF)
 
   *
 
@@ -2740,7 +2726,7 @@ Success Criterion 3.2.3 by the WCAG Working Group.
 
     F66: Failure of Success Criterion 3.2.3 due to presenting navigation
     links in a different relative order on different pages
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F66>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F66>
 
 
       Key Terms
@@ -2832,6 +2818,14 @@ This consistency extends to the text alternatives. If icons or other
 non-text items have the same functionality, then their text alternatives
 should be consistent as well.
 
+If there are two components on a web page that both have the same
+functionality as a component on another page in a set of web pages, then
+all 3 must be consistent. Hence the two on the same page will be consistent.
+
+While it is desirable and best practice always to be consistent within a
+single web page, 3.2.4 only addresses consistency within a set of web
+pages where something is repeated on more than one page in the set.
+
 
         Specific Benefits of Success Criterion 3.2.4
 
@@ -2906,7 +2900,22 @@ should be consistent as well.
 
   *
 
-    *Example 6: Example of a Failure*
+    Example 6: Icon and adjacent link to same destination
+
+    An icon with alt text and a link are next to each other and go to
+    the same location. The best practice would be to group them into one
+    link as per H2: Combining adjacent image and text links for the same
+    resource <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H2>
+    (HTML) . However if they are visually positioned one above the other
+    but separated in the source, this may not be possible. To meet the
+    Success Criterion, the link text for these two links need only be
+    consistent, not identical. But best practice is to have identical
+    text so that when users encounter the second one, it is clear that
+    it goes to the same place as the first.
+
+  *
+
+    *Example 7: Example of a Failure*
 
     A submit "search" button on one Web page and a "find" button on
     another Web page both have a field to enter a term and list topics
@@ -2926,10 +2935,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2938,11 +2948,11 @@ been met.
 
     G197: Using labels, names, and text alternatives consistently for
     content that has the same functionality
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G197> *AND*
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G197> *AND*
     following the sufficient techniques for Success Criterion 1.1.1
-    <https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/text-equiv-all.html#text-equiv-all-techniques-head>
+    <https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv-all.html#text-equiv-all-techniques-head>
     and sufficient techniques for Success Criterion 4.1.2
-    <https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/ensure-compat-rsv.html#ensure-compat-rsv-techniques-head>
+    <https://www.w3.org/TR/UNDERSTANDING-WCAG20/ensure-compat-rsv.html#ensure-compat-rsv-techniques-head>
     for providing labels, names, and text alternatives.
 
 /Note 1: /Text alternatives that are "consistent" are not always
@@ -2993,7 +3003,7 @@ Success Criterion 3.2.4 by the WCAG Working Group.
 
     F31: Failure of Success Criterion 3.2.4 due to using two different
     labels for the same function on different Web pages within a set of
-    Web pages <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F31>
+    Web pages <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F31>
 
 
       Key Terms
@@ -3079,8 +3089,14 @@ ability to change context in order to provide the intended user
 experience. Content that initiates changes of context automatically only
 when user preferences allow can conform to this Success Criterion.
 
-/Note: /Clicking on a link is an example of an action that is "initiated
-only by user request."
+/Note: /It is possible for more than one change of context to occur
+simultaneously. For example, clicking on a link which automatically
+opens a new window is an example of two separate changes of context
+related to the change in content and to the change in the viewport
+(window). The change in the content in this case is initiated by user
+request when they click on the link, but unless the user can be aware
+that the link will open in a new window then that change of context
+cannot be regarded as user-initiated.
 
 
         Specific Benefits of Success Criterion 3.2.5
@@ -3149,10 +3165,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3169,7 +3186,7 @@ situation.
 
     G76: Providing a mechanism to request an update of the content
     instead of updating automatically
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G76>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G76>
 
 
           Situation B: If automatic redirects are possible:
@@ -3178,19 +3195,19 @@ situation.
 
     SVR1: Implementing automatic redirects on the server side instead of
     on the client side
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR1> (SERVER)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SVR1> (SERVER)
 
  2.
 
     G110: Using an instant client-side redirect
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G110> using
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G110> using
     one of the following techniques:
 
       *
 
         H76: Using meta refresh to create an instant client-side
         redirect
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H76> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H76> (HTML)
 
 
           Situation C: If the Web page uses pop-up windows:
@@ -3203,13 +3220,13 @@ situation.
 
         H83: Using the target attribute to open a new window on user
         request and indicating this in link text
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H83> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H83> (HTML)
 
       *
 
         SCR24: Using progressive enhancement to open new windows on user
         request
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR24>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR24>
         (Scripting)
 
 
@@ -3219,7 +3236,7 @@ situation.
 
     SCR19: Using an onchange event on a select element without causing a
     change of context
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR19>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR19>
     (Scripting)
 
 
@@ -3239,7 +3256,7 @@ situations.
   *
 
     G200: Opening new windows and tabs from a link only when necessary
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G200>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G200>
 
 
         Common Failures for SC 3.2.5
@@ -3251,38 +3268,38 @@ Success Criterion 3.2.5 by the WCAG Working Group.
 
     F60: Failure of Success Criterion 3.2.5 due to launching a new
     window when a user enters text into an input field
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F60>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F60>
 
   *
 
     F61: Failure of Success Criterion 3.2.5 due to complete change of
     main content through an automatic update that the user cannot
     disable from within the content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F61>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F61>
 
   *
 
     F9: Failure of Success Criterion 3.2.5 due to changing the context
     when the user removes focus from a form element
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F9>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F9>
 
   *
 
     F22: Failure of Success Criterion 3.2.5 due to opening windows that
     are not requested by the user
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F22>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F22>
 
   *
 
     F52: Failure of Success Criterion 3.2.1 and 3.2.5 due to opening a
     new window as soon as a new page is loaded
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F52>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F52>
 
   *
 
     F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to
-    using meta refresh with a time-out
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F41>
+    using meta refresh to reload the page
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F41>
 
 
       Key Terms
@@ -3401,7 +3418,56 @@ fields in error is insufficient for some users to perceive that an error
 has occurred. Screen reader users, for example, will not know there was
 an error until they encounter one of the indicators. They may abandon
 the form altogether before encountering the error indicator, thinking
-that the page simply is not functional.
+that the page simply is not functional. Per the definition in WCAG 2.0,
+an "input error" is information provided by the user that is not
+accepted. This includes:
+
+  *
+
+    information that is required by the web page but omitted by the user, or
+
+  *
+
+    information that is provided by the user but that falls outside the
+    required data format or allowed values.
+
+For example:
+
+  *
+
+    the user fails to enter the proper abbreviation in to state,
+    province, region, etc. field;
+
+  *
+
+    the user enters a state abbreviation that is not a valid state;
+
+  *
+
+    the user enters a non existent zip or postal code;
+
+  *
+
+    the user enters a birth date 2 years in the future;
+
+  *
+
+    the user enters alphabetic characters or parentheses into their
+    phone number field that only accepts numbers;
+
+  *
+
+    the user enters a bid that is below the previous bid or the minimum
+    bid increment.
+
+/Note: /If a user enters a value that is too high or too low, and the
+coding on the page automatically changes that value to fall within the
+allowed range, the user's error would still need to be described to them
+as required by the success criterion. Such an error description telling
+the person of the changed value would meet both this success criterion
+(Error Identification) and Success Criterion 3.3.3 (Error Suggestion)
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-suggestions.html>.
+
 
 The identification and description of an error can be combined with
 programmatic information that user agents or assistive technologies can
@@ -3472,10 +3538,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3493,24 +3560,29 @@ situation.
 
     G83: Providing text descriptions to identify required fields that
     were not completed
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G83>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G83>
 
  2.
 
-    SCR18: Providing client-side validation and alert
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR18>
-    (Scripting)
+    ARIA21: Using Aria-Invalid to Indicate An Error Field
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA21> (ARIA)
 
  3.
 
-    PDF5: Indicating required form controls in PDF forms
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF5> (PDF)
+    SCR18: Providing client-side validation and alert
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR18>
+    (Scripting)
 
  4.
 
+    PDF5: Indicating required form controls in PDF forms
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF5> (PDF)
+
+ 5.
+
     SL35: Using the Validation and ValidationSummary APIs to Implement
     Client Side Forms Validation in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL35>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL35>
     (Silverlight)
 
 
@@ -3519,45 +3591,60 @@ situation.
 
  1.
 
-    G84: Providing a text description when the user provides information
-    that is not in the list of allowed values
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G84>
+    ARIA18: Using aria-alertdialog to Identify Errors
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA18> (ARIA)
 
  2.
 
-    G85: Providing a text description when user input falls outside the
-    required format or values
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G85>
+    ARIA19: Using ARIA role=alert or Live Regions to Identify Errors
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA19> (ARIA)
 
  3.
 
-    SCR18: Providing client-side validation and alert
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR18>
-    (Scripting)
+    ARIA21: Using Aria-Invalid to Indicate An Error Field
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA21> (ARIA)
 
  4.
 
-    SCR32: Providing client-side validation and adding error text via
-    the DOM <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR32>
-    (Scripting)
+    G84: Providing a text description when the user provides information
+    that is not in the list of allowed values
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G84>
 
  5.
 
-    FLASH12: Providing client-side validation and adding error text via
-    the accessible description
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH12> (Flash)
+    G85: Providing a text description when user input falls outside the
+    required format or values
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G85>
 
  6.
 
-    PDF22: Indicating when user input falls outside the required format
-    or values in PDF forms
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF22> (PDF)
+    SCR18: Providing client-side validation and alert
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR18>
+    (Scripting)
 
  7.
 
+    SCR32: Providing client-side validation and adding error text via
+    the DOM <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR32>
+    (Scripting)
+
+ 8.
+
+    FLASH12: Providing client-side validation and adding error text via
+    the accessible description
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH12> (Flash)
+
+ 9.
+
+    PDF22: Indicating when user input falls outside the required format
+    or values in PDF forms
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF22> (PDF)
+
+10.
+
     SL35: Using the Validation and ValidationSummary APIs to Implement
     Client Side Forms Validation in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL35>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL35>
     (Silverlight)
 
 
@@ -3571,7 +3658,7 @@ situations.
   *
 
     G139: Creating a mechanism that allows users to jump to errors
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G139>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G139>
 
   *
 
@@ -3603,7 +3690,7 @@ situations.
   *
 
     G199: Providing success feedback when data is submitted successfully
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G199>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G199>
 
   *
 
@@ -3652,18 +3739,14 @@ input error
 
       Intent of this Success Criterion
 
-The intent of this Success Criterion is to help users avoid making
-mistakes when their input is required. To help avoid mistakes it is good
-user interface design to provide simple instructions and cues for
-entering information. Some users with disabilities may be more likely to
-make mistakes than users without disabilities or recovery from mistakes
-may be more difficult, making mistake avoidance an important strategy
-for users with disabilities. People with disabilities rely on well
-documented forms and procedures to interact with a page. Blind users
-need to know exactly what information should be entered into form fields
-and what the available choices are. Simple instructions visually
-connected to form controls can assist users with cognitive disabilities
-or those accessing a page using a screen magnifier.
+The intent of this success criterion is to have content authors place
+instructions or labels that identify the controls in a form so that
+users know what input data is expected. Instructions or labels may also
+specify data formats for fields especially if they are out of the
+customary formats or if there are specific rules for correct input.
+Content authors may also choose to make such instructions available to
+users only when the individual control has focus especially when
+instructions are long and verbose.
 
 The intent of this Success Criterion is not to clutter the page with
 unnecessary information but to provide important cues and instructions
@@ -3672,14 +3755,22 @@ instruction can be just as much of a hindrance as too little. The goal
 is to make certain that enough information is provided for the user to
 accomplish the task without undue confusion or navigation.
 
+/Note: /When labels are provided for input objects, the input object's
+relationship to the label (or to redundant text serving as the label)
+must be programmatically determinable or available in text per
+/Understanding Success Criterion 1.3.1 Info and Relationships
+<#content-structure-separation-programmatic>/.
+
 
         Specific Benefits of Success Criterion 3.3.2
 
   *
 
-    Label elements associated with input elements insure that
-    information about the input field is spoken by screen readers when
-    the field receives focus.
+    When label elements are associated with input elements the label is
+    spoken by screen readers when the field receives focus and users
+    with impaired motor control are helped by a larger clickable area
+    for the control, since clicking on the label or the control will
+    activate the control.
 
   *
 
@@ -3748,10 +3839,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3759,109 +3851,127 @@ been met.
  1.
 
     G131: Providing descriptive labels
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G131> *AND*
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G131> *AND*
     one of the following:
 
       *
 
+        ARIA1: Using the aria-describedby property to provide a
+        descriptive label for user interface controls
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA1> (ARIA)
+
+      *
+
+        ARIA9: Using aria-labelledby to concatenate a label from several
+        text nodes
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA9> (ARIA)
+
+      *
+
+        ARIA17: Using grouping roles to identify related form controls
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA17>
+        (ARIA)
+
+      *
+
         G89: Providing expected data format and example
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G89>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G89>
 
       *
 
         G184: Providing text instructions at the beginning of a form or
         set of fields that describes the necessary input
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G184>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G184>
 
       *
 
         G162: Positioning labels to maximize predictability of
         relationships
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G162>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G162>
 
       *
 
         G83: Providing text descriptions to identify required fields
         that were not completed
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G83>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G83>
 
       *
 
         H90: Indicating required form controls using label or legend
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H90> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H90> (HTML)
 
       *
 
         FLASH10: Indicating required form controls in Flash
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH10>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH10>
         (Flash)
 
       *
 
         PDF5: Indicating required form controls in PDF forms
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF5> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF5> (PDF)
 
  2.
 
     H44: Using label elements to associate text labels with form
-    controls <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H44>
+    controls <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H44>
     (HTML)
 
  3.
 
     FLASH32: Using auto labeling to associate text labels with form
     controls
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH32> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH32> (Flash)
 
  4.
 
     FLASH29: Setting the label property for form components
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH29> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH29> (Flash)
 
  5.
 
     FLASH25: Labeling a form control by setting its accessible name
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH25> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH25> (Flash)
 
  6.
 
     PDF10: Providing labels for interactive form controls in PDF
     documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF10> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF10> (PDF)
 
  7.
 
     SL26: Using LabeledBy to Associate Labels and Targets in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL26>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL26>
     (Silverlight)
 
  8.
 
     H71: Providing a description for groups of form controls using
     fieldset and legend elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H71> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H71> (HTML)
 
  9.
 
     FLASH8: Adding a group name to the accessible name of a form control
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH8> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH8> (Flash)
 
 10.
 
     H65: Using the title attribute to identify form controls when the
     label element cannot be used
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H65> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H65> (HTML)
 
 11.
 
     SL8: Displaying HelpText in Silverlight User Interfaces
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL8>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL8>
     (Silverlight)
 
 12.
 
     G167: Using an adjacent button to label the purpose of a field
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G167>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G167>
 
 /Note: /The techniques at the end of the above list should be considered
 "last resort" and only used when the other techniques cannot be applied
@@ -3880,24 +3990,13 @@ situations.
 
     G13: Describing what will happen before a change to a form control
     that causes a change of context to occur is made
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G13>
-
-  *
-
-    ARIA1: Using the aria-describedby property to provide a descriptive
-    label for input controls
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA1> (ARIA)
-
-  *
-
-    ARIA2: Identifying required fields with the aria-required property
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA2> (ARIA)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G13>
 
   *
 
     SL19: Providing User Instructions With AutomationProperties.HelpText
     in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL19>
     (Silverlight)
 
   *
@@ -3914,7 +4013,7 @@ Success Criterion 3.3.2 by the WCAG Working Group.
 
     F82: Failure of Success Criterion 3.3.2 by visually formatting a set
     of phone number fields but not including a text label
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F82>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F82>
 
 
       Key Terms
@@ -3952,7 +4051,13 @@ label
       Intent of this Success Criterion
 
 The intent of this Success Criterion is to ensure that users receive
-appropriate suggestions for correction of an input error if it is possible.
+appropriate suggestions for correction of an input error if it is
+possible. The WCAG 2.0 definition of "input error" says that it is
+"information provided by the user that is not accepted" by the system.
+Some examples of information that is not accepted include information
+that is required but omitted by the user and information that is
+provided by the user but that falls outside the required data format or
+allowed values.
 
 Success Criterion 3.3.1 provides for notification of errors. However,
 persons with cognitive limitations may find it difficult to understand
@@ -4024,10 +4129,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 /Note: / In some cases, more than one of these situations may apply. For
 example, when a mandatory field also requires the data to be in a
@@ -4048,18 +4154,23 @@ situation.
 
     G83: Providing text descriptions to identify required fields that
     were not completed
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G83>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G83>
 
  2.
 
-    PDF5: Indicating required form controls in PDF forms
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF5> (PDF)
+    ARIA2: Identifying a required field with the aria-required property
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA2> (ARIA)
 
  3.
 
+    PDF5: Indicating required form controls in PDF forms
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF5> (PDF)
+
+ 4.
+
     SL35: Using the Validation and ValidationSummary APIs to Implement
     Client Side Forms Validation in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL35>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL35>
     (Silverlight)
 
 
@@ -4068,38 +4179,43 @@ situation.
 
  1.
 
-    G85: Providing a text description when user input falls outside the
-    required format or values
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G85>
+    ARIA18: Using aria-alertdialog to Identify Errors
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA18> (ARIA)
 
  2.
 
-    G177: Providing suggested correction text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G177>
+    G85: Providing a text description when user input falls outside the
+    required format or values
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G85>
 
  3.
 
-    SCR18: Providing client-side validation and alert
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR18>
-    (Scripting)
+    G177: Providing suggested correction text
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G177>
 
  4.
 
-    SCR32: Providing client-side validation and adding error text via
-    the DOM <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR32>
+    SCR18: Providing client-side validation and alert
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR18>
     (Scripting)
 
  5.
 
-    FLASH12: Providing client-side validation and adding error text via
-    the accessible description
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH12> (Flash)
+    SCR32: Providing client-side validation and adding error text via
+    the DOM <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR32>
+    (Scripting)
 
  6.
 
+    FLASH12: Providing client-side validation and adding error text via
+    the accessible description
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH12> (Flash)
+
+ 7.
+
     PDF22: Indicating when user input falls outside the required format
     or values in PDF forms
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF22> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF22> (PDF)
 
 
           Situation C: Information provided by the user is required to
@@ -4107,38 +4223,43 @@ situation.
 
  1.
 
-    G84: Providing a text description when the user provides information
-    that is not in the list of allowed values
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G84>
+    ARIA18: Using aria-alertdialog to Identify Errors
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA18> (ARIA)
 
  2.
 
-    G177: Providing suggested correction text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G177>
+    G84: Providing a text description when the user provides information
+    that is not in the list of allowed values
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G84>
 
  3.
 
-    SCR18: Providing client-side validation and alert
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR18>
-    (Scripting)
+    G177: Providing suggested correction text
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G177>
 
  4.
 
-    SCR32: Providing client-side validation and adding error text via
-    the DOM <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR32>
+    SCR18: Providing client-side validation and alert
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR18>
     (Scripting)
 
  5.
 
-    FLASH12: Providing client-side validation and adding error text via
-    the accessible description
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH12> (Flash)
+    SCR32: Providing client-side validation and adding error text via
+    the DOM <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR32>
+    (Scripting)
 
  6.
 
+    FLASH12: Providing client-side validation and adding error text via
+    the accessible description
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH12> (Flash)
+
+ 7.
+
     PDF22: Indicating when user input falls outside the required format
     or values in PDF forms
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF22> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF22> (PDF)
 
 
         Additional Techniques (Advisory) for 3.3.3
@@ -4151,7 +4272,7 @@ situations.
   *
 
     G139: Creating a mechanism that allows users to jump to errors
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G139>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G139>
 
   *
 
@@ -4190,7 +4311,7 @@ situations.
   *
 
     G199: Providing success feedback when data is submitted successfully
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G199>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G199>
 
 
           Techniques for providing suggestions to the user (Advisory)
@@ -4234,7 +4355,7 @@ situations.
   *
 
     SCR18: Providing client-side validation and alert
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR18>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR18>
     (Scripting)
 
   *
@@ -4246,20 +4367,6 @@ situations.
 
     Calling a function from the submit action of a form to perform
     client side validation (future link)
-
-
-          WAI-ARIA Techniques (Advisory)
-
-  *
-
-    ARIA2: Identifying required fields with the aria-required property
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA2> (ARIA)
-
-  *
-
-    ARIA3: Identifying valid range information with the aria-valuemin
-    and aria-valuemax properties
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA3> (ARIA)
 
 
         Common Failures for SC 3.3.3
@@ -4340,10 +4447,11 @@ mistakes involve transactions that take place immediately and cannot be
 altered afterwards, and can be very costly. Likewise, it may be an
 unrecoverable error if users unintentionally modify or delete data
 stored in a database that they later need to access, such as their
-travel profile in a travel services Web site. Test data is included in
-this provision because, in order for tests to be valid, users are not
-allowed to modify their answers once submitted; so users need to be able
-to ensure that their submission is correct.
+entire travel profile in a travel services web site. When referring to
+modification or deletion of 'user controllable' data, the intent is to
+prevent mass loss of data such as deleting a file or record. It is not
+the intent to require a confirmation for each save command or the simple
+creation or editing of documents, records or other data.
 
 Users with disabilities may be more likely to make mistakes. People with
 reading disabilities may transpose numbers and letters, and those with
@@ -4353,9 +4461,12 @@ serious consequences. Providing the ability to review and correct
 information gives the user an opportunity to detect a mistake before
 taking an action that has serious consequences.
 
-User-controllable data is data that is intended to be accessed by users.
-(e.g., name and address for the user's account.) It does not refer such
-things as internet logs and search engine monitoring data.
+User-controllable data is user-viewable data that the user can change
+and/or delete through an intentional action. Examples of the user
+controlling such data would be updating the phone number and address for
+the user's account, or deleting a record of past invoices from a
+website. It does not refer such things as internet logs and search
+engine monitoring data that the user can't view or interact with directly.
 
 
         Specific Benefits of Success Criterion 3.3.4
@@ -4403,10 +4514,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4423,21 +4535,20 @@ situation.
 
  1.
 
-    G164: Providing a stated period oftime after submission of the form
-    when the order canwithin which an online request (or transaction)
-    may be updatedamended or canceled by the user after making the
-    request <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G164>
+    G164: Providing a stated time within which an online request (or
+    transaction) may be amended or canceled by the user after making the
+    request <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G164>
 
  2.
 
     G98: Providing the ability for the user to review and correct
     answers before submitting
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G98>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G98>
 
  3.
 
     G155: Providing a checkbox in addition to a submit button
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G155>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G155>
 
 
           Situation B: If an action causes information to be deleted:
@@ -4445,17 +4556,17 @@ situation.
  1.
 
     G99: Providing the ability to recover deleted information
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G99>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G99>
 
  2.
 
     G168: Requesting confirmation to continue with selected action
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G168>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G168>
 
  3.
 
     G155: Providing a checkbox in addition to a submit button
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G155>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G155>
 
 
           Situation C: If the Web page includes a testing application:
@@ -4464,12 +4575,12 @@ situation.
 
     G98: Providing the ability for the user to review and correct
     answers before submitting
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G98>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G98>
 
  2.
 
     G168: Requesting confirmation to continue with selected action
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G168>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G168>
 
 
         Additional Techniques (Advisory) for 3.3.4
@@ -4487,14 +4598,14 @@ situations.
   *
 
     SCR18: Providing client-side validation and alert
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR18>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR18>
     (Scripting)
 
   *
 
     SL35: Using the Validation and ValidationSummary APIs to Implement
     Client Side Forms Validation in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL35>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL35>
     (Silverlight)
 
   *
@@ -4509,7 +4620,7 @@ situations.
   *
 
     G199: Providing success feedback when data is submitted successfully
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G199>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G199>
 
 
         Common Failures for SC 3.3.4
@@ -4676,10 +4787,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4695,23 +4807,23 @@ situation.
  1.
 
     G71: Providing a help link on every Web page
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G71>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G71>
 
  2.
 
     G193: Providing help by an assistant in the Web page
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G193>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G193>
 
  3.
 
     G194: Providing spell checking and suggestions for text input
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G194>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G194>
 
  4.
 
     G184: Providing text instructions at the beginning of a form or set
     of fields that describes the necessary input
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G184>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G184>
 
 
           Situation B: If a form requires text input in an expected data
@@ -4720,13 +4832,13 @@ situation.
  1.
 
     G89: Providing expected data format and example
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G89>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G89>
 
  2.
 
     G184: Providing text instructions at the beginning of a form or set
     of fields that describes the necessary input
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G184>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G184>
 
 
         Additional Techniques (Advisory) for 3.3.5
@@ -4739,7 +4851,7 @@ situations.
   *
 
     H89: Using the title attribute to provide context-sensitive help
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H89> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H89> (HTML)
 
   *
 
@@ -4838,10 +4950,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4849,7 +4962,7 @@ been met.
  1.
 
     Following the sufficient techniques for Success Criterion 3.3.4
-    <https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/minimize-error-reversible.html#minimize-error-reversible-techniques-head>
+    <https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-reversible.html#minimize-error-reversible-techniques-head>
     for all forms that require the user to submit information.
 
 

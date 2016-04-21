@@ -347,7 +347,205 @@ Accessibility metadata implementations include:
 ------------------------------------------------------------------------
 
 
-    Appendix D References
+    Appendix D Acknowledgements
+
+This publication has been funded in part with U.S. Federal funds from
+the Department of Education, National Institute on Disability,
+Independent Living, and Rehabilitation Research (NIDILRR), initially
+under contract number ED-OSE-10-C-0067 and currently under contract
+number HHSP23301500054C. The content of this publication does not
+necessarily reflect the views or policies of the U.S. Department of
+Education, nor does mention of trade names, commercial products, or
+organizations imply endorsement by the U.S. Government.
+
+Additional information about participation in the Web Content
+Accessibility Guidelines Working Group (WCAG WG) can be found on the
+Working Group home page <http://www.w3.org/WAI/GL/>.
+
+
+      Participants of the WCAG WG active in the development of this
+      document:
+
+  *
+
+    Paul Adam (Deque)
+
+  *
+
+    Kathleen Anderson
+
+  *
+
+    Jon Avila (SSB Bart Group)
+
+  *
+
+    Bruce Bailey (U.S. Access Board)
+
+  *
+
+    Laura Carlson
+
+  *
+
+    Louis Cheng (Google)
+
+  *
+
+    Michael Cooper (W3C)
+
+  *
+
+    Wayne Dick
+
+  *
+
+    Eric Eggert (W3C)
+
+  *
+
+    Michael Elledge
+
+  *
+
+    Detlev Fischer
+
+  *
+
+    John Foliot (Deque)
+
+  *
+
+    Loretta Guarino Reid (Google)
+
+  *
+
+    Jon Gunderson
+
+  *
+
+    Katie Haritos-Shea
+
+  *
+
+    Marc Johlic (IBM)
+
+  *
+
+    Barry Johnson (Deque)
+
+  *
+
+    Andrew Kirkpatrick (Adobe)
+
+  *
+
+    David MacDonald
+
+  *
+
+    Erich Manser (IBM)
+
+  *
+
+    James Nurthen (Oracle)
+
+  *
+
+    Joshue O Connor
+
+  *
+
+    Jan Richards
+
+  *
+
+    Alan Smith
+
+  *
+
+    Adam Solomon
+
+  *
+
+    Makoto Ueki
+
+  *
+
+    Gregg Vanderheiden
+
+  *
+
+    Kathleen Wahlbin
+
+  *
+
+    Can Wang (Zhejiang University)
+
+  *
+
+    Jason White (Educational Testing Service)
+
+  *
+
+    Kenny Zhang (W3C)
+
+------------------------------------------------------------------------
+
+
+      Other previously active WCAG WG participants and other
+      contributors to WCAG 2.0 or supporting resources
+
+Shadi Abou-Zahra, Jim Allan, Jenae Andershonis, Wilhelm Joys Andersen,
+Andrew Arch, Avi Arditti, Aries Arditi, Jon Avila, Mark Barratt, Mike
+Barta, Sandy Bartell, Kynn Bartlett, Chris Beer, Charles Belov, Marco
+Bertoni, Harvey Bingham, Chris Blouch, Paul Bohman, Frederick Boland,
+Denis Boudreau, Patrice Bourlon, Judy Brewer, Andy Brown, Dick Brown,
+Doyle Burnett, Raven Calais, Ben Caldwell, Alastair Campbell, Laura
+Carlson, Tomas Caspers, Roberto Castaldo, Sofia Celic-Li, Sambhavi
+Chandrashekar, Mike Cherim, Jonathan Chetwynd, Wendy Chisholm, Alan
+Chuter, David M Clark, Joe Clark, Darcy Clarke, James Coltham, Vivienne
+Conway, Earl Cousins, James Craig, Tom Croucher, Pierce Crowell, Nir
+Dagan, Daniel Dardailler, Geoff Deering, Sébastien Delorme, Pete
+DeVasto, Wayne Dick, Iyad Abu Doush, Sylvie Duchateau, Cherie Eckholm,
+Roberto Ellero, Don Evans, Gavin Evans, Neal Ewers, Steve Faulkner,
+Bengt Farre, Lainey Feingold, Wilco Fiers, Michel Fitos, Alan J.
+Flavell, Nikolaos Floratos, Kentarou Fukuda, Miguel Garcia, P.J.
+Gardner, Alistair Garrison, Greg Gay, Becky Gibson, Al Gilman, Kerstin
+Goldsmith, Michael Grade, Karl Groves, Jon Gunderson, Emmanuelle
+Gutiérrez y Restrepo, Brian Hardy, Eric Hansen, Benjamin Hawkes-Lewis,
+Sean Hayes, Shawn Henry, Hans Hillen, Donovan Hipke, Bjoern Hoehrmann,
+Allen Hoffman, Chris Hofstader, Yvette Hoitink, Martijn Houtepen, Carlos
+Iglesias, Jonas Jacek, Ian Jacobs, Phill Jenkins, Duff Johnson, Jyotsna
+Kaki, Shilpi Kapoor, Leonard R. Kasday, Kazuhito Kidachi, Ken Kipness,
+John Kirkwood, Jason Kiss, Johannes Koch, Marja-Riitta Koivunen, Maureen
+Kraft, Preety Kumar, Kristjan Kure, Andrew LaHart, Gez Lemon, Chuck
+Letourneau, Aurélien Levy, Harry Loots, Scott Luebking, Tim Lacy, Jim
+Ley, Alex Li, William Loughborough, Greg Lowney, N Maffeo, Mark
+Magennis, Kapsi Maria, Luca Mascaro, Matt May, Sheena McCullagh, Liam
+McGee, Jens Meiert, Niqui Merret, Jonathan Metz, Alessandro Miele,
+Steven Miller, Mathew J Mirabella, Matt May, Marti McCuller, Sorcha
+Moore, Mary Jo Mueller, Charles F. Munat, Robert Neff, Charles Nevile,
+Liddy Nevile, Dylan Nicholson, Bruno von Niman, Tim Noonan, Sebastiano
+Nutarelli, Graham Oliver, Sean B. Palmer, Sailesh Panchang, Devarshi
+Pant, Nigel Peck, Anne Pemberton, David Poehlman, Ian Pouncey, Charles
+Pritchard, Kerstin Probiesch, W Reagan, Adam Victor Reed, Chris Reeve,
+Chris Ridpath, Lee Roberts, Mark Rogers, Raph de Rooij, Gregory J.
+Rosmaita, Matthew Ross, Sharron Rush, Joel Sanda, Janina Sajka, Roberto
+Scano, Gordon Schantz, Tim van Schie, Wolf Schmidt, Stefan Schnabel,
+Lisa Seeman, Cynthia Shelly, Glenda Sims, John Slatin, Becky Smith,
+Jared Smith, Andi Snow-Weaver, Neil Soiffer, Jeanne Spellman, Mike
+Squillace, Michael Stenitzer, Diane Stottlemyer, Christophe Strobbe,
+Sarah J Swierenga, Jim Thatcher, Terry Thompson, Justin Thorp, David
+Todd, Mary Utt, Jean Vanderdonckt, Carlos A Velasco, Eric Velleman, Gijs
+Veyfeyken, Dena Wainwright, Paul Walsch, Daman Wandke, Richard Warren,
+Elle Waters, Takayuki Watanabe, Léonie Watson, Gian Wild, David Wooley,
+Wu Wei, Leona Zumbo.
+
+------------------------------------------------------------------------
+
+
+    Appendix E References
 
 ANSI-HFES-100-1988
     ANSI/HFS 100-1988, American National Standard for Human Factors
@@ -356,9 +554,7 @@ ANSI-HFES-100-1988
 ARDITI
     Arditi, A. (2002). Effective color contrast: designing for people
     with partial sight and color deficiencies. New York, Arlene R.
-    Gordon Research Institute, Lighthouse International. Also available
-    at http://www.lighthouse.org/color_contrast.htm
-    <http://www.lighthouse.org/accessibility/design/accessible-print-design/effective-color-contrast>.
+    Gordon Research Institute, Lighthouse International.
 ARDITI-FAYE
     Arditi, A. and Faye, E. (2004). Monocular and binocular letter
     contrast sensitivity and letter acuity in a diverse ophthalmologic
@@ -403,8 +599,9 @@ KNOBLAUCH
 LAALS
     Bakke, M. H., Levitt, H., Ross, M., & Erickson, F. (1999). Large
     area assistive listening systems (ALS): Review and recommendations
-    <http://www.naric.com/research/rehab/download.cfm?ID=101662> (Final
-    Report. NARIC Accession Number: O16430). Jackson Heights, NY:
+    (PDF)
+    <http://search.naric.com/research/rehab/download.cfm?ID=101662>
+    (Final Report. NARIC Accession Number: O16430). Jackson Heights, NY:
     Lexington School for the Deaf/Center for the Deaf Rehabilitation
     Research Engineering Center on Hearing Enhancement. 
 sRGB
@@ -422,3 +619,4 @@ WCAG20
     December 2008, http://www.w3.org/TR/2008/REC-WCAG20-20081211
     <http://www.w3.org/TR/2008/REC-WCAG20-20081211/>. The latest version
     of WCAG 2.0 is available at http://www.w3.org/TR/WCAG20/. 
+

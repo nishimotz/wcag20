@@ -196,10 +196,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -207,7 +208,7 @@ been met.
  1.
 
     G202: Ensuring keyboard control for all functionality
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G202>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G202>
 
  2.
 
@@ -216,95 +217,95 @@ been met.
       *
 
         H91: Using HTML form controls and links
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H91> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H91> (HTML)
 
       *
 
         PDF3: Ensuring correct tab and reading order in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF3> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF3> (PDF)
 
       *
 
-        PDF11: Providing links and link text using the /Link structure
-        element in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF11> (PDF)
+        PDF11: Providing links and link text using the Link annotation
+        and the /Link structure element in PDF documents
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF11> (PDF)
 
       *
 
         PDF23: Providing interactive form controls in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF23> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF23> (PDF)
 
       *
 
         SL15: Providing Keyboard Shortcuts that Work Across the Entire
         Silverlight Application
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL15>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL15>
         (Silverlight)
 
  3.
 
     G90: Providing keyboard-triggered event handlers
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G90> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G90> using one
     of the following techniques:
 
       *
 
         SCR20: Using both keyboard and other device-specific functions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR20>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR20>
         (Scripting)
 
       *
 
         SCR35: Making actions keyboard accessible by using the onclick
         event of anchors and buttons
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR35>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR35>
         (Scripting)
 
       *
 
         SCR2: Using redundant keyboard and mouse event handlers
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR2>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR2>
         (Scripting)
 
       *
 
         SL9: Handling Key Events to Enable Keyboard Functionality in
         Silverlight
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL9>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL9>
         (Silverlight)
 
       *
 
         SL14: Providing Custom Control Key Handling for Keyboard
         Functionality in Silverlight
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL14>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL14>
         (Silverlight)
 
  4.
 
     FLASH17: Providing keyboard access to a Flash object and avoiding a
     keyboard trap
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH17>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH17>
     (Flash) *AND* using the following techniques as applicable:
 
       *
 
         FLASH22: Adding keyboard-accessible actions to static elements
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH22>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH22>
         (Flash)
 
       *
 
         FLASH16: Making actions keyboard accessible by using the click
         event on standard components
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH16>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH16>
         (Flash)
 
       *
 
         FLASH14: Using redundant keyboard and mouse event handlers in
         Flash
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH14>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH14>
         (Flash)
 
 
@@ -320,7 +321,7 @@ situations.
     Using XHTML role, state, and value attributes if repurposing static
     elements as interactive user interface components (future link) AND
     SCR29: Adding keyboard-accessible actions to static HTML elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR29>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR29>
     (Scripting)
 
   *
@@ -356,20 +357,19 @@ Success Criterion 2.1.1 by the WCAG Working Group.
 
     F54: Failure of Success Criterion 2.1.1 due to using only
     pointing-device-specific event handlers (including gesture) for a
-    function <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F54>
+    function <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F54>
 
   *
 
     F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to
     using script to remove focus when focus is received
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F55>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F55>
 
   *
 
-    F42: Failure of Success Criterion 1.3.1 and 2.1.1 due to using
-    scripting events to emulate links in a way that is not
-    programmatically determinable
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F42>
+    F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when
+    emulating links
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F42>
 
 
       Key Terms
@@ -490,10 +490,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -501,13 +502,13 @@ been met.
  1.
 
     G21: Ensuring that users are not trapped in content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G21>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G21>
 
  2.
 
     FLASH17: Providing keyboard access to a Flash object and avoiding a
     keyboard trap
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH17> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH17> (Flash)
 
 
         Additional Techniques (Advisory) for 2.1.2
@@ -530,7 +531,7 @@ Success Criterion 2.1.2 by the WCAG Working Group.
     F10: Failure of Success Criterion 2.1.2 and Conformance Requirement
     5 due to combining multiple content formats in a way that traps
     users inside one format type
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F10>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F10>
 
 
       Key Terms
@@ -602,17 +603,18 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
 
 No additional techniques exist for this Success Criterion. Follow
 techniques for Success Criterion 2.1.1
-<https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/keyboard-operation-keyboard-operable.html#keyboard-operation-keyboard-operable-techniques-head>.
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation-keyboard-operable.html#keyboard-operation-keyboard-operable-techniques-head>.
 If that is not possible because there is a requirement for
 path-dependent input, then it is not possible to meet this Level AAA
 Success Criterion.
@@ -731,8 +733,9 @@ of Web content more accessible to more people.
     tasks without unexpected changes in content or context that are a
     result of a time limit. This success criterion should be considered
     in conjunction with Success Criterion 3.2.1
-    <#consistent-behavior-receive-focus>, which puts limits on changes
-    of content or context as a result of user action.
+    <http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-receive-focus>,
+    which puts limits on changes of content or context as a result of
+    user action.
 
 
       Intent of this Success Criterion
@@ -938,10 +941,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -958,12 +962,12 @@ situation.
 
     G133: Providing a checkbox on the first page of a multipart form
     that allows users to ask for longer session time limit or no session
-    time limit <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G133>
+    time limit <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G133>
 
  2.
 
     G198: Providing a way for the user to turn the time limit off
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G198>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G198>
 
 
           Situation B: If a time limit is controlled by a script on the
@@ -972,38 +976,38 @@ situation.
  1.
 
     G198: Providing a way for the user to turn the time limit off
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G198>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G198>
 
  2.
 
     G180: Providing the user with a means to set the time limit to 10
     times the default time limit
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G180>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G180>
 
  3.
 
     SCR16: Providing a script that warns the user a time limit is about
     to expire
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR16>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR16>
     (Scripting) *AND* SCR1: Allowing the user to extend the default time
-    limit <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR1>
+    limit <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR1>
     (Scripting)
 
  4.
 
     FLASH19: Providing a script that warns the user a time limit is
     about to expire and provides a way to extend it
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH19> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH19> (Flash)
 
  5.
 
     FLASH24: Allowing the user to extend the default time limit
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH24> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH24> (Flash)
 
  6.
 
     SL21: Replacing A Silverlight Timed Animation With a Nonanimated
-    Element <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL21>
+    Element <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL21>
     (Silverlight)
 
 
@@ -1012,25 +1016,25 @@ situation.
  1.
 
     G4: Allowing the content to be paused and restarted from where it
-    was paused <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G4>
+    was paused <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G4>
 
  2.
 
     G198: Providing a way for the user to turn the time limit off
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G198>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G198>
 
  3.
 
     SCR33: Using script to scroll content, and providing a mechanism to
     pause it
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR33>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR33>
     (Scripting)
 
  4.
 
     SCR36: Providing a mechanism to allow users to display moving,
     scrolling, or auto-updating text in a static window or area
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR36>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR36>
     (Scripting)
 
 
@@ -1060,19 +1064,19 @@ Success Criterion 2.2.1 by the WCAG Working Group.
 
     F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta
     redirect with a time limit
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F40>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F40>
 
   *
 
     F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to
-    using meta refresh with a time-out
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F41>
+    using meta refresh to reload the page
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F41>
 
   *
 
     F58: Failure of Success Criterion 2.2.1 due to using server-side
     techniques to automatically redirect pages after a time-out
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F58>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F58>
 
 
       Key Terms
@@ -1160,7 +1164,7 @@ auto-updating content are the same except that:
 
   *
 
-    there is no three second exception for auto-updating since it makes
+    there is no five second exception for auto-updating since it makes
     little sense to auto-update for just three seconds and then stop
 
 Content that moves or auto-updates can be a barrier to anyone who has
@@ -1339,10 +1343,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -1350,80 +1355,80 @@ been met.
  1.
 
     G4: Allowing the content to be paused and restarted from where it
-    was paused <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G4>
+    was paused <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G4>
 
  2.
 
     SL11: Pausing or Stopping A Decorative Silverlight Animation
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL11>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL11>
     (Silverlight)
 
  3.
 
     SL12: Pausing, Stopping, or Playing Media in Silverlight
     MediaElements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL12>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL12>
     (Silverlight)
 
  4.
 
     SCR33: Using script to scroll content, and providing a mechanism to
     pause it
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR33>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR33>
     (Scripting)
 
  5.
 
     FLASH35: Using script to scroll Flash content, and providing a
     mechanism to pause it
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH35> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH35> (Flash)
 
  6.
 
     G11: Creating content that blinks for less than 5 seconds
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G11>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G11>
 
  7.
 
     G187: Using a technology to include blinking content that can be
     turned off via the user agent
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G187>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G187>
 
  8.
 
     G152: Setting animated gif images to stop blinking after n cycles
     (within 5 seconds)
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G152>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G152>
 
  9.
 
     SCR22: Using scripts to control blinking and stop it in five seconds
-    or less <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR22>
+    or less <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR22>
     (Scripting)
 
 10.
 
     FLASH36: Using scripts to control blinking and stop it in five
     seconds or less
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH36> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH36> (Flash)
 
 11.
 
     G186: Using a control in the Web page that stops moving, blinking,
     or auto-updating content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G186>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G186>
 
 12.
 
     G191: Providing a link, button, or other mechanism that reloads the
     page without any blinking content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G191>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G191>
 
 13.
 
     SL24: Using AutoPlay to Keep Silverlight Media from Playing
     Automatically
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL24>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL24>
     (Silverlight)
 
 
@@ -1455,31 +1460,31 @@ Success Criterion 2.2.2 by the WCAG Working Group.
     F16: Failure of Success Criterion 2.2.2 due to including scrolling
     content where movement is not essential to the activity without also
     including a mechanism to pause and restart the content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F16>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F16>
 
   *
 
     F47: Failure of Success Criterion 2.2.2 due to using the blink
-    element <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F47>
+    element <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F47>
 
   *
 
     F4: Failure of Success Criterion 2.2.2 due to using
     text-decoration:blink without a mechanism to stop it in less than
-    five seconds <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F4>
+    five seconds <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F4>
 
   *
 
     F50: Failure of Success Criterion 2.2.2 due to a script that causes
     a blink effect without a mechanism to stop the blinking at 5 seconds
-    or less <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F50>
+    or less <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F50>
 
   *
 
     F7: Failure of Success Criterion 2.2.2 due to an object or applet,
     such as Java or Flash, that has blinking content without a mechanism
     to pause the content that blinks for more than five seconds
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F7>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F7>
 
 
       Key Terms
@@ -1585,10 +1590,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -1596,7 +1602,7 @@ been met.
  1.
 
     G5: Allowing users to complete an activity without any time limit
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G5>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G5>
 
 
         Additional Techniques (Advisory) for 2.2.3
@@ -1715,10 +1721,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -1726,18 +1733,18 @@ been met.
  1.
 
     G75: Providing a mechanism to postpone any updating of content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G75>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G75>
 
  2.
 
     G76: Providing a mechanism to request an update of the content
     instead of updating automatically
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G76>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G76>
 
  3.
 
     SCR14: Using scripts to make nonessential alerts optional
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR14>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR14>
     (Scripting)
 
 
@@ -1760,13 +1767,13 @@ Success Criterion 2.2.4 by the WCAG Working Group.
 
     F40: Failure of Success Criterion 2.2.1 and 2.2.4 due to using meta
     redirect with a time limit
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F40>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F40>
 
   *
 
     F41: Failure of Success Criterion 2.2.1, 2.2.4, and 3.2.5 due to
-    using meta refresh with a time-out
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F41>
+    using meta refresh to reload the page
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F41>
 
 
       Key Terms
@@ -1886,10 +1893,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -1903,16 +1911,16 @@ been met.
 
         G105: Saving data so that it can be used after a user
         re-authenticates
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G105>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G105>
 
       *
 
         G181: Encoding user data as hidden or encrypted data in a
         re-authorization page
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G181>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G181>
 
 /Note: /Refer to Techniques for Addressing Success Criterion 2.2.1
-<https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/time-limits-required-behaviors.html#time-limits-required-behaviors-techniques-head>
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/time-limits-required-behaviors.html#time-limits-required-behaviors-techniques-head>
 for techniques related to providing notifications about time limits.
 
 
@@ -1936,7 +1944,7 @@ Success Criterion 2.2.5 by the WCAG Working Group.
     F12: Failure of Success Criterion 2.2.5 due to having a session time
     limit without a mechanism for saving user's input and
     re-establishing that information upon re-authentication
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F12>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F12>
 
 ------------------------------------------------------------------------
 
@@ -2108,12 +2116,13 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Epilepsy Action <http://www.epilepsy.org.uk/>
+    Epilepsy Action <https://www.epilepsy.org.uk/>
 
   *
 
     Epilepsy Foundation
-    <http://www.epilepsyfoundation.org/about/photosensitivity/>
+    <http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures>
+
 
   *
 
@@ -2128,10 +2137,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2140,18 +2150,18 @@ been met.
 
     G19: Ensuring that no component of the content flashes more than
     three times in any 1-second period
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G19>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G19>
 
  2.
 
     G176: Keeping the flashing area small enough
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G176>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G176>
 
  3.
 
     G15: Using a tool to ensure that content does not violate the
     general flash threshold or red flash threshold
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G15>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G15>
 
 
         Additional Techniques (Advisory) for 2.3.1
@@ -2416,12 +2426,13 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Epilepsy Action <http://www.epilepsy.org.uk/>
+    Epilepsy Action <https://www.epilepsy.org.uk/>
 
   *
 
     Epilepsy Foundation
-    <http://www.epilepsyfoundation.org/about/photosensitivity/>
+    <http://www.epilepsy.com/learn/triggers-seizures/photosensitivity-and-seizures>
+
 
   *
 
@@ -2435,10 +2446,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2447,7 +2459,7 @@ been met.
 
     G19: Ensuring that no component of the content flashes more than
     three times in any 1-second period
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G19>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G19>
 
 
         Additional Techniques (Advisory) for 2.3.2
@@ -2663,6 +2675,18 @@ unnecessary.
 that are repeated on multiple pages, we also strongly promote structural
 markup on individual pages as per Success Criteria 1.3.1.
 
+Although the success criterion does not specifically use the term
+“within a set of web pages”, the concept of the pages belonging to a set
+is implied. An author would not be expected to avoid any possible
+duplication of content in any two pages that are not in some way related
+to each other; that are not "Web pages that share a common purpose and
+that are created by the same author, group or organization” (the
+definition of set of web pages).
+
+/Note: /Even for web pages that are not in a set, if a web page has
+blocks of text that are repeated within the page it may be helpful (but
+not required) to provide a means to skip over them.
+
 
         Specific Benefits of Success Criterion 2.4.1
 
@@ -2718,19 +2742,23 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Quick tips for accessible headings
-    <http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/>
+    WebAIM: Semantic Structure
+    <http://webaim.org/techniques/semanticstructure/>
 
+  *
+
+    Heading Tags <http://accessibility.psu.edu/headingshtml/>
 
 
       Techniques and Failures for Success Criterion 2.4.1 - Bypass Blocks
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2744,24 +2772,24 @@ been met.
 
         G1: Adding a link at the top of each page that goes directly to
         the main content area
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G1>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G1>
 
       *
 
         G123: Adding a link at the beginning of a block of repeated
         content to go to the end of the block
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G123>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G123>
 
       *
 
         G124: Adding links at the top of the page to each area of the
-        content <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G124>
+        content <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G124>
 
       *
 
         SL25: Using Controls and Programmatic Focus to Bypass Blocks of
         Content in Silverlight
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL25>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL25>
         (Silverlight)
 
  2.
@@ -2771,41 +2799,42 @@ been met.
 
       *
 
+        ARIA11: Using ARIA landmarks to identify regions of a page
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA11>
+        (ARIA)
+
+      *
+
         H69: Providing heading elements at the beginning of each section
         of content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H69> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H69> (HTML)
 
       *
 
         PDF9: Providing headings by marking content with heading tags in
         PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF9> (PDF)
-
-      *
-
-        H50: Using map to group links
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H50> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF9> (PDF)
 
       *
 
         H70: Using frame elements to group blocks of repeated material
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H70>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H70>
         (HTML) *AND* H64: Using the title attribute of the frame and
         iframe elements
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H64> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H64> (HTML)
 
       *
 
         SCR28: Using an expandable and collapsible menu to bypass block
         of content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR28>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR28>
         (Scripting)
 
       *
 
         SL29: Using Silverlight "List" Controls to Define Blocks that
         can be Bypassed
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL29>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL29>
         (Silverlight)
 
 
@@ -2837,7 +2866,7 @@ situations.
   *
 
     C6: Positioning content based on structural markup
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C6> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C6> (CSS)
 
 
         Common Failures for SC 2.4.1
@@ -2925,6 +2954,23 @@ the content they need. User agents make the title of the page easily
 available to the user for identifying the page. For instance, a user
 agent may display the page title in the window title bar or as the name
 of the tab containing the page.
+
+In cases where the page is a document or a web application, the name of
+the document or web application would be sufficient to describe the
+purpose of the page. Note that it is not required to use the name of the
+document or web application; other things may also describe the purpose
+or the topic of the page.
+
+Success Criteria 2.4.4
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-refs.html>
+and 2.4.9
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-link.html>
+deal with the purpose of links, many of which are links to web pages.
+Here also, the name of a document or web application being linked to
+would be sufficient to describe the purpose of the link. Having the link
+and the title agree, or be very similar, is good practice and provides
+continuity between the link 'clicked on' and the web page that the user
+lands on.
 
 
         Specific Benefits of Success Criterion 2.4.2
@@ -3019,7 +3065,7 @@ Resources are for information purposes only, no endorsement implied.
 
     Guidelines for Accessible and Usable Web Sites: Observing Users Who
     Work With Screen Readers
-    <http://redish.net/content/papers/interactions.html>. Theofanos,
+    <http://redish.net/images/stories/PDF/interactions.html>. Theofanos,
     M.F., and Redish, J. (2003). Interactions, Volume X, Issue 6,
     November-December 2003, pages 38-51,
     http://dl.acm.org/citation.cfm?doid=947226.947227
@@ -3029,10 +3075,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3040,20 +3087,20 @@ been met.
  1.
 
     G88: Providing descriptive titles for Web pages
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G88> *AND*
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G88> *AND*
     associating a title with a Web page using one of the following
     techniques:
 
       *
 
         H25: Providing a title using the title element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H25> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H25> (HTML)
 
       *
 
         PDF18: Specifying the document title using the Title entry in
         the document information dictionary of a PDF document
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF18> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF18> (PDF)
 
 
         Additional Techniques (Advisory) for 2.4.2
@@ -3067,17 +3114,11 @@ situations.
 
     G127: Identifying a Web page's relationship to a larger collection
     of Web pages
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G127>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G127>
 
   *
 
     Identifying the subject of the Web page (future link)
-
-  *
-
-    ARIA1: Using the aria-describedby property to provide a descriptive
-    label for input controls
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA1> (ARIA)
 
   *
 
@@ -3101,7 +3142,7 @@ Success Criterion 2.4.2 by the WCAG Working Group.
 
     F25: Failure of Success Criterion 2.4.2 due to the title of a Web
     page not identifying the contents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F25>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F25>
 
 
       Key Terms
@@ -3204,6 +3245,24 @@ the visual presentation of the Web page. Care should be taken so that
 the focus order makes sense to both of these sets of users and does not
 appear to either of them to jump around randomly.
 
+For clarity:
+
+ 1.
+
+    Focusable components need to receive focus in an order that
+    preserves meaning and operability only when navigation sequences
+    affect meaning and operability.
+
+ 2.
+
+    In those cases where it is required, there may be more than one
+    order that will preserve meaning and operability.
+
+ 3.
+
+    If there is more than one order that preserves meaning and
+    operability, only one of them needs to be provided.
+
 
         Specific Benefits of Success Criterion 2.4.3
 
@@ -3242,7 +3301,7 @@ sequential reading order.
 
     On a web page that contains a tree of interactive controls, the user
     can use the up and down arrow keys to move from tree node to tree
-    node. Pressing the left arrow key expands a node, then using the
+    node. Pressing the right arrow key expands a node, then using the
     down arrow key moves into the newly expanded nodes.
 
  2.
@@ -3303,10 +3362,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3315,7 +3375,7 @@ been met.
 
     G59: Placing the interactive elements in an order that follows
     sequences and relationships within the content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G59>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G59>
 
  2.
 
@@ -3326,30 +3386,30 @@ been met.
 
         H4: Creating a logical tab order through links, form controls,
         and objects
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H4> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H4> (HTML)
 
       *
 
         FLASH15: Using the tabIndex property to specify a logical
         reading order and a logical tab order in Flash
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH15>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH15>
         (Flash)
 
       *
 
         C27: Making the DOM order match the visual order
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C27> (CSS)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C27> (CSS)
 
       *
 
         PDF3: Ensuring correct tab and reading order in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF3> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF3> (PDF)
 
       *
 
         SL34: Using the Silverlight Default Tab Sequence and Altering
         Tab Sequences With Properties
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL34>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL34>
         (Silverlight)
 
  3.
@@ -3360,19 +3420,19 @@ been met.
 
         SCR26: Inserting dynamic content into the Document Object Model
         immediately following its trigger element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR26>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR26>
         (Scripting)
 
       *
 
         SCR37: Creating Custom Dialogs in a Device Independent Way
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR37>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR37>
         (Scripting)
 
       *
 
         SCR27: Reordering page sections using the Document Object Model
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR27>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR27>
         (Scripting)
 
 
@@ -3402,14 +3462,14 @@ Success Criterion 2.4.3 by the WCAG Working Group.
 
     F44: Failure of Success Criterion 2.4.3 due to using tabindex to
     create a tab order that does not preserve meaning and operability
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F44>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F44>
 
   *
 
     F85: Failure of Success Criterion 2.4.3 due to using dialogs or
     menus that are not adjacent to their trigger control in the
     sequential navigation order
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F85>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F85>
 
 
       Key Terms
@@ -3487,16 +3547,33 @@ those who wish to tab from link to link. Meaningful links help users
 choose which links to follow without requiring complicated strategies to
 understand the page.
 
+The text of, or associated with, the link is intended to describe the
+purpose of the link. In cases where the link takes one to a document or
+a web application, the name of the document or web application would be
+sufficient to describe the purpose of the link (which is to take you to
+the document or web application). Note that it is not required to use
+the name of the document or web application; other things may also
+describe the purpose of the link.
+
+Success Criterion 2.4.2
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html>
+deals with the titles of pages. Here also, the name of a document or web
+application being presented on the page would be sufficient to describe
+the purpose of the page. Having the link and the title agree, or be very
+similar, is good practice and provides continuity between the link
+'clicked on' and the web page that the user lands on.
+
 In some situations, authors may want to provide part of the description
 of the link in logically related text that provides the context for the
 link. In this case the user should be able to identify the purpose of
 the link without moving focus from the link. In other words, they can
 arrive on a link and find out more about it without losing their place.
 This can be achieved by putting the description of the link in the same
-sentence, paragraph, list item, the heading immediately preceding the
-link, or table cell as the link, or in the table header cell for a link
-in a data table, because these are directly associated with the link
-itself.
+sentence, paragraph, list item, or table cell as the link, or in the
+table header cell for a link in a data table, because these are directly
+associated with the link itself. Alternatively, authors may choose to
+use an ARIA technique to associate additional text on the page with the
+link.
 
 This context will be most usable if it precedes the link. (For instance,
 if you must use ambiguous link text, it is better to put it at the end
@@ -3505,11 +3582,12 @@ ambiguous phrase at the beginning of the sentence.) If the description
 follows the link, there can be confusion and difficulty for screen
 reader users who are reading through the page in order (top to bottom).
 
-Links with the same destination should have the same descriptions (per
-Success Criterion 3.2.4
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-consistent-functionality>),
-but links with different purposes and destinations should have different
-descriptions.
+It is a best practice for links with the same destination to have
+consistent descriptions (and this is a requirement per Success Criterion
+3.2.4
+<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#consistent-behavior-consistent-functionality>
+for pages in a set). It is also a best practice for links with different
+purposes and destinations to have different descriptions.
 
 The Success Criterion includes an exception for links for which the
 purpose of the link cannot be determined from the information on the Web
@@ -3607,7 +3685,8 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Using Link Titles to Help Users Predict Where They Are Going
-    <http://www.useit.com/alertbox/980111.html>
+    <https://www.nngroup.com/articles/using-link-titles-to-help-users-predict-where-they-are-going/>
+
 
   *
 
@@ -3617,8 +3696,7 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Hidden barriers - out of sight
-    <http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers>
-
+    <http://www.rnib.org.uk/blogs/expert-series?Name=Hidden%20barriers>
 
 
       Techniques and Failures for Success Criterion 2.4.4 - Link Purpose
@@ -3626,10 +3704,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3637,24 +3716,24 @@ been met.
  1.
 
     G91: Providing link text that describes the purpose of a link
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G91>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G91>
 
  2.
 
     H30: Providing link text that describes the purpose of a link for
     anchor elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H30> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H30> (HTML)
 
  3.
 
     H24: Providing text alternatives for the area elements of image maps
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H24> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H24> (HTML)
 
  4.
 
     FLASH27: Providing button labels that describe the purpose of a
     button
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH27> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH27> (Flash)
 
  5.
 
@@ -3665,25 +3744,25 @@ been met.
 
         G189: Providing a control near the beginning of the Web page
         that changes the link text
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G189>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G189>
 
       *
 
         SCR30: Using scripts to change the link text
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR30>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR30>
         (Scripting)
 
       *
 
         FLASH7: Using scripting to change control labels
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH7>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH7>
         (Flash)
 
  6.
 
     G53: Identifying the purpose of a link using link text combined with
     the text of the enclosing sentence
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G53>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G53>
 
  7.
 
@@ -3693,12 +3772,12 @@ been met.
       *
 
         H33: Supplementing link text with the title attribute
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H33> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H33> (HTML)
 
       *
 
         C7: Using CSS to hide a portion of the link text
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C7> (CSS)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C7> (CSS)
 
  8.
 
@@ -3708,58 +3787,63 @@ been met.
 
       *
 
+        ARIA7: Using aria-labelledby for link purpose
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA7> (ARIA)
+
+      *
+
+        ARIA8: Using aria-label for link purpose
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA8> (ARIA)
+
+      *
+
         H77: Identifying the purpose of a link using link text combined
         with its enclosing list item
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H77> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H77> (HTML)
 
       *
 
         H78: Identifying the purpose of a link using link text combined
         with its enclosing paragraph
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H78> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H78> (HTML)
 
       *
 
-        H79: Identifying the purpose of a link using link text combined
-        with its enclosing table cell and associated table headings
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H79> (HTML)
-
-      *
-
-        H80: Identifying the purpose of a link using link text combined
-        with the preceding heading element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H80> (HTML)
+        H79: Identifying the purpose of a link in a data table using the
+        link text combined with its enclosing table cell and associated
+        table header cells
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H79> (HTML)
 
       *
 
         H81: Identifying the purpose of a link in a nested list using
         link text combined with the parent list item under which the
         list is nested
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H81> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H81> (HTML)
 
  9.
 
     G91: Providing link text that describes the purpose of a link
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G91> *AND*
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G91> *AND*
     Semantically indicating links using one of the following techniques:
 
       *
 
-        PDF11: Providing links and link text using the /Link structure
-        element in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF11> (PDF)
+        PDF11: Providing links and link text using the Link annotation
+        and the /Link structure element in PDF documents
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF11> (PDF)
 
       *
 
         PDF13: Providing replacement text using the /Alt entry for links
         in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF13> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF13> (PDF)
 
       *
 
         SL18: Providing Text Equivalent for Nontext Silverlight Controls
         With AutomationProperties.Name
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL18>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL18>
         (Silverlight)
 
 
@@ -3773,19 +3857,19 @@ situations.
   *
 
     H2: Combining adjacent image and text links for the same resource
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H2> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H2> (HTML)
 
   *
 
     FLASH5: Combining adjacent image and text buttons for the same
     resource
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH5> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH5> (Flash)
 
   *
 
-    ARIA1: Using the aria-describedby property to provide a descriptive
-    label for input controls
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA1> (ARIA)
+    H80: Identifying the purpose of a link using link text combined with
+    the preceding heading element
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H80> (HTML)
 
 
         Common Failures for SC 2.4.4
@@ -3797,13 +3881,13 @@ Success Criterion 2.4.4 by the WCAG Working Group.
 
     F63: Failure of Success Criterion 2.4.4 due to providing link
     context only in content that is not related to the link
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F63>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F63>
 
   *
 
-    F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to using
-    null alt on an image where the image is the only content in a link
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F89>
+    F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not
+    providing an accessible name for an image which is the only content
+    in a link <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F89>
 
 
       Key Terms
@@ -3948,10 +4032,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3963,37 +4048,37 @@ been met.
       *
 
         G125: Providing links to navigate to related Web pages
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G125>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G125>
 
       *
 
         G64: Providing a Table of Contents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G64>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G64>
 
       *
 
         PDF2: Creating bookmarks in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF2> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF2> (PDF)
 
       *
 
         G63: Providing a site map
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G63>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G63>
 
       *
 
         G161: Providing a search function to help users find content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G161>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G161>
 
       *
 
         G126: Providing a list of links to all other Web pages
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G126>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G126>
 
       *
 
         G185: Linking to all of the pages on the site from the home page
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G185>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G185>
 
 
         Additional Techniques (Advisory) for 2.4.5
@@ -4006,7 +4091,7 @@ situations.
   *
 
     H59: Using the link element and navigation tools
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H59> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H59> (HTML)
 
   *
 
@@ -4110,6 +4195,12 @@ Labels and headings do not need to be lengthy. A word, or even a single
 character, may suffice if it provides an appropriate cue to finding and
 navigating content.
 
+/Note: /This success criterion does not require headings or labels. This
+success criterion requires that if headings or labels are provided, they
+be descriptive. Also note that, if headings or labels are provided, they
+must meet /Understanding Success Criterion 1.3.1 Info and Relationships
+<#content-structure-separation-programmatic>/.
+
 
         Specific Benefits of Success Criterion 2.4.6
 
@@ -4184,15 +4275,17 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    How Users Read on the Web <http://www.useit.com/alertbox/9710a.html>
-    A study showing that most users scan Web pages rather than reading
+    How Users Read on the Web
+    <https://www.nngroup.com/articles/how-users-read-on-the-web/> A
+    study showing that most users scan Web pages rather than reading
     them word by word.
 
   *
 
     Applying Writing Guidelines to Web Pages
-    <http://www.useit.com/papers/webwriting/rewriting.html> A report on
-    the effects of making Web sites concise, easy to scan, and objective.
+    <https://www.nngroup.com/articles/applying-writing-guidelines-web-pages/>
+    A report on the effects of making Web sites concise, easy to scan,
+    and objective.
 
 
       Techniques and Failures for Success Criterion 2.4.6 - Headings and
@@ -4200,10 +4293,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4211,12 +4305,12 @@ been met.
  1.
 
     G130: Providing descriptive headings
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G130>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G130>
 
  2.
 
     G131: Providing descriptive labels
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G131>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G131>
 
 /Note: / Headings and labels must be programmatically determined, per
 Success Criterion 1.3.1
@@ -4278,9 +4372,19 @@ label
 
       Intent of this Success Criterion
 
-The intent of this Success Criterion is to ensure that there is at least
-one mode of operation where the keyboard focus indicator can be visually
-located.
+The purpose of this success criterion is to help a person know which
+element has the keyboard focus.
+
+The purpose of this success criterion is to help a person know which
+element among multiple elements has the keyboard focus. If there is only
+one keyboard actionable control on the screen, the success criterion
+would be met because the visual design presents only one keyboard
+actionable item.
+
+Note that a keyboard focus indicator can take different forms. One
+common way is a caret within the text field to indicate that the text
+field has the keyboard focus. Another is a visual change to a button to
+indicate that that button has the keyboard focus.
 
 
         Specific Benefits of Success Criterion 2.4.7
@@ -4327,10 +4431,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4339,48 +4444,48 @@ been met.
 
     G149: Using user interface components that are highlighted by the
     user agent when they receive focus
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G149>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G149>
 
  2.
 
     C15: Using CSS to change the presentation of a user interface
     component when it receives focus
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C15> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C15> (CSS)
 
  3.
 
     G165: Using the default focus indicator for the platform so that
     high visibility default focus indicators will carry over
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G165>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G165>
 
  4.
 
     G195: Using an author-supplied, highly visible focus indicator
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G195>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G195>
 
  5.
 
     SCR31: Using script to change the background color or border of the
     element with focus
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR31>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR31>
     (Scripting)
 
  6.
 
     FLASH20: Reskinning Flash components to provide highly visible focus
     indication
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH20> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH20> (Flash)
 
  7.
 
     SL2: Changing The Visual Focus Indicator in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL2>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL2>
     (Silverlight)
 
  8.
 
     SL7: Designing a Focused Visual State for Custom Silverlight
-    Controls <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL7>
+    Controls <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL7>
     (Silverlight)
 
 
@@ -4411,14 +4516,14 @@ Success Criterion 2.4.7 by the WCAG Working Group.
 
     F55: Failure of Success Criteria 2.1.1, 2.4.7, and 3.2.1 due to
     using script to remove focus when focus is received
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F55>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F55>
 
   *
 
     F78: Failure of Success Criterion 2.4.7 due to styling element
     outlines and borders in a way that removes or renders non-visible
     the visual focus indicator
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F78>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F78>
 
 ------------------------------------------------------------------------
 
@@ -4479,24 +4584,19 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Breadcrumb Navigation: Further Investigation of Usage
-    <http://psychology.wichita.edu/surl/usabilitynews/52/breadcrumb.htm>
-
-  *
-
     The Sound of the Accessible Title Tag Separator
-    <http://www.standards-schmandards.com/?2004/11/06/6-the-sound-of-the-accessible-title-tag-separator>
-
+    <http://www.standards-schmandards.com/2004/title-text-separators/>
 
 
       Techniques and Failures for Success Criterion 2.4.8 - Location
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4504,39 +4604,29 @@ been met.
  1.
 
     G65: Providing a breadcrumb trail
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G65>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G65>
 
  2.
 
     G63: Providing a site map
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G63>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G63>
 
  3.
 
     G128: Indicating current location within navigation bars
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G128>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G128>
 
  4.
 
     G127: Identifying a Web page's relationship to a larger collection
     of Web pages
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G127> using
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G127> using
     one of the following techniques:
 
       *
 
         H59: Using the link element and navigation tools
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H59> (HTML)
-
- 5.
-
-    PDF14: Providing running headers and footers in PDF documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF14> (PDF)
-
- 6.
-
-    PDF17: Specifying consistent page numbering for PDF documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF17> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H59> (HTML)
 
 
         Additional Techniques (Advisory) for 2.4.8
@@ -4545,6 +4635,16 @@ Although not required for conformance, the following additional
 techniques should be considered in order to make content more
 accessible. Not all techniques can be used or would be effective in all
 situations.
+
+  *
+
+    PDF14: Providing running headers and footers in PDF documents
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF14> (PDF)
+
+  *
+
+    PDF17: Specifying consistent page numbering for PDF documents
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF17> (PDF)
 
   *
 
@@ -4616,6 +4716,22 @@ which calls for consistency in identifying components that have the same
 functionality). Because the purpose of a link can be identified from its
 link text, links can be understood when they are out of context, such as
 when the user agent provides a list of all the links on a page.
+
+The text in the link is intended to describe the purpose of the link. In
+cases where the link takes one to a document or a web application, the
+name of the document or web application would be sufficient to describe
+the purpose of the link (which is to take you to the document or web
+application). Note that it is not required to use the name of the
+document or web application; other things may also describe the purpose
+of the link.
+
+Success Criterion 2.4.2
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/navigation-mechanisms-title.html>
+deals with the titles of pages. Here also, the name of a document or web
+application being presented on the page would be sufficient to describe
+the purpose of the page. Having the link and the title agree, or be very
+similar, is good practice and provides continuity between the link
+'clicked on' and the web page that the user lands on.
 
 The Success Criterion includes an exception for links for which the
 purpose of the link cannot be determined from the information on the Web
@@ -4699,7 +4815,8 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Using Link Titles to Help Users Predict Where They Are Going
-    <http://www.useit.com/alertbox/980111.html>
+    <https://www.nngroup.com/articles/using-link-titles-to-help-users-predict-where-they-are-going/>
+
 
   *
 
@@ -4709,8 +4826,7 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Hidden barriers - out of sight
-    <http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Categories/Category.aspx?Name=Hidden%20barriers>
-
+    <http://www.rnib.org.uk/blogs/expert-series?Name=Hidden%20barriers>
 
 
       Techniques and Failures for Success Criterion 2.4.9 - Link Purpose
@@ -4718,37 +4834,43 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
 
  1.
 
-    G91: Providing link text that describes the purpose of a link
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G91>
+    ARIA8: Using aria-label for link purpose
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA8> (ARIA)
 
  2.
 
-    H30: Providing link text that describes the purpose of a link for
-    anchor elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H30> (HTML)
+    G91: Providing link text that describes the purpose of a link
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G91>
 
  3.
 
-    H24: Providing text alternatives for the area elements of image maps
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H24> (HTML)
+    H30: Providing link text that describes the purpose of a link for
+    anchor elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H30> (HTML)
 
  4.
 
-    FLASH27: Providing button labels that describe the purpose of a
-    button
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH27> (Flash)
+    H24: Providing text alternatives for the area elements of image maps
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H24> (HTML)
 
  5.
+
+    FLASH27: Providing button labels that describe the purpose of a
+    button
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH27> (Flash)
+
+ 6.
 
     Allowing the user to choose short or long link text using one of the
     techniques below:
@@ -4757,21 +4879,21 @@ been met.
 
         G189: Providing a control near the beginning of the Web page
         that changes the link text
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G189>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G189>
 
       *
 
         SCR30: Using scripts to change the link text
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR30>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR30>
         (Scripting)
 
       *
 
         FLASH7: Using scripting to change control labels
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH7>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH7>
         (Flash)
 
- 6.
+ 7.
 
     Providing a supplemental description of the purpose of a link using
     one of the following techniques:
@@ -4779,29 +4901,29 @@ been met.
       *
 
         C7: Using CSS to hide a portion of the link text
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C7> (CSS)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C7> (CSS)
 
- 7.
+ 8.
 
     Semantically indicating links using one of the following techniques:
 
       *
 
-        PDF11: Providing links and link text using the /Link structure
-        element in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF11> (PDF)
+        PDF11: Providing links and link text using the Link annotation
+        and the /Link structure element in PDF documents
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF11> (PDF)
 
       *
 
         PDF13: Providing replacement text using the /Alt entry for links
         in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF13> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF13> (PDF)
 
       *
 
         SL18: Providing Text Equivalent for Nontext Silverlight Controls
         With AutomationProperties.Name
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL18>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL18>
         (Silverlight)
 
 
@@ -4815,18 +4937,18 @@ situations.
   *
 
     H2: Combining adjacent image and text links for the same resource
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H2> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H2> (HTML)
 
   *
 
     FLASH5: Combining adjacent image and text buttons for the same
     resource
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH5> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH5> (Flash)
 
   *
 
     H33: Supplementing link text with the title attribute
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H33> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H33> (HTML)
 
 
         Common Failures for SC 2.4.9
@@ -4839,13 +4961,13 @@ Success Criterion 2.4.9 by the WCAG Working Group.
     F84: Failure of Success Criterion 2.4.9 due to using a non-specific
     link such as "click here" or "more" without a mechanism to change
     the link text to specific text.
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F84>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F84>
 
   *
 
-    F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to using
-    null alt on an image where the image is the only content in a link
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F89>
+    F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not
+    providing an accessible name for an image which is the only content
+    in a link <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F89>
 
 
       Key Terms
@@ -4971,9 +5093,12 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Quick tips for accessible headings
-    <http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/>
+    WebAIM: Semantic Structure
+    <http://webaim.org/techniques/semanticstructure/>
 
+  *
+
+    Heading Tags <http://accessibility.psu.edu/headingshtml/>
 
 
       Techniques and Failures for Success Criterion 2.4.10 - Section
@@ -4981,10 +5106,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4992,7 +5118,13 @@ been met.
  1.
 
     G141: Organizing a page using headings
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G141>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G141>
+
+ 2.
+
+    H69: Providing heading elements at the beginning of each section of
+    content <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H69>
+    (HTML)
 
 
         Additional Techniques (Advisory) for 2.4.10

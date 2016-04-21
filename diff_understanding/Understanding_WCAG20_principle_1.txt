@@ -406,14 +406,8 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    GAWDS Writing Better Alt Text
-    <http://www.gawds.org/show.php?contentid=28>
-
-  *
-
     All That Malarkey: Accessible Alternatives
-    <http://www.stuffandnonsense.co.uk/archives/accessible_alternatives.html>
-
+    <https://stuffandnonsense.co.uk/archives/accessible_alternatives.html>
 
   *
 
@@ -436,10 +430,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -458,8 +453,83 @@ situation.
     G94: Providing short text alternative for non-text content that
     serves the same purpose and presents the same information as the
     non-text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G94> using a
-    *short* text alternative technique listed below
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G94> using one
+    of the following *Short text alternative techniques for Situation A
+    <#text-equiv-all-situation-a-shorttext> *:
+
+*Short text alternative techniques for Situation A*:
+
+  *
+
+    ARIA6: Using aria-label to provide labels for objects
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA6> (ARIA)
+
+  *
+
+    ARIA10: Using aria-labelledby to provide a text alternative for
+    non-text content
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA10> (ARIA)
+
+  *
+
+    G196: Using a text alternative on one item within a group of images
+    that describes all items in the group
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G196>
+
+  *
+
+    FLASH1: Setting the name property for a non-text object
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH1> (Flash)
+
+  *
+
+    FLASH5: Combining adjacent image and text buttons for the same
+    resource
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH5> (Flash)
+
+  *
+
+    FLASH28: Providing text alternatives for ASCII art, emoticons, and
+    leetspeak in Flash
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH28> (Flash)
+
+  *
+
+    H2: Combining adjacent image and text links for the same resource
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H2> (HTML)
+
+  *
+
+    H35: Providing text alternatives on applet elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H35> (HTML)
+
+  *
+
+    H37: Using alt attributes on img elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H37> (HTML)
+
+  *
+
+    H53: Using the body of the object element
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H53> (HTML)
+
+  *
+
+    H86: Providing text alternatives for ASCII art, emoticons, and
+    leetspeak <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H86>
+    (HTML)
+
+  *
+
+    PDF1: Applying text alternatives to images with the Alt entry in PDF
+    documents
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF1> (PDF)
+
+  *
+
+    SL5: Defining a Focusable Image Class for Silverlight
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL5>
+    (Silverlight)
 
 
           Situation B: If a short description can *not* serve the same
@@ -470,29 +540,138 @@ situation.
 
     G95: Providing short text alternatives that provide a brief
     description of the non-text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G95> using a
-    *short* text alternative technique listed below *AND* one of the
-    following techniques for *long* description:
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G95> using one
+    of the following *Short text alternative techniques for Situation B
+    <#text-equiv-all-situation-b-shorttext> * *AND* one of the following
+    *Long text alternative techniques for Situation B
+    <#text-equiv-all-situation-b-longtext> *:
 
-      *
+*Short text alternative techniques for Situation B*:
 
-        G92: Providing long description for non-text content that serves
-        the same purpose and presents the same information
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G92> using
-        a *long* text alternative technique listed below
+  *
 
-      *
+    ARIA6: Using aria-label to provide labels for objects
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA6> (ARIA)
 
-        G74: Providing a long description in text near the non-text
-        content, with a reference to the location of the long
-        description in the short description
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G74>
+  *
 
-      *
+    ARIA10: Using aria-labelledby to provide a text alternative for
+    non-text content
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA10> (ARIA)
 
-        G73: Providing a long description in another location with a
-        link to it that is immediately adjacent to the non-text content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G73>
+  *
+
+    G196: Using a text alternative on one item within a group of images
+    that describes all items in the group
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G196>
+
+  *
+
+    FLASH1: Setting the name property for a non-text object
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH1> (Flash)
+
+  *
+
+    FLASH5: Combining adjacent image and text buttons for the same
+    resource
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH5> (Flash)
+
+  *
+
+    FLASH28: Providing text alternatives for ASCII art, emoticons, and
+    leetspeak in Flash
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH28> (Flash)
+
+  *
+
+    H2: Combining adjacent image and text links for the same resource
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H2> (HTML)
+
+  *
+
+    H35: Providing text alternatives on applet elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H35> (HTML)
+
+  *
+
+    H37: Using alt attributes on img elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H37> (HTML)
+
+  *
+
+    H53: Using the body of the object element
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H53> (HTML)
+
+  *
+
+    H86: Providing text alternatives for ASCII art, emoticons, and
+    leetspeak <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H86>
+    (HTML)
+
+  *
+
+    PDF1: Applying text alternatives to images with the Alt entry in PDF
+    documents
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF1> (PDF)
+
+  *
+
+    SL5: Defining a Focusable Image Class for Silverlight
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL5>
+    (Silverlight)
+
+*Long text alternative techniques for Situation B*:
+
+  *
+
+    ARIA15: Using aria-describedby to provide descriptions of images
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA15> (ARIA)
+
+  *
+
+    G73: Providing a long description in another location with a link to
+    it that is immediately adjacent to the non-text content
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G73>
+
+  *
+
+    G74: Providing a long description in text near the non-text content,
+    with a reference to the location of the long description in the
+    short description
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G74>
+
+  *
+
+    G92: Providing long description for non-text content that serves the
+    same purpose and presents the same information
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G92>
+
+  *
+
+    FLASH2: Setting the description property for a non-text object in
+    Flash <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH2>
+    (Flash)
+
+  *
+
+    FLASH11: Providing a longer text description of an object
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH11> (Flash)
+
+  *
+
+    H45: Using longdesc
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H45> (HTML)
+
+  *
+
+    H53: Using the body of the object element
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H53> (HTML)
+
+  *
+
+    SL8: Displaying HelpText in Silverlight User Interfaces
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL8>
+    (Silverlight)
 
 
           Situation C: If non-text content is a control or accepts user
@@ -502,71 +681,101 @@ situation.
 
     G82: Providing a text alternative that identifies the purpose of the
     non-text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G82> using a
-    *short* text alternative technique listed below
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G82> using one
+    of the following *Text alternative techniques for controls and input
+    for Situation C <#text-equiv-all-situation-c-controls> *:
 
- 2.
+*Text alternative techniques for controls and input for Situation C*:
 
-    H44: Using label elements to associate text labels with form
-    controls <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H44>
-    (HTML)
+  *
 
- 3.
+    ARIA6: Using aria-label to provide labels for objects
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA6> (ARIA)
 
-    H65: Using the title attribute to identify form controls when the
-    label element cannot be used
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H65> (HTML)
+  *
 
- 4.
+    ARIA9: Using aria-labelledby to concatenate a label from several
+    text nodes
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA9> (ARIA)
 
-    FLASH32: Using auto labeling to associate text labels with form
-    controls
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH32> (Flash)
+  *
 
- 5.
+    FLASH6: Creating accessible hotspots using invisible buttons
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH6> (Flash)
 
-    FLASH29: Setting the label property for form components
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH29> (Flash)
-
- 6.
+  *
 
     FLASH25: Labeling a form control by setting its accessible name
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH25> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH25> (Flash)
 
- 7.
-
-    FLASH30: Specifying accessible names for image buttons
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH30> (Flash)
-
- 8.
+  *
 
     FLASH27: Providing button labels that describe the purpose of a
     button
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH27> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH27> (Flash)
 
- 9.
+  *
 
-    FLASH6: Creating accessible hotspots using invisible buttons
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH6> (Flash)
+    FLASH29: Setting the label property for form components
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH29> (Flash)
 
-10.
+  *
+
+    FLASH30: Specifying accessible names for image buttons
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH30> (Flash)
+
+  *
+
+    FLASH32: Using auto labeling to associate text labels with form
+    controls
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH32> (Flash)
+
+  *
+
+    H24: Providing text alternatives for the area elements of image maps
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H24> (HTML)
+
+  *
+
+    H30: Providing link text that describes the purpose of a link for
+    anchor elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H30> (HTML)
+
+  *
+
+    H36: Using alt attributes on images used as submit buttons
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H36> (HTML)
+
+  *
+
+    H44: Using label elements to associate text labels with form
+    controls <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H44>
+    (HTML)
+
+  *
+
+    H65: Using the title attribute to identify form controls when the
+    label element cannot be used
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H65> (HTML)
+
+  *
 
     SL18: Providing Text Equivalent for Nontext Silverlight Controls
     With AutomationProperties.Name
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL18>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL18>
     (Silverlight)
 
-11.
+  *
 
     SL26: Using LabeledBy to Associate Labels and Targets in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL26>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL26>
     (Silverlight)
 
-12.
+  *
 
     SL30: Using Silverlight Control Compositing and
     AutomationProperties.Name
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL30>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL30>
     (Silverlight)
 
 
@@ -577,22 +786,99 @@ situation.
 
  1.
 
-    Providing a descriptive label using a *short* text alternative
-    technique listed below
+    Providing a descriptive label using one of the following *Short text
+    alternative techniques for Situation D
+    <#text-equiv-all-situation-d-shorttext> *:
 
  2.
 
-    G68: Providing a descriptive labelshort text alternative that
-    describes the purpose of live audio-only and live video-only content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G68> using a
-    *short* text alternative technique listed below
+    G68: Providing a short text alternative that describes the purpose
+    of live audio-only and live video-only content
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G68> using one
+    of the following *Short text alternative techniques for Situation D
+    <#text-equiv-all-situation-d-shorttext> *:
 
  3.
 
     G100: Providing a short text alternative which is the accepted name
     or a descriptive name of the non-text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G100> using a
-    *short* text alternative technique listed below
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G100> using
+    one of the following *Short text alternative techniques for
+    Situation D <#text-equiv-all-situation-d-shorttext> *:
+
+*Short text alternative techniques for Situation D*:
+
+  *
+
+    ARIA6: Using aria-label to provide labels for objects
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA6> (ARIA)
+
+  *
+
+    ARIA10: Using aria-labelledby to provide a text alternative for
+    non-text content
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA10> (ARIA)
+
+  *
+
+    G196: Using a text alternative on one item within a group of images
+    that describes all items in the group
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G196>
+
+  *
+
+    FLASH1: Setting the name property for a non-text object
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH1> (Flash)
+
+  *
+
+    FLASH5: Combining adjacent image and text buttons for the same
+    resource
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH5> (Flash)
+
+  *
+
+    FLASH28: Providing text alternatives for ASCII art, emoticons, and
+    leetspeak in Flash
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH28> (Flash)
+
+  *
+
+    H2: Combining adjacent image and text links for the same resource
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H2> (HTML)
+
+  *
+
+    H35: Providing text alternatives on applet elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H35> (HTML)
+
+  *
+
+    H37: Using alt attributes on img elements
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H37> (HTML)
+
+  *
+
+    H53: Using the body of the object element
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H53> (HTML)
+
+  *
+
+    H86: Providing text alternatives for ASCII art, emoticons, and
+    leetspeak <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H86>
+    (HTML)
+
+  *
+
+    PDF1: Applying text alternatives to images with the Alt entry in PDF
+    documents
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF1> (PDF)
+
+  *
+
+    SL5: Defining a Focusable Image Class for Silverlight
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL5>
+    (Silverlight)
 
 
           Situation E: If non-text content is a CAPTCHA:
@@ -600,10 +886,10 @@ situation.
  1.
 
     G143: Providing a text alternative that describes the purpose of the
-    CAPTCHA <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G143>
+    CAPTCHA <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G143>
     *AND* G144: Ensuring that the Web Page contains another CAPTCHA
     serving the same purpose using a different modality
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G144>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G144>
 
 
           Situation F: If the non-text content should be ignored by
@@ -612,146 +898,34 @@ situation.
  1.
 
     Implementing or marking the non-text content so that it will be
-    ignored by assistive technology using one of the technology-specific
-    techniques listed below
+    ignored by assistive technology using one of the following
+    *Techniques to indicate that text alternatives are not required for
+    Situation F <#text-equiv-all-situation-f-notrequired> *:
 
-      *
+*Techniques to indicate that text alternatives are not required for
+Situation F*:
 
-        H67: Using null alt text and no title attribute on img elements
-        for images that AT should ignore
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H67> (HTML)
+  *
 
-      *
+    C9: Using CSS to include decorative images
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C9> (CSS)
 
-        C9: Using CSS to include decorative images
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C9> (CSS)
+  *
 
-      *
+    FLASH3: Marking objects in Flash so that they can be ignored by AT
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH3> (Flash)
 
-        FLASH3: Marking objects in Flash so that they can be ignored by
-        AT <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH3>
-        (Flash)
+  *
 
-      *
+    H67: Using null alt text and no title attribute on img elements for
+    images that AT should ignore
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H67> (HTML)
 
-        PDF4: Hiding decorative images with the Artifact tag in PDF
-        documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF4> (PDF)
+  *
 
-
-          *Short* text alternative techniques for use in sufficient
-          techniques above
-
- 1.
-
-    H36: Using alt attributes on images used as submit buttons
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H36> (HTML)
-
- 2.
-
-    H2: Combining adjacent image and text links for the same resource
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H2> (HTML)
-
- 3.
-
-    H37: Using alt attributes on img elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H37> (HTML)
-
- 4.
-
-    H35: Providing text alternatives on applet elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H35> (HTML)
-
- 5.
-
-    FLASH1: Setting the name property for a non-text object
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH1> (Flash)
-
- 6.
-
-    PDF1: Applying text alternatives to images with the Alt entry in PDF
+    PDF4: Hiding decorative images with the Artifact tag in PDF
     documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF1> (PDF)
-
- 7.
-
-    H53: Using the body of the object element
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H53> (HTML)
-
- 8.
-
-    H24: Providing text alternatives for the area elements of image maps
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H24> (HTML)
-
- 9.
-
-    H86: Providing text alternatives for ASCII art, emoticons, and
-    leetspeak <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H86>
-    (HTML)
-
-10.
-
-    FLASH28: Providing text alternatives for ASCII art, emoticons, and
-    leetspeak in Flash
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH28> (Flash)
-
-11.
-
-    H30: Providing link text that describes the purpose of a link for
-    anchor elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H30> (HTML)
-
-    /Note: /See /Understanding Success Criterion 2.4.4 Link Purpose (In
-    Context) <#navigation-mechanisms-refs>/.
-
-12.
-
-    G196: Using a text alternative on one item within a group of images
-    that describes all items in the group
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G196>
-
-13.
-
-    FLASH5: Combining adjacent image and text buttons for the same
-    resource
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH5> (Flash)
-
-14.
-
-    SL5: Defining a Focusable Image Class for Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL5>
-    (Silverlight)
-
-
-          *Long* text alternative techniques for use in sufficient
-          techniques above
-
- 1.
-
-    H45: Using longdesc
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H45> (HTML)
-
- 2.
-
-    H53: Using the body of the object element
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H53> (HTML)
-
- 3.
-
-    FLASH2: Setting the description property for a non-text object in
-    Flash <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH2>
-    (Flash)
-
- 4.
-
-    FLASH11: Providing a longer text description of an object
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH11> (Flash)
-
- 5.
-
-    SL8: Displaying HelpText in Silverlight User Interfaces
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL8>
-    (Silverlight)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF4> (PDF)
 
 
         Additional Techniques (Advisory) for 1.1.1
@@ -823,7 +997,7 @@ situations.
   *
 
     H46: Using noembed with embed
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H46> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H46> (HTML)
 
   *
 
@@ -832,11 +1006,6 @@ situations.
   *
 
     Providing alternative content for iframe (future link)
-
-  *
-
-    H27: Providing text and non-text alternatives for object
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H27> (HTML)
 
   *
 
@@ -853,7 +1022,7 @@ situations.
 
     C18: Using CSS margin and padding rules instead of spacer images for
     layout design
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C18> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C18> (CSS)
 
   *
 
@@ -879,7 +1048,7 @@ situations.
 
     SL19: Providing User Instructions With AutomationProperties.HelpText
     in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL19>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL19>
     (Silverlight)
 
 
@@ -913,67 +1082,69 @@ Success Criterion 1.1.1 by the WCAG Working Group.
 
   *
 
-    F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text
-    alternatives that are not alternatives (e.g., filenames or
-    placeholder text)
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F30>
-
-  *
-
-    F20: Failure of Success Criterion 1.1.1 and 4.1.2 due to not
-    updating text alternatives when changes to non-text content occur
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F20>
-
-  *
-
     F3: Failure of Success Criterion 1.1.1 due to using CSS to include
     images that convey important information
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F3>
-
-  *
-
-    F39: Failure of Success Criterion 1.1.1 due to providing a text
-    alternative that is not null (e.g., alt="spacer" or alt="image") for
-    images that should be ignored by assistive technology
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F39>
-
-  *
-
-    F38: Failure of Success Criterion 1.1.1 due to omitting the
-    alt-attribute for non-text content used for decorative purposes only
-    in HTML <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F38>
-
-  *
-
-    F71: Failure of Success Criterion 1.1.1 due to using text
-    look-alikes to represent text without providing a text alternative
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F71>
-
-  *
-
-    F72: Failure of Success Criterion 1.1.1 due to using ASCII art
-    without providing a text alternative
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F72>
-
-  *
-
-    F65: Failure of Success Criterion 1.1.1 due to omitting the alt
-    attribute on img elements, area elements, and input elements of type
-    "image" <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F65>
-
-  *
-
-    F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing
-    long descriptions for non-text content that does not serve the same
-    purpose or does not present the same information
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F67>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F3>
 
   *
 
     F13: Failure of Success Criterion 1.1.1 and 1.4.1 due to having a
     text alternative that does not include information that is conveyed
     by color differences in the image
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F13>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F13>
+
+  *
+
+    F20: Failure of Success Criterion 1.1.1 and 4.1.2 due to not
+    updating text alternatives when changes to non-text content occur
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F20>
+
+  *
+
+    F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text
+    alternatives that are not alternatives (e.g., filenames or
+    placeholder text)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F30>
+
+  *
+
+    F38: Failure of Success Criterion 1.1.1 due to not marking up
+    decorative images in HTML in a way that allows assistive technology
+    to ignore them
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F38>
+
+  *
+
+    F39: Failure of Success Criterion 1.1.1 due to providing a text
+    alternative that is not null (e.g., alt="spacer" or alt="image") for
+    images that should be ignored by assistive technology
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F39>
+
+  *
+
+    F65: Failure of Success Criterion 1.1.1 due to omitting the alt
+    attribute or text alternative on img elements, area elements, and
+    input elements of type "image"
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F65>
+
+  *
+
+    F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing
+    long descriptions for non-text content that does not serve the same
+    purpose or does not present the same information
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F67>
+
+  *
+
+    F71: Failure of Success Criterion 1.1.1 due to using text
+    look-alikes to represent text without providing a text alternative
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F71>
+
+  *
+
+    F72: Failure of Success Criterion 1.1.1 due to using ASCII art
+    without providing a text alternative
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F72>
 
 
       Key Terms
@@ -1127,7 +1298,7 @@ text alternative
     that a description follows.
 
     /Note: /Refer to Understanding Text Alternatives
-    <https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/conformance.html#uc-text-alternatives-head>
+    <https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-text-alternatives-head>
     for more information.
 
 ------------------------------------------------------------------------
@@ -1366,7 +1537,7 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Overcoming the challenge of podcast transcription
-    <http://www.rnib.org.uk/professionals/webaccessibility/wacblog/Lists/Posts/Post.aspx?List=be9c76d3-7ad0-4e03-a1a0-e6f6953b8178&ID=16>
+    <http://www.rnib.org.uk/travel-downloads-podcasts-and-apps?List=be9c76d3-7ad0-4e03-a1a0-e6f6953b8178&ID=16>
 
 
   *
@@ -1385,10 +1556,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -1404,13 +1576,13 @@ situation.
  1.
 
     G158: Providing an alternative for time-based media for audio-only
-    content <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G158>
+    content <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G158>
 
  2.
 
     SL17: Providing Static Alternative Content for Silverlight Media
     Playing in a MediaElement
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL17>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL17>
     (Silverlight)
 
 
@@ -1419,19 +1591,19 @@ situation.
  1.
 
     G159: Providing an alternative for time-based media for video-only
-    content <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G159>
+    content <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G159>
 
  2.
 
     G166: Providing audio that describes the important video content and
     describing it as such
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G166>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G166>
 
  3.
 
     SL17: Providing Static Alternative Content for Silverlight Media
     Playing in a MediaElement
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL17>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL17>
     (Silverlight)
 
 
@@ -1441,6 +1613,11 @@ Although not required for conformance, the following additional
 techniques should be considered in order to make content more
 accessible. Not all techniques can be used or would be effective in all
 situations.
+
+  *
+
+    H96: Using the track element to provide audio descriptions
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H96> (HTML)
 
   *
 
@@ -1464,14 +1641,14 @@ Success Criterion 1.2.1 by the WCAG Working Group.
     F30: Failure of Success Criterion 1.1.1 and 1.2.1 due to using text
     alternatives that are not alternatives (e.g., filenames or
     placeholder text)
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F30>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F30>
 
   *
 
     F67: Failure of Success Criterion 1.1.1 and 1.2.1 due to providing
     long descriptions for non-text content that does not serve the same
     purpose or does not present the same information
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F67>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F67>
 
 
       Key Terms
@@ -1603,6 +1780,22 @@ See also /Understanding Success Criterion 1.2.4 Captions (Live)
     showing the part in its correct orientation. No captions are
     provided for the synchronized media clip.
 
+  *
+
+    An orchestra provides captions for videos of performances. In
+    addition to capturing dialog and lyrics verbatim, captions identify
+    non-vocal music by title, movement, composer, and any information
+    that will help the user comprehend the nature of the audio. For
+    instance captions read,
+
+    "[Orchestral Suite No. 3.2 in D major, BWV 1068, Air]
+
+    [Johann Sebastian Bach, Composer]
+
+    ♪ Calm melody with a slow tempo ♪"
+
+    /Note: /Style guides for captions may differ among different languages.
+
 
       Related Resources
 
@@ -1614,7 +1807,7 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Captioning Key: Guidelines and Preferred Techniques
-    <http://www.dcmp.org/captioningkey/>
+    <http://www.captioningkey.org/>
 
   *
 
@@ -1653,23 +1846,8 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Quicktime Captioning Tutorial
-    <http://webaim.org/techniques/captions/quicktime/>
-
-  *
-
-    RealPlayer Captioning Tutorial
-    <http://webaim.org/techniques/captions/real/>
-
-  *
-
     WebAIM: Captioning Resource List
-    <http://webaim.org/resources/captioning/>
-
-  *
-
-    Windows Media Player Captioning Tutorial
-    <http://webaim.org/techniques/captions/windows/>
+    <http://webaim.org/techniques/captions/>
 
 
         Captioning Tools
@@ -1679,20 +1857,17 @@ Resources are for information purposes only, no endorsement implied.
     Media Access Generator (MAGpie)
     <http://ncam.wgbh.org/invent_build/web_multimedia/tools-guidelines>
 
-  *
-
-    World Caption Software <https://kb.wisc.edu/helpdesk/page.php?id=7096>
-
 
       Techniques and Failures for Success Criterion 1.2.2 - Captions
       (Prerecorded)
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -1700,51 +1875,56 @@ been met.
  1.
 
     G93: Providing open (always visible) captions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G93>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G93>
 
  2.
 
     G87: Providing closed captions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G87> using any
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G87> using any
     readily available media format that has a video player that supports
     closed captioning
 
  3.
 
     G87: Providing closed captions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G87> using any
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G87> using any
     of the technology-specific techniques below
 
       *
 
         SM11: Providing captions through synchronized text streams in
         SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM11> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM11> (SMIL)
 
       *
 
         SM12: Providing captions through synchronized text streams in
         SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM12> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM12> (SMIL)
+
+      *
+
+        H95: Using the track element to provide captions
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H95> (HTML)
 
       *
 
         FLASH9: Applying captions to prerecorded synchronized media
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH9>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH9>
         (Flash)
 
       *
 
         SL16: Providing Script-Embedded Text Captions for MediaElement
         Content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL16>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL16>
         (Silverlight)
 
       *
 
         SL28: Using Separate Text-Format Text Captions for MediaElement
         Content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL28>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL28>
         (Silverlight)
 
 
@@ -1780,20 +1960,20 @@ Success Criterion 1.2.2 by the WCAG Working Group.
 
     F8: Failure of Success Criterion 1.2.2 due to captions omitting some
     dialogue or important sound effects
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F8>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F8>
 
   *
 
     F75: Failure of Success Criterion 1.2.2 by providing synchronized
     media without captions when the synchronized media presents more
     information than is presented on the page
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F75>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F75>
 
   *
 
     F74: Failure of Success Criterion 1.2.2 and 1.2.8 due to not
     labeling a synchronized media alternative to text as an alternative
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F74>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F74>
 
 
       Key Terms
@@ -2028,10 +2208,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2039,20 +2220,20 @@ been met.
  1.
 
     G69: Providing an alternative for time based media
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G69> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G69> using one
     of the following techniques
 
       *
 
         G58: Placing a link to the alternative for time-based media
         immediately next to the non-text content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G58>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G58>
 
       *
 
         SL17: Providing Static Alternative Content for Silverlight Media
         Playing in a MediaElement
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL17>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL17>
         (Silverlight)
 
  2.
@@ -2063,49 +2244,49 @@ been met.
       *
 
         H53: Using the body of the object element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H53> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H53> (HTML)
 
  3.
 
     G78: Providing a second, user-selectable, audio track that includes
     audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G78>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G78>
 
  4.
 
     G78: Providing a second, user-selectable, audio track that includes
     audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G78> *AND*
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G78> *AND*
     SL1: Accessing Alternate Audio Tracks in Silverlight Media
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL1>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL1>
     (Silverlight)
 
  5.
 
     G173: Providing a version of a movie with audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G173> using
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G173> using
     one of the following:
 
       *
 
         SM6: Providing audio description in SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM6> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM6> (SMIL)
 
       *
 
         SM7: Providing audio description in SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM7> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM7> (SMIL)
 
       *
 
         FLASH26: Applying audio descriptions to Flash video
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH26>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH26>
         (Flash)
 
       *
 
         SL1: Accessing Alternate Audio Tracks in Silverlight Media
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL1>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL1>
         (Silverlight)
 
       *
@@ -2115,34 +2296,39 @@ been met.
  6.
 
     G8: Providing a movie with extended audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G8> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G8> using one
     of the following:
 
       *
 
         SM1: Adding extended audio description in SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM1> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM1> (SMIL)
 
       *
 
         SM2: Adding extended audio description in SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM2> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM2> (SMIL)
 
       *
 
         FLASH26: Applying audio descriptions to Flash video
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH26>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH26>
         (Flash)
 
       *
 
         SL1: Accessing Alternate Audio Tracks in Silverlight Media
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL1>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL1>
         (Silverlight)
 
       *
 
         Using any player that supports audio and video
+
+ 7.
+
+    G203: Using a static text alternative to describe a talking head
+    video <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G203>
 
 
         Additional Techniques (Advisory) for 1.2.3
@@ -2151,6 +2337,11 @@ Although not required for conformance, the following additional
 techniques should be considered in order to make content more
 accessible. Not all techniques can be used or would be effective in all
 situations.
+
+  *
+
+    H96: Using the track element to provide audio descriptions
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H96> (HTML)
 
   *
 
@@ -2263,6 +2454,13 @@ the part of the content available via the audio track. Captions not only
 include dialogue, but also identify who is speaking and notate sound
 effects and other significant audio.
 
+This success criterion was intended to apply to broadcast of
+synchronized media and is not intended to require that two-way
+multimedia calls between two or more individuals through web apps must
+be captioned regardless of the needs of users. Responsibility for
+providing captions would fall to the content providers (the callers) or
+the “host” caller, and not the application.
+
 
         Specific Benefits of Success Criterion 1.2.4
 
@@ -2280,6 +2478,16 @@ effects and other significant audio.
 
     A news organization provides a live, captioned Web cast.
 
+  *
+
+    *A music Web cast*
+
+    An orchestra provides Communication Access Realtime Translation
+    (CART) captioning of each real-time Web performance. The CART
+    service captures lyrics and dialog as well as identifies non-vocal
+    music by title, movement, composer, and any information that will
+    help the user comprehend the nature of the audio.
+
 
       Related Resources
 
@@ -2295,10 +2503,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2306,38 +2515,38 @@ been met.
  1.
 
     G9: Creating captions for live synchronized media
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G9> *AND* G93:
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G9> *AND* G93:
     Providing open (always visible) captions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G93>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G93>
 
  2.
 
     G9: Creating captions for live synchronized media
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G9> *AND* G87:
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G9> *AND* G87:
     Providing closed captions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G87> using any
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G87> using any
     readily available media format that has a video player that supports
     closed captioning
 
  3.
 
     G9: Creating captions for live synchronized media
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G9> *AND* G87:
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G9> *AND* G87:
     Providing closed captions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G87> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G87> using one
     of the following techniques:
 
       *
 
         SM11: Providing captions through synchronized text streams in
         SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM11> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM11> (SMIL)
 
       *
 
         SM12: Providing captions through synchronized text streams in
         SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM12> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM12> (SMIL)
 
 /Note: /Captions may be generated using real-time text translation service.
 
@@ -2542,10 +2751,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2554,37 +2764,37 @@ been met.
 
     G78: Providing a second, user-selectable, audio track that includes
     audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G78>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G78>
 
  2.
 
     G78: Providing a second, user-selectable, audio track that includes
     audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G78> *AND*
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G78> *AND*
     SL1: Accessing Alternate Audio Tracks in Silverlight Media
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL1>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL1>
     (Silverlight)
 
  3.
 
     G173: Providing a version of a movie with audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G173> using
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G173> using
     one of the following:
 
       *
 
         SM6: Providing audio description in SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM6> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM6> (SMIL)
 
       *
 
         SM7: Providing audio description in SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM7> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM7> (SMIL)
 
       *
 
         FLASH26: Applying audio descriptions to Flash video
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH26>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH26>
         (Flash)
 
       *
@@ -2594,28 +2804,33 @@ been met.
  4.
 
     G8: Providing a movie with extended audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G8> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G8> using one
     of the following:
 
       *
 
         SM1: Adding extended audio description in SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM1> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM1> (SMIL)
 
       *
 
         SM2: Adding extended audio description in SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM2> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM2> (SMIL)
 
       *
 
         FLASH26: Applying audio descriptions to Flash video
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH26>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH26>
         (Flash)
 
       *
 
         Using any player that supports audio and video
+
+ 5.
+
+    G203: Using a static text alternative to describe a talking head
+    video <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G203>
 
 
         Additional Techniques (Advisory) for 1.2.5
@@ -2624,6 +2839,11 @@ Although not required for conformance, the following additional
 techniques should be considered in order to make content more
 accessible. Not all techniques can be used or would be effective in all
 situations.
+
+  *
+
+    H96: Using the track element to provide audio descriptions
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H96> (HTML)
 
   *
 
@@ -2790,19 +3010,14 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     National Institute on Deafness and other Communication Disorders
-    <http://www.nidcd.nih.gov/health/hearing/asl.asp>: Information on
-    American Sign Language
+    <https://www.nidcd.nih.gov/health/american-sign-language>:
+    Information on American Sign Language
 
   *
 
     Techniques for filming sign language interpreters
     <http://www.sign-lang.uni-hamburg.de/signingbooks/sbrc/grid/d71/guide12.htm>
 
-
-  *
-
-    eSign Avatar Signing Plugin for Internet Explorer
-    <http://www.sys-consulting.co.uk/downloads/esign/>.
 
   *
 
@@ -2815,10 +3030,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -2826,27 +3042,27 @@ been met.
  1.
 
     G54: Including a sign language interpreter in the video stream
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G54>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G54>
 
  2.
 
     G81: Providing a synchronized video of the sign language interpreter
     that can be displayed in a different viewport or overlaid on the
     image by the player
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G81> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G81> using one
     of the following techniques
 
       *
 
         SM13: Providing sign language interpretation through
         synchronized video streams in SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM13> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM13> (SMIL)
 
       *
 
         SM14: Providing sign language interpretation through
         synchronized video streams in SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM14> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM14> (SMIL)
 
 
         Additional Techniques (Advisory) for 1.2.6
@@ -3010,10 +3226,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3021,18 +3238,18 @@ been met.
  1.
 
     G8: Providing a movie with extended audio descriptions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G8> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G8> using one
     of the following:
 
       *
 
         SM1: Adding extended audio description in SMIL 1.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM1> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM1> (SMIL)
 
       *
 
         SM2: Adding extended audio description in SMIL 2.0
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SM2> (SMIL)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SM2> (SMIL)
 
       *
 
@@ -3045,6 +3262,11 @@ Although not required for conformance, the following additional
 techniques should be considered in order to make content more
 accessible. Not all techniques can be used or would be effective in all
 situations.
+
+  *
+
+    H96: Using the track element to provide audio descriptions
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H96> (HTML)
 
   *
 
@@ -3214,7 +3436,7 @@ description was met, then 1.2.8 does not add new requirements.
     A community center purchases a Training video for use by its clients
     and puts it on the center's intranet. The video involves explaining
     use of a new technology and has a person talking and showing things
-    at the same time. The community center provides a alternative for
+    at the same time. The community center provides an alternative for
     time-based media that all clients, including those who can neither
     see the demonstrations nor hear the explanations in the synchronized
     media, can use to better understand what is being presented.
@@ -3240,10 +3462,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3259,20 +3482,20 @@ situation.
  1.
 
     G69: Providing an alternative for time based media
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G69> using one
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G69> using one
     of the following techniques
 
       *
 
         G58: Placing a link to the alternative for time-based media
         immediately next to the non-text content
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G58>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G58>
 
       *
 
         SL17: Providing Static Alternative Content for Silverlight Media
         Playing in a MediaElement
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL17>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL17>
         (Silverlight)
 
  2.
@@ -3283,7 +3506,7 @@ situation.
       *
 
         H53: Using the body of the object element
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H53> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H53> (HTML)
 
 
           Situation B: If the content is prerecorded video-only:
@@ -3291,7 +3514,7 @@ situation.
  1.
 
     G159: Providing an alternative for time-based media for video-only
-    content <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G159>
+    content <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G159>
 
 
         Additional Techniques (Advisory) for 1.2.8
@@ -3304,7 +3527,7 @@ situations.
   *
 
     H46: Using noembed with embed
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H46> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H46> (HTML)
 
   *
 
@@ -3324,7 +3547,7 @@ Success Criterion 1.2.8 by the WCAG Working Group.
 
     F74: Failure of Success Criterion 1.2.2 and 1.2.8 due to not
     labeling a synchronized media alternative to text as an alternative
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F74>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F74>
 
 
       Key Terms
@@ -3398,6 +3621,13 @@ Using untrained operators, or providing a transcript which differs
 markedly from what actually happens would not be considered meeting this
 Success Criterion.
 
+This success criterion was intended to apply to broadcast of audio and
+is not intended to require that two-way audio calls between two or more
+individuals through web apps must be captioned regardless of the needs
+of users. Responsibility for providing captions would fall to the
+content providers (the callers) or the “host” caller, and not the
+application.
+
 
       Examples of Success Criterion 1.2.9
 
@@ -3439,7 +3669,7 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Captioning and Subtitling International
-    <http://www.captioningandsubtitling.com/webcapt.htm>
+    <http://www.captioningandsubtitling.com.au/work/internet/>
 
   *
 
@@ -3462,10 +3692,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3474,17 +3705,17 @@ been met.
 
     G151: Providing a link to a text transcript of a prepared statement
     or script if the script is followed
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G151>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G151>
 
  2.
 
     G150: Providing text based alternatives for live audio-only content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G150>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G150>
 
  3.
 
     G157: Incorporating a live audio captioning service into a Web page
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G157>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G157>
 
 
         Additional Techniques (Advisory) for 1.2.9
@@ -3607,16 +3838,22 @@ presentation format changes when the content is read by a screen reader
 or when a user style sheet is substituted for the style sheet provided
 by the author.
 
-Sighted users perceive structure through various visual cues — headings
-are often in a larger, bold font separated from paragraphs by blank
-lines; list items are preceded by a bullet and perhaps indented;
-paragraphs are separated by a blank line; items that share a common
-characteristic are organized into tabular rows and columns; form fields
-may be positioned as groups that share text labels; a different
-background color may be used to indicate that several items are related
-to each other; words that have special status are indicated by changing
-the font family and /or bolding, italicizing, or underlining them and so
-on.
+Sighted users perceive structure and relationships through various
+visual cues — headings are often in a larger, bold font separated from
+paragraphs by blank lines; list items are preceded by a bullet and
+perhaps indented; paragraphs are separated by a blank line; items that
+share a common characteristic are organized into tabular rows and
+columns; form fields may be positioned as groups that share text labels;
+a different background color may be used to indicate that several items
+are related to each other; words that have special status are indicated
+by changing the font family and /or bolding, italicizing, or underlining
+them; items that share a common characteristic are organized into a
+table where the relationship of cells sharing the same row or column and
+the relationship of each cell to its row and/or column header are
+necessary for understanding; and so on. Having these structures and
+these relationships programmatically determined or available in text
+ensures that information important for comprehension will be perceivable
+to all.
 
 Auditory cues may be used as well. For example, a chime might indicate
 the beginning of a new section; a change in voice pitch or speech rate
@@ -3645,11 +3882,11 @@ text description should be near the information it is describing (when
 the page is linearized), such as in the parent element or in the
 adjacent element.
 
-There may also be cases where it may be a judgment call about what
-information should appear in text and what would need to be directly
-associated. However, wherever possible it is necessary for the
-information to be programmatically determined rather than providing a
-text description before encountering the table.
+There may also be cases where it may be a judgment call as to whether
+the relationships should be programmatically determined or be presented
+in text. However, when technologies support programmatic relationships,
+it is strongly encouraged that information and relationships be
+programmatically determined rather than described in text.
 
 /Note: /It is not required that color values be programmatically
 determined. The information conveyed by color cannot be adequately
@@ -3739,9 +3976,12 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Quick tips for accessible headings
-    <http://webarchive.nationalarchives.gov.uk/20100418065544/http://www.rnib.org.uk/wacblog/headings/quick-tips-for-accessible-headings/>
+    WebAIM: Semantic Structure
+    <http://webaim.org/techniques/semanticstructure/>
 
+  *
+
+    Heading Tags <http://accessibility.psu.edu/headingshtml/>
 
 
       Techniques and Failures for Success Criterion 1.3.1 - Info and
@@ -3749,10 +3989,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -3769,24 +4010,55 @@ situation.
 
  1.
 
-    G115: Using semantic elements to mark up structure
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G115> *AND*
-    H49: Using semantic markup to mark emphasized or special text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H49> (HTML)
+    ARIA11: Using ARIA landmarks to identify regions of a page
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA11> (ARIA)
 
  2.
 
-    G117: Using text to convey information that is conveyed by
-    variations in presentation of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G117>
+    ARIA12: Using role=heading to identify headings
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA12> (ARIA)
 
  3.
 
-    G140: Separating information and structure from presentation to
-    enable different presentations
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G140>
+    ARIA13: Using aria-labelledby to name regions and landmarks
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA13> (ARIA)
 
  4.
+
+    ARIA16: Using aria-labelledby to provide a name for user interface
+    controls
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA16> (ARIA)
+
+ 5.
+
+    ARIA17: Using grouping roles to identify related form controls
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA17> (ARIA)
+
+ 6.
+
+    ARIA20: Using the region role to identify a region of the page
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA20> (ARIA)
+
+ 7.
+
+    G115: Using semantic elements to mark up structure
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G115> *AND*
+    H49: Using semantic markup to mark emphasized or special text
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H49> (HTML)
+
+ 8.
+
+    G117: Using text to convey information that is conveyed by
+    variations in presentation of text
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G117>
+
+ 9.
+
+    G140: Separating information and structure from presentation to
+    enable different presentations
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G140>
+
+10.
 
     Making information and relationships conveyed through presentation
     programmatically determinable using the following techniques:
@@ -3794,173 +4066,178 @@ situation.
       *
 
         G138: Using semantic markup whenever color cues are used
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G138>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G138>
 
       *
 
         H51: Using table markup to present tabular information
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H51> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H51> (HTML)
 
       *
 
         PDF6: Using table elements for table markup in PDF Documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF6> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF6> (PDF)
 
       *
 
         PDF20: Using Adobe Acrobat Pro's Table Editor to repair
         mistagged tables
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF20> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF20> (PDF)
 
       *
 
         H39: Using caption elements to associate data table captions
         with data tables
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H39> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H39> (HTML)
 
       *
 
         FLASH31: Specifying caption text for a DataGrid
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH31>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH31>
         (Flash)
 
       *
 
         H73: Using the summary attribute of the table element to give an
         overview of data tables
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H73> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H73> (HTML)
 
       *
 
         FLASH23: Adding summary information to a DataGrid
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH23>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH23>
         (Flash)
 
       *
 
         H63: Using the scope attribute to associate header cells and
         data cells in data tables
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H63> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H63> (HTML)
 
       *
 
         H43: Using id and headers attributes to associate data cells
         with header cells in data tables
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H43> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H43> (HTML)
 
       *
 
         FLASH21: Using the DataGrid component to associate column
         headers with cells
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH21>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH21>
         (Flash)
 
       *
 
         H44: Using label elements to associate text labels with form
         controls
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H44> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H44> (HTML)
 
       *
 
         H65: Using the title attribute to identify form controls when
         the label element cannot be used
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H65> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H65> (HTML)
 
       *
 
         PDF10: Providing labels for interactive form controls in PDF
         documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF10> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF10> (PDF)
 
       *
 
         PDF12: Providing name, role, value information for form fields
         in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF12> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF12> (PDF)
 
       *
 
         FLASH32: Using auto labeling to associate text labels with form
         controls
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH32>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH32>
         (Flash)
 
       *
 
         FLASH29: Setting the label property for form components
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH29>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH29>
         (Flash)
 
       *
 
         FLASH25: Labeling a form control by setting its accessible name
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH25>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH25>
         (Flash)
 
       *
 
         H71: Providing a description for groups of form controls using
         fieldset and legend elements
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H71> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H71> (HTML)
 
       *
 
         SL20: Relying on Silverlight AutomationPeer Behavior to Set
         AutomationProperties.Name
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL20>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL20>
         (Silverlight)
 
       *
 
         SL26: Using LabeledBy to Associate Labels and Targets in
         Silverlight
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL26>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL26>
         (Silverlight)
 
       *
 
         H85: Using OPTGROUP to group OPTION elements inside a SELECT
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H85> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H85> (HTML)
 
       *
 
         H48: Using ol, ul and dl for lists or groups of links
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H48> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H48> (HTML)
 
       *
 
         H42: Using h1-h6 to identify headings
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H42> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H42> (HTML)
 
       *
 
         PDF9: Providing headings by marking content with heading tags in
         PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF9> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF9> (PDF)
 
       *
 
         SCR21: Using functions of the Document Object Model (DOM) to add
         content to a page
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR21>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR21>
         (Scripting)
 
       *
 
-        PDF11: Providing links and link text using the /Link structure
-        element in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF11> (PDF)
+        PDF11: Providing links and link text using the Link annotation
+        and the /Link structure element in PDF documents
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF11> (PDF)
 
       *
 
         PDF17: Specifying consistent page numbering for PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF17> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF17> (PDF)
 
       *
 
         PDF21: Using List tags for lists in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF21> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF21> (PDF)
+
+      *
+
+        H97: Grouping related links using the nav element
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H97> (HTML)
 
 
           Situation B: The technology in use does NOT provide the
@@ -3971,12 +4248,12 @@ situation.
 
     G117: Using text to convey information that is conveyed by
     variations in presentation of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G117>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G117>
 
  2.
 
     FLASH8: Adding a group name to the accessible name of a form control
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH8> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH8> (Flash)
 
  3.
 
@@ -3987,17 +4264,17 @@ situation.
       *
 
         T1: Using standard text formatting conventions for paragraphs
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/T1> (Text)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/T1> (Text)
 
       *
 
         T2: Using standard text formatting conventions for lists
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/T2> (Text)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/T2> (Text)
 
       *
 
         T3: Using standard text formatting conventions for headings
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/T3> (Text)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/T3> (Text)
 
 
         Additional Techniques (Advisory) for 1.3.1
@@ -4010,7 +4287,7 @@ situations.
   *
 
     C22: Using CSS to control visual presentation of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C22> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C22> (CSS)
 
   *
 
@@ -4019,18 +4296,18 @@ situations.
   *
 
     G162: Positioning labels to maximize predictability of relationships
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G162>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G162>
 
   *
 
     ARIA1: Using the aria-describedby property to provide a descriptive
-    label for input controls
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA1> (ARIA)
+    label for user interface controls
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA1> (ARIA)
 
   *
 
-    ARIA2: Identifying required fields with the aria-required property
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/ARIA2> (ARIA)
+    ARIA2: Identifying a required field with the aria-required property
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA2> (ARIA)
 
   *
 
@@ -4040,7 +4317,7 @@ situations.
   *
 
     G141: Organizing a page using headings
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G141>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G141>
 
 
         Common Failures for SC 1.3.1
@@ -4053,71 +4330,74 @@ Success Criterion 1.3.1 by the WCAG Working Group.
     F2: Failure of Success Criterion 1.3.1 due to using changes in text
     presentation to convey information without using the appropriate
     markup or text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F2>
-
-  *
-
-    F17: Failure of Success Criterion 1.3.1 and 4.1.1 due to
-    insufficient information in DOM to determine one-to-one
-    relationships (e.g., between labels with same id) in HTML
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F17>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F2>
 
   *
 
     F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white
     space characters to create multiple columns in plain text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F33>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F33>
 
   *
 
     F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white
     space characters to format tables in plain text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F34>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F34>
 
   *
 
-    F42: Failure of Success Criterion 1.3.1 and 2.1.1 due to using
-    scripting events to emulate links in a way that is not
-    programmatically determinable
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F42>
+    F42: Failure of Success Criteria 1.3.1, 2.1.1, 2.1.3, or 4.1.2 when
+    emulating links
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F42>
 
   *
 
     F43: Failure of Success Criterion 1.3.1 due to using structural
     markup in a way that does not represent relationships in the content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F43>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F43>
 
   *
 
     F46: Failure of Success Criterion 1.3.1 due to using th elements,
     caption elements, or non-empty summary attributes in layout tables
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F46>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F46>
 
   *
 
     F48: Failure of Success Criterion 1.3.1 due to using the pre element
     to markup tabular information
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F48>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F48>
 
   *
 
-    F62: Failure of Success Criterion 1.3.1 and 4.1.1 due to
-    insufficient information in DOM to determine specific relationships
-    in XML <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F62>
-
-  *
-
-    F68: Failure of Success Criterion 1.3.1 and 4.1.2 due to the
-    association of label and user interface controls not being
-    programmatically determinable
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F68>
+    F68: Failure of Success Criterion 4.1.2 due to a user interface
+    control not having a programmatically determined name
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F68>
 
   *
 
     F87: Failure of Success Criterion 1.3.1 due to inserting
     non-decorative content by using :before and :after pseudo-elements
     and the 'content' property in CSS
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F87>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F87>
+
+  *
+
+    F90: Failure of Success Criterion 1.3.1 for incorrectly associating
+    table headers and content via the headers and id attributes
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F90>
+
+  *
+
+    F91: Failure of Success Criterion 1.3.1 for not correctly marking up
+    table headers
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F91>
+
+  *
+
+    F92: Failure of Success Criterion 1.3.1 due to the use of role
+    presentation on content which conveys semantic information
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F92>
 
 
       Key Terms
@@ -4213,6 +4493,22 @@ The order of the article and the sidebars does not affect their meaning.
 In these cases there are a number of different reading orders for a Web
 page that can satisfy the Success Criterion.
 
+For clarity:
+
+ 1.
+
+    Providing a particular linear order is only required where it
+    affects meaning.
+
+ 2.
+
+    There may be more than one order that is "correct" (according to the
+    WCAG 2.0 definition).
+
+ 3.
+
+    Only one correct order needs to be provided.
+
 
         Specific Benefits of Success Criterion 1.3.2
 
@@ -4252,10 +4548,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4263,59 +4560,59 @@ been met.
  1.
 
     G57: Ordering the content in a meaningful sequence
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G57> for all
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G57> for all
     the content in the Web page
 
  2.
 
     Marking sequences in the content as meaningful using one of the
     following techniques *AND* G57: Ordering the content in a meaningful
-    sequence <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G57>
+    sequence <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G57>
     for those sequences
 
       *
 
         H34: Using a Unicode right-to-left mark (RLM) or left-to-right
         mark (LRM) to mix text direction inline
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H34> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H34> (HTML)
 
       *
 
         H56: Using the dir attribute on an inline element to resolve
         problems with nested directional runs
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H56> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H56> (HTML)
 
       *
 
         C6: Positioning content based on structural markup
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C6> (CSS)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C6> (CSS)
 
       *
 
         C8: Using CSS letter-spacing to control spacing within a word
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C8> (CSS)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C8> (CSS)
 
  3.
 
     C27: Making the DOM order match the visual order
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C27> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C27> (CSS)
 
  4.
 
     FLASH15: Using the tabIndex property to specify a logical reading
     order and a logical tab order in Flash
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH15> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH15> (Flash)
 
  5.
 
     PDF3: Ensuring correct tab and reading order in PDF documents
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF3> (PDF)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF3> (PDF)
 
  6.
 
     SL34: Using the Silverlight Default Tab Sequence and Altering Tab
     Sequences With Properties
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL34>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL34>
     (Silverlight)
 
 
@@ -4351,31 +4648,31 @@ Success Criterion 1.3.2 by the WCAG Working Group.
 
     F34: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white
     space characters to format tables in plain text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F34>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F34>
 
   *
 
     F33: Failure of Success Criterion 1.3.1 and 1.3.2 due to using white
     space characters to create multiple columns in plain text content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F33>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F33>
 
   *
 
     F32: Failure of Success Criterion 1.3.2 due to using white space
     characters to control spacing within a word
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F32>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F32>
 
   *
 
     F49: Failure of Success Criterion 1.3.2 due to using an HTML layout
     table that does not make sense when linearized
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F49>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F49>
 
   *
 
     F1: Failure of Success Criterion 1.3.2 due to changing the meaning
     of content by positioning information with CSS
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F1>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F1>
 
 
       Key Terms
@@ -4445,6 +4742,15 @@ referenced is in the appropriate place in the reading order and the
 references are unambiguous, statements such as "choose one of the links
 below" or "all of the above" would conform to this Success Criterion.
 
+WCAG was designed to apply only to controls that were displayed on a web
+page. The intent was to avoid describing controls solely via references
+to visual or auditory cues. When applying this to instructions for
+operating physical hardware controls (e.g. a web kiosk with dedicated
+content), tactile cues on the hardware might be described (e.g. the
+arrow shaped key, the round key on the right side). This success
+criterion is not intended to prevent the use of tactile cues in
+instructions.
+
 
         Specific Benefits of Success Criterion 1.3.3
 
@@ -4494,10 +4800,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4506,7 +4813,7 @@ been met.
 
     G96: Providing textual identification of items that otherwise rely
     only on sensory information to be understood
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G96>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G96>
 
 
         Additional Techniques (Advisory) for 1.3.3
@@ -4532,13 +4839,13 @@ Success Criterion 1.3.3 by the WCAG Working Group.
 
     F14: Failure of Success Criterion 1.3.3 due to identifying content
     only by its shape or location
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F14>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F14>
 
   *
 
     F26: Failure of Success Criterion 1.3.3 due to using a graphical
     symbol alone to convey information
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F26>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F26>
 
 ------------------------------------------------------------------------
 
@@ -4713,19 +5020,7 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Lighthouse International: Effective Color Contrast
-    <http://www.lighthouse.org/accessibility/design/accessible-print-design/effective-color-contrast>
-
-
-  *
-
     Vischeck <http://www.vischeck.com/>
-
-  *
-
-    Internetworking: Designing for the Color-Challenged: A Challenge
-    <http://www.internettg.org/newsletter/mar99/accessibility_color_challenged.html>
-
 
   *
 
@@ -4734,28 +5029,13 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Colorblind Web Page Filter <http://colorfilter.wickline.org/>
-
-  *
-
-    Firelily Designs: Color Vision, Color Deficiency
-    <http://www.firelily.com/opinions/color.html>
-
-  *
-
     Wikipedia: Color Blindness
-    <http://en.wikipedia.org/wiki/Color_blindness>
+    <https://en.wikipedia.org/wiki/Color_blindness>
 
   *
 
     Microsoft: Can Color-Blind Users See Your Site?
-    <http://msdn.microsoft.com/en-us/library/bb263953.aspx>
-
-  *
-
-    BT Inclusive Communication: Choosing safe colours
-    <http://www.btplc.com/inclusion/Gettingonline/Accessible/Adviceforwebdevelopers/colours.htm>
-
+    <https://msdn.microsoft.com/en-us/library/bb263953.aspx>
 
   *
 
@@ -4769,17 +5049,19 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    The Color Tutor application <http://www.tomjewett.com/colors/tutor.html>
+    The Color Tutor application
+    <http://www.tomjewett.com/colors/tutor.html>
 
 
       Techniques and Failures for Success Criterion 1.4.1 - Use of Color
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4797,25 +5079,25 @@ situation.
 
     G14: Ensuring that information conveyed by color differences is also
     available in text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G14>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G14>
 
  2.
 
-    H92: Including a text cue for colored form control labels
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H92> (HTML)
+    G205: Including a text cue for colored form control labels
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G205>
 
  3.
 
     G182: Ensuring that additional visual cues are available when text
     color differences are used to convey information
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G182>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G182>
 
  4.
 
     G183: Using a contrast ratio of 3:1 with surrounding text and
     providing additional visual cues on focus for links or controls
     where color alone is used to identify them
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G183>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G183>
 
 
           Situation B: If color is used within an image to convey
@@ -4824,13 +5106,13 @@ situation.
  1.
 
     G111: Using color and pattern
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G111>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G111>
 
  2.
 
     G14: Ensuring that information conveyed by color differences is also
     available in text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G14>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G14>
 
 
         Additional Techniques (Advisory) for 1.4.1
@@ -4848,7 +5130,7 @@ situations.
 
     C15: Using CSS to change the presentation of a user interface
     component when it receives focus
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C15> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C15> (CSS)
 
 
         Common Failures for SC 1.4.1
@@ -4861,19 +5143,19 @@ Success Criterion 1.4.1 by the WCAG Working Group.
     F13: Failure of Success Criterion 1.1.1 and 1.4.1 due to having a
     text alternative that does not include information that is conveyed
     by color differences in the image
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F13>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F13>
 
   *
 
     F73: Failure of Success Criterion 1.4.1 due to creating links that
     are not visually evident without color vision
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F73>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F73>
 
   *
 
     F81: Failure of Success Criterion 1.4.1 due to identifying required
     or error fields using color differences only
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F81>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F81>
 
 ------------------------------------------------------------------------
 
@@ -4968,10 +5250,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -4979,42 +5262,42 @@ been met.
  1.
 
     G60: Playing a sound that turns off automatically within three
-    seconds <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G60>
+    seconds <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G60>
 
  2.
 
     G170: Providing a control near the beginning of the Web page that
     turns off sounds that play automatically
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G170>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G170>
 
  3.
 
     G171: Playing sounds only on user request
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G171>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G171>
 
  4.
 
     SL24: Using AutoPlay to Keep Silverlight Media from Playing
     Automatically
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL24>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL24>
     (Silverlight)
 
  5.
 
     FLASH18: Providing a control to turn off sounds that play
     automatically in Flash
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH18> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH18> (Flash)
 
  6.
 
     FLASH34: Turning off sounds that play automatically when an
     assistive technology is detected
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH34> (Flash)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH34> (Flash)
 
  7.
 
     SL3: Controlling Silverlight MediaElement Audio Volume
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL3>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL3>
     (Silverlight)
 
 
@@ -5041,7 +5324,13 @@ Success Criterion 1.4.2 by the WCAG Working Group.
 
     F23: Failure of 1.4.2 due to playing a sound longer than 3 seconds
     where there is no mechanism to turn it off
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F23>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F23>
+
+  *
+
+    F93: Failure of Success Criterion 1.4.2 for absence of a way to
+    pause or stop an HTML5 media element that autoplays
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F93>
 
 
       Key Terms
@@ -5178,9 +5467,14 @@ contrast and color combinations for images of text, which is necessary
 for some users. Therefore, we suggest using text wherever possible, and
 when not, consider supplying an image of higher resolution.
 
+/Note 3: /The minimum contrast success criterion (1.4.3) applies to text
+in the page, and placeholder text is text in the page. If used,
+placeholder text needs to provide sufficient contrast.
+
 Although this Success Criterion only applies to text, similar issues
-occur for data presented in charts or graphs. Good color contrast should
-also be provided for data presented in these forms.
+occur for content presented in charts, graphs, diagrams, and other
+non-text-based information. Content presented in this manner should also
+have good contrast to ensure that more users can access the information.
 
 See also /Understanding Success Criterion 1.4.6 Contrast (Enhanced)
 <#visual-audio-contrast7>/.
@@ -5306,7 +5600,7 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Contrast Analyser – Application
-    <http://www.paciellogroup.com/resources/contrast-analyser.html>
+    <https://www.paciellogroup.com/resources/contrastanalyser/>
 
   *
 
@@ -5356,27 +5650,17 @@ Resources are for information purposes only, no endorsement implied.
     <http://www.456bereastreet.com/archive/200709/10_colour_contrast_checking_tools_to_improve_the_accessibility_of_your_design/>
 
 
-  *
-
-    American Printing House for the Blind Guidelines for Large Print
-    <http://www.aph.org/edresearch/lpguide.htm>
-
-  *
-
-    National Library Service for the Blind and Physically Handicapped
-    (NLS), The Library of Congress Guidelines for Large Print
-    <http://www.loc.gov/nls/reference/circulars/largeprint.html>
-
 
       Techniques and Failures for Success Criterion 1.4.3 - Contrast
       (Minimum)
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -5394,24 +5678,24 @@ situation.
 
     G18: Ensuring that a contrast ratio of at least 4.5:1 exists between
     text (and images of text) and background behind the text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G18>
 
  2.
 
     G148: Not specifying background color, not specifying text color,
     and not using technology features that change those defaults
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G148>
 
  3.
 
     G174: Providing a control with a sufficient contrast ratio that
     allows users to switch to a presentation that uses sufficient
-    contrast <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G174>
+    contrast <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G174>
 
  4.
 
     SL13: Providing A Style Switcher To Switch To High Contrast
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL13>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL13>
     (Silverlight)
 
 
@@ -5422,24 +5706,24 @@ situation.
 
     G145: Ensuring that a contrast ratio of at least 3:1 exists between
     text (and images of text) and background behind the text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G145>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G145>
 
  2.
 
     G148: Not specifying background color, not specifying text color,
     and not using technology features that change those defaults
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G148>
 
  3.
 
     G174: Providing a control with a sufficient contrast ratio that
     allows users to switch to a presentation that uses sufficient
-    contrast <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G174>
+    contrast <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G174>
 
  4.
 
     SL13: Providing A Style Switcher To Switch To High Contrast
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL13>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL13>
     (Silverlight)
 
 
@@ -5454,7 +5738,7 @@ situations.
 
     G156: Using a technology that has commonly-available user agents
     that can change the foreground and background of blocks of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G156>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G156>
 
   *
 
@@ -5494,7 +5778,7 @@ situations.
 
   *
 
-    Providing sufficient color contrast in graphs and charts (future link)
+    Providing sufficient contrast ratio in graphs and charts (future link)
 
   *
 
@@ -5515,14 +5799,14 @@ Success Criterion 1.4.3 by the WCAG Working Group.
 
     F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to
     specifying foreground colors without specifying background colors or
-    vice versa <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F24>
+    vice versa <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F24>
 
   *
 
     F83: Failure of Success Criterion 1.4.3 and 1.4.6 due to using
     background images that do not provide sufficient contrast with
     foreground text (or images of text)
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F83>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F83>
 
 
       Key Terms
@@ -5706,7 +5990,7 @@ different style sheets.
 The author cannot rely on the user agent to satisfy this Success
 Criterion for HTML content if users do not have access to a user agent
 with zoom support. For example, if they work in an environment that
-requires them to use IE 6 or Firefox.
+requires them to use IE 6.
 
 If the author is using a technology whose user agents do not provide
 zoom support, the author is responsible to provide this type of
@@ -5719,7 +6003,7 @@ usable when the text is resized.
 Some user interface components that function as a label and require
 activation by the user to access content are not wide enough to
 accommodate the label's content. For example, in Web mail applications
-the subject column may not wide enough to accommodate every possible
+the subject column may not be wide enough to accommodate every possible
 subject header, but activating the subject header takes the user to the
 full message with the full subject header. In Web-based spreadsheets,
 cell content that is too long to be displayed in a column can be
@@ -5825,10 +6109,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -5837,19 +6122,19 @@ been met.
 
     G142: Using a technology that has commonly-available user agents
     that support zoom
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G142>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G142>
 
  2.
 
     SL22: Supporting Browser Zoom in Silverlight
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL22>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL22>
     (Silverlight)
 
  3.
 
     SL23: Using A Style Switcher to Increase Font Size of Silverlight
     Text Elements
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL23>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL23>
     (Silverlight)
 
  4.
@@ -5861,7 +6146,7 @@ been met.
       *
 
         C28: Specifying the size of text containers using em units
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C28> (CSS)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C28> (CSS)
 
       *
 
@@ -5870,19 +6155,19 @@ been met.
           o
 
             C12: Using percent for font sizes
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C12>
             (CSS)
 
           o
 
             C13: Using named font sizes
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C13>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C13>
             (CSS)
 
           o
 
             C14: Using em units for font sizes
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C14>
             (CSS)
 
       *
@@ -5893,25 +6178,25 @@ been met.
 
             SCR34: Calculating size and position in a way that scales
             with text size
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR34>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR34>
             (Scripting)
 
           o
 
             G146: Using liquid layout
-            <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G146>
+            <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G146>
 
  5.
 
     G178: Providing controls on the Web page that allow users to
     incrementally change the size of all text on the page up to 200
-    percent <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G178>
+    percent <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G178>
 
  6.
 
     G179: Ensuring that there is no loss of content or functionality
     when the text resizes and text containers do not change their width
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G179>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G179>
 
 
         Additional Techniques (Advisory) for 1.4.4
@@ -5961,7 +6246,7 @@ situations.
   *
 
     C17: Scaling form elements which contain text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C17> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C17> (CSS)
 
   *
 
@@ -5975,12 +6260,12 @@ situations.
 
     C20: Using relative measurements to set column widths so that lines
     can average 80 characters or less when the browser is resized
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C20> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C20> (CSS)
 
   *
 
     C22: Using CSS to control visual presentation of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C22> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C22> (CSS)
 
   *
 
@@ -5997,13 +6282,13 @@ Success Criterion 1.4.4 by the WCAG Working Group.
     F69: Failure of Success Criterion 1.4.4 when resizing visually
     rendered text up to 200 percent causes the text, image or controls
     to be clipped, truncated or obscured
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F69>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F69>
 
   *
 
     F80: Failure of Success Criterion 1.4.4 when text-based form
     controls do not resize when visually rendered text is resized up to
-    200% <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F80>
+    200% <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F80>
 
 
       Key Terms
@@ -6174,7 +6459,7 @@ should present the information as text rather than using an image. If
 for any reason, the author cannot format the text to get the same
 effect, the effect won't be reliably presented on the commonly available
 user agents, or using a technology to meet this criterion would
-interfere with meeting other criterion such as 1.4.4, then an image of
+interfere with meeting other criteria such as 1.4.4, then an image of
 text can be used. This includes instances where a particular
 presentation of text is essential to the information being conveyed,
 such as type samples, logotypes, branding, etc. Images of text may also
@@ -6314,7 +6599,7 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    CSS Web fonts <http://www.alistapart.com/articles/cssatten>
+    CSS Web fonts <http://alistapart.com/article/cssatten>
 
   *
 
@@ -6335,10 +6620,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -6346,30 +6632,30 @@ been met.
  1.
 
     C22: Using CSS to control visual presentation of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C22> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C22> (CSS)
 
  2.
 
     SL31: Using Silverlight Font Properties to Control Text Presentation
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL31>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL31>
     (Silverlight)
 
  3.
 
     C30: Using CSS to replace text with images of text and providing
     user interface controls to switch
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C30> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C30> (CSS)
 
  4.
 
     G140: Separating information and structure from presentation to
     enable different presentations
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G140>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G140>
 
  5.
 
     PDF7: Performing OCR on a scanned PDF document to provide actual
-    text <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF7> (PDF)
+    text <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF7> (PDF)
 
 
         Additional Techniques (Advisory) for 1.4.5
@@ -6392,27 +6678,27 @@ situations.
  1.
 
     C12: Using percent for font sizes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C12> (CSS)
 
  2.
 
     C13: Using named font sizes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C13> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C13> (CSS)
 
  3.
 
     C14: Using em units for font sizes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C14> (CSS)
 
  4.
 
     C8: Using CSS letter-spacing to control spacing within a word
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C8> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C8> (CSS)
 
  5.
 
     C6: Positioning content based on structural markup
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C6> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C6> (CSS)
 
  6.
 
@@ -6566,8 +6852,9 @@ is intended to separate pictures that have text in them from images of
 text that are done to replace text in order to get a particular look.
 
 Although this Success Criterion only applies to text, similar issues
-occur for data presented in charts or graphs. Good color contrast should
-also be provided for data presented in these forms.
+occur for content presented in charts, graphs, diagrams, and other
+non-text-based information. Content presented in this manner should also
+have good contrast to ensure that more users can access the information.
 
 
         Rationale for the Ratios Chosen
@@ -6683,7 +6970,7 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Contrast Analyser – Application
-    <http://www.paciellogroup.com/resources/contrast-analyser.html>
+    <https://www.paciellogroup.com/resources/contrastanalyser/>
 
   *
 
@@ -6722,28 +7009,21 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    American Printing House for the Blind Guidelines for Large Print
-    <http://www.aph.org/edresearch/lpguide.htm>
-
-  *
-
-    National Library Service for the Blind and Physically Handicapped
-    (NLS), The Library of Congress Guidelines for Large Print
-    <http://www.loc.gov/nls/reference/circulars/largeprint.html>
-
-  *
-
     6 Surprising Bad Practices That Hurt Dyslexic Users
     <http://uxmovement.com/content/6-surprising-bad-practices-that-hurt-dyslexic-users/>
+
 
   *
 
     Design for Dyslexics
     <http://accessites.org/site/2006/11/designing-for-dyslexics-part-3-of-3>
 
+
   *
 
-    Typefaces for Dyslexia <http://www.dyslexic.com/fonts>
+    Typefaces for Dyslexia
+    <http://www.iansyst.co.uk/articles/article/articles/2012/10/18/fonts-for-dyslexia>
+
 
   *
 
@@ -6755,10 +7035,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -6776,24 +7057,24 @@ situation.
 
     G17: Ensuring that a contrast ratio of at least 7:1 exists between
     text (and images of text) and background behind the text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G17>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G17>
 
  2.
 
     G148: Not specifying background color, not specifying text color,
     and not using technology features that change those defaults
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G148>
 
  3.
 
     G174: Providing a control with a sufficient contrast ratio that
     allows users to switch to a presentation that uses sufficient
-    contrast <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G174>
+    contrast <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G174>
 
  4.
 
     SL13: Providing A Style Switcher To Switch To High Contrast
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL13>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL13>
     (Silverlight)
 
 
@@ -6804,24 +7085,24 @@ situation.
 
     G18: Ensuring that a contrast ratio of at least 4.5:1 exists between
     text (and images of text) and background behind the text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G18>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G18>
 
  2.
 
     G148: Not specifying background color, not specifying text color,
     and not using technology features that change those defaults
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G148>
 
  3.
 
     G174: Providing a control with a sufficient contrast ratio that
     allows users to switch to a presentation that uses sufficient
-    contrast <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G174>
+    contrast <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G174>
 
  4.
 
     SL13: Providing A Style Switcher To Switch To High Contrast
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL13>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL13>
     (Silverlight)
 
 
@@ -6836,7 +7117,7 @@ situations.
 
     G156: Using a technology that has commonly-available user agents
     that can change the foreground and background of blocks of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G156>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G156>
 
   *
 
@@ -6875,7 +7156,7 @@ situations.
 
   *
 
-    Providing sufficient color contrast in graphs and charts (future link)
+    Providing sufficient contrast ratio in graphs and charts (future link)
 
   *
 
@@ -6896,14 +7177,14 @@ Success Criterion 1.4.6 by the WCAG Working Group.
 
     F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to
     specifying foreground colors without specifying background colors or
-    vice versa <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F24>
+    vice versa <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F24>
 
   *
 
     F83: Failure of Success Criterion 1.4.3 and 1.4.6 due to using
     background images that do not provide sufficient contrast with
     foreground text (or images of text)
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F83>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F83>
 
 
       Key Terms
@@ -7120,10 +7401,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -7132,7 +7414,7 @@ been met.
 
     G56: Mixing audio files so that non-speech sounds are at least 20
     decibels lower than the speech audio content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G56>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G56>
 
 
         Additional Techniques (Advisory) for 1.4.7
@@ -7252,7 +7534,7 @@ can become a significant barrier. They have trouble keeping their place
 and following the flow of text. Having a narrow block of text makes it
 easier for them to continue on to the next line in a block. Lines should
 not exceed 80 characters or glyphs (40 if CJK), where glyphs are the
-element of writing in the writing system for the text.. Studies have
+element of writing in the writing system for the text. Studies have
 shown that Chinese, Japanese and Korean (CJK) characters are
 approximately twice as wide as non-CJK characters when both types of
 characters are displayed with characteristics that achieve the same
@@ -7397,8 +7679,7 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    Ideal line length for content
-    <http://www.maxdesign.com.au/articles/em/>
+    Ideal line length for content <http://maxdesign.com.au/articles/em/>
 
   *
 
@@ -7412,36 +7693,22 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     MULTIFUNK: Bringing computer-supported reading one step further
-    <http://oldwww.nr.no/dart/multifunk/Multifunk-NR-rapport.pdf>, Date:
-    April 2002, ISBN: 82-539-0491-6, Author: Gjertrud W. Kamstrup, Eva
-    Mjøvik, Anne-Lise Rygvold og Bjørn Gunnar Saltnes
+    <http://publications.nr.no/Multifunk-NR-rapport.pdf>, Date: April
+    2002, ISBN: 82-539-0491-6, Author: Gjertrud W. Kamstrup, Eva Mjøvik,
+    Anne-Lise Rygvold og Bjørn Gunnar Saltnes
 
   *
 
-    ERIC Web portal
-    <http://www.eric.ed.gov/ERICWebPortal/search/detailmini.jsp?_nfpb=true&_&ERICExtSearch_SearchValue_0=EJ601947&ERICExtSearch_SearchType_0=eric_accno&accno=EJ601947>
-
+    Effective Monitor Display Design <http://eric.ed.gov/?id=EJ601947>
+    on the ERIC Web portal
 
   *
 
     Cognitive difficulties and access to information systems - an
     interaction design perspective
-    <http://www.sigaccess.org/community/newsletter/september_2005/sep05_10.php>",
+    <http://www.sigaccess.org/2005/09/september-2005-newsletter/>",
     Peter Gregor and Anna Dickinson, Applied Computing, University of
     Dundee
-
-  *
-
-    "Case Study of a Dyslexic Person's Visual Perceptual Problems: A
-    Fizz Effect <http://www.engsc.ac.uk/downloads/Disability/fizz.pdf>",
-    Nigel Beauchamp, IMPACT Research Group, Computer Science,
-    Loughborough University
-
-  *
-
-    "A Dyslexic Perspective on e-Content Accessibility
-    <http://www.techdis.ac.uk/resources/files/dyslexia.doc>" Peter
-    Rainger, Date of Publication: 20/01/03
 
   *
 
@@ -7494,25 +7761,21 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    The Forgotten People: Designing for Cognitive Disability
-    <http://www.thepickards.co.uk/index.php/200607/the-forgotten-people-designing-for-cognitive-disability/>
-
-
-  *
-
     Guidance on accessible publishing
-    <http://odi.dwp.gov.uk/inclusive-communications/channels/publishing.php>
+    <http://webarchive.nationalarchives.gov.uk/20130812104657/http://odi.dwp.gov.uk/inclusive-communications/channels/publishing.php>
 
 
   *
 
     An Accessibility Frontier: Cognitive disabilities and learning
-    difficulties <http://usability.com.au/resources/cognitive.cfm>
+    difficulties
+    <http://usability.com.au/2004/12/an-accessibility-frontier-cognitive-disabilities-and-learning-difficulties-2004/>
+
 
   *
 
     Cognitive/Perceptual Difference And Good Web Design
-    <http://leftbrainrightbrain.co.uk/2005/03/cognitiveperceptual-difference-and-good-web-design/>
+    <http://leftbrainrightbrain.co.uk/2005/03/08/cognitiveperceptual-difference-and-good-web-design/>
 
 
   *
@@ -7520,14 +7783,12 @@ Resources are for information purposes only, no endorsement implied.
     6 Surprising Bad Practices That Hurt Dyslexic Users
     <http://uxmovement.com/content/6-surprising-bad-practices-that-hurt-dyslexic-users/>
 
+
   *
 
     Design for Dyslexics
     <http://accessites.org/site/2006/11/designing-for-dyslexics-part-3-of-3>
 
-  *
-
-    Typefaces for Dyslexia <http://www.dyslexic.com/fonts>
 
   *
 
@@ -7539,10 +7800,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -7559,31 +7821,31 @@ satisfy one of the numbered items for each of the requirements below.
     C23: Specifying text and background colors of secondary content such
     as banners, features and navigation in CSS while not specifying text
     and background colors of the main content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C23> (CSS) OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C23> (CSS) OR
 
  2.
 
     C25: Specifying borders and layout in CSS to delineate areas of a
     Web page while not specifying text and text-background colors
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C25> (CSS) OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C25> (CSS) OR
 
  3.
 
     G156: Using a technology that has commonly-available user agents
     that can change the foreground and background of blocks of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G156> OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G156> OR
 
  4.
 
     G148: Not specifying background color, not specifying text color,
     and not using technology features that change those defaults
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G148> OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G148> OR
 
  5.
 
     G175: Providing a multi color selection tool on the page for
     foreground and background colors
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G175>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G175>
 
 
           Second Requirement: Techniques to ensure width is no more than
@@ -7591,15 +7853,15 @@ satisfy one of the numbered items for each of the requirements below.
 
  1.
 
-    H87: Not interfering with the user agent's reflow of text as the
+    G204: Not interfering with the user agent's reflow of text as the
     viewing window is narrowed
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H87> (HTML) OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G204> OR
 
  2.
 
     C20: Using relative measurements to set column widths so that lines
     can average 80 characters or less when the browser is resized
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C20> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C20> (CSS)
 
 
           Third Requirement: Techniques to ensure text is not justified
@@ -7608,17 +7870,17 @@ satisfy one of the numbered items for each of the requirements below.
  1.
 
     C19: Specifying alignment either to the left OR right in CSS
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C19> (CSS) OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C19> (CSS) OR
 
  2.
 
     G172: Providing a mechanism to remove full justification of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G172> OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G172> OR
 
  3.
 
     G169: Aligning text on only one side
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G169>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G169>
 
 
           Fourth Requirement: Techniques to ensure line spacing
@@ -7630,12 +7892,12 @@ satisfy one of the numbered items for each of the requirements below.
 
     G188: Providing a button on the page to increase line spaces and
     paragraph spaces
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G188> OR
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G188> OR
 
  2.
 
     C21: Specifying line spacing in CSS
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C21> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C21> (CSS)
 
 
           Fifth Requirement: Techniques to ensure text can be resized
@@ -7651,48 +7913,48 @@ satisfy one of the numbered items for each of the requirements below.
  2.
 
     G146: Using liquid layout
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G146> /AND/
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G146> /AND/
     using measurements that are relative to other measurements in the
     content by using one or more of the following techniques:
 
       *
 
         C12: Using percent for font sizes
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12> (CSS) OR
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C12> (CSS) OR
 
       *
 
         C13: Using named font sizes
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C13> (CSS) OR
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C13> (CSS) OR
 
       *
 
         C14: Using em units for font sizes
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14> (CSS) OR
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C14> (CSS) OR
 
       *
 
         C24: Using percentage values in CSS for container sizes
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C24> (CSS) OR
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C24> (CSS) OR
 
       *
 
         FLASH33: Using relative values for Flash object dimensions
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH33>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH33>
         (Flash)
 
       *
 
         SCR34: Calculating size and position in a way that scales with
         text size
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SCR34>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR34>
         (Scripting) OR
 
  3.
 
-    C26: Providing options within the content to switch to a layout that
-    does not require the user to scroll horizontally to read a line of
-    text <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C26> (CSS)
+    G206: Providing options within the content to switch to a layout
+    that does not require the user to scroll horizontally to read a line
+    of text <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G206>
 
 
         Additional Techniques (Advisory) for 1.4.8
@@ -7778,13 +8040,13 @@ Success Criterion 1.4.8 by the WCAG Working Group.
 
     F24: Failure of Success Criterion 1.4.3, 1.4.6 and 1.4.8 due to
     specifying foreground colors without specifying background colors or
-    vice versa <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F24>
+    vice versa <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F24>
 
   *
 
     F88: Failure of Success Criterion 1.4.8 due to using text that is
     justified (aligned to both the left and the right margins)
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F88>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F88>
 
 
       Key Terms
@@ -7965,7 +8227,7 @@ Resources are for information purposes only, no endorsement implied.
 
   *
 
-    CSS Web fonts <http://www.alistapart.com/articles/cssatten>
+    CSS Web fonts <http://alistapart.com/article/cssatten>
 
   *
 
@@ -7987,10 +8249,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -7998,30 +8261,30 @@ been met.
  1.
 
     C22: Using CSS to control visual presentation of text
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C22> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C22> (CSS)
 
  2.
 
     SL31: Using Silverlight Font Properties to Control Text Presentation
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL31>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL31>
     (Silverlight)
 
  3.
 
     C30: Using CSS to replace text with images of text and providing
     user interface controls to switch
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C30> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C30> (CSS)
 
  4.
 
     G140: Separating information and structure from presentation to
     enable different presentations
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G140>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G140>
 
  5.
 
     PDF7: Performing OCR on a scanned PDF document to provide actual
-    text <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF7> (PDF)
+    text <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF7> (PDF)
 
 
         Additional Techniques (Advisory) for 1.4.9
@@ -8044,27 +8307,27 @@ situations.
   *
 
     C12: Using percent for font sizes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C12> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C12> (CSS)
 
   *
 
     C13: Using named font sizes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C13> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C13> (CSS)
 
   *
 
     C14: Using em units for font sizes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C14> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C14> (CSS)
 
   *
 
     C8: Using CSS letter-spacing to control spacing within a word
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C8> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C8> (CSS)
 
   *
 
     C6: Positioning content based on structural markup
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C6> (CSS)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C6> (CSS)
 
   *
 

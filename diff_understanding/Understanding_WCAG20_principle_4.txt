@@ -78,16 +78,25 @@ languages, errors in element and attribute syntax and failure to provide
 properly nested start/end tags lead to errors that prevent user agents
 from parsing the content reliably. Therefore, the Success Criterion
 requires that the content can be parsed using only the rules of the
-formal grammar
+formal grammar.
 
-/Note: /The concept of "well formed" is close to what is required here.
-However, exact parsing requirements vary amongst markup languages, and
-most non XML-based languages do not explicitly define requirements for
-well formedness. Therefore, it was necessary to be more explicit in the
-success criterion in order to be generally applicable to markup
+/Note 1: /The concept of "well formed" is close to what is required
+here. However, exact parsing requirements vary amongst markup languages,
+and most non XML-based languages do not explicitly define requirements
+for well formedness. Therefore, it was necessary to be more explicit in
+the success criterion in order to be generally applicable to markup
 languages. Because the term "well formed" is only defined in XML, and
 (because end tags are sometimes optional) valid HTML does not require
 well formed code, the term is not used in this success criterion.
+
+/Note 2: /With the exception of one success criterion (/Understanding
+Success Criterion 1.4.4 Resize text <#visual-audio-contrast-scale>/,
+which specifically mentions that the effect specified by the success
+criterion must be achieved without relying on an assistive technology)
+authors can meet the success criteria with content that assumes use of
+an assistive technology (or access features in use agents) by the user,
+where such assistive technologies (or access features in user agents)
+exist and are available to the user.
 
 
         Specific Benefits of Success Criterion 4.1.1
@@ -115,10 +124,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -126,17 +136,17 @@ been met.
  1.
 
     G134: Validating Web pages
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G134>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G134>
 
  2.
 
     G192: Fully conforming to specifications
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G192>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G192>
 
  3.
 
     H88: Using HTML according to spec
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H88> (HTML)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H88> (HTML)
 
  4.
 
@@ -147,23 +157,23 @@ been met.
 
         H74: Ensuring that opening and closing tags are used according
         to specification
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H74>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H74>
         (HTML) *AND* H93: Ensuring that id attributes are unique on a
         Web page
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H93>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H93>
         (HTML) *AND* H94: Ensuring that elements do not contain
         duplicate attributes
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H94> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H94> (HTML)
 
       *
 
         H75: Ensuring that Web pages are well-formed
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H75> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H75> (HTML)
 
  5.
 
     SL33: Using Well-Formed XAML to Define a Silverlight User Interface
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL33>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL33>
     (Silverlight)
 
 
@@ -186,25 +196,12 @@ Success Criterion 4.1.1 by the WCAG Working Group.
 
     F70: Failure of Success Criterion 4.1.1 due to incorrect use of
     start and end tags or attribute markup
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F70>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F70>
 
   *
 
     F77: Failure of Success Criterion 4.1.1 due to duplicate values of
-    type ID <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F77>
-
-  *
-
-    F17: Failure of Success Criterion 1.3.1 and 4.1.1 due to
-    insufficient information in DOM to determine one-to-one
-    relationships (e.g., between labels with same id) in HTML
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F17>
-
-  *
-
-    F62: Failure of Success Criterion 1.3.1 and 4.1.1 due to
-    insufficient information in DOM to determine specific relationships
-    in XML <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F62>
+    type ID <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F77>
 
 ------------------------------------------------------------------------
 
@@ -286,19 +283,11 @@ glossary for more information.
     *Accessible APIs *
 
     A Java applet uses the accessibility API defined by the language.
-    Refer to the IBM Guidelines for Writing Accessible Applications
-    Using 100% Pure Java
-    <http://www-03.ibm.com/able/guidelines/java/snsjavag.html>.
 
 
       Related Resources
 
 Resources are for information purposes only, no endorsement implied.
-
-  *
-
-    CodeTalks: Accessible DHTML
-    <http://wiki.codetalks.org/wiki/index.php/Main_Page>
 
   *
 
@@ -318,17 +307,13 @@ Resources are for information purposes only, no endorsement implied.
   *
 
     Microsoft Active Accessibility, Version 2.0
-    <http://msdn.microsoft.com/en-us/library/ms697707.aspx>
-
-  *
-
-    IBM Guidelines for Writing Accessible Applications using 100% Pure
-    Java <http://www-03.ibm.com/able/guidelines/java/snsjavag.html>
+    <https://msdn.microsoft.com/en-us/library/ms697707.aspx>
 
   *
 
     Adobe Flash accessibility design guidelines
-    <http://www.adobe.com/accessibility/products/flash/best_practices.html>
+    <http://www.adobe.com/accessibility.htmlproducts/flash/best-practices.html>
+
 
 
       Techniques and Failures for Success Criterion 4.1.2 - Name, Role,
@@ -336,10 +321,11 @@ Resources are for information purposes only, no endorsement implied.
 
 Each numbered item in this section represents a technique or combination
 of techniques that the WCAG Working Group deems sufficient for meeting
-this Success Criterion. The techniques listed only satisfy the Success
-Criterion if all of the WCAG 2.0 conformance requirements
-<http://www.w3.org/TR/2008/REC-WCAG20-20081211/#conformance-reqs> have
-been met.
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+Understanding Techniques for WCAG Success Criteria
+<http://www.w3.org/TR/2016/NOTE-UNDERSTANDING-WCAG20-20160317/understanding-techniques.html>,
+particularly the "Other Techniques" section.
 
 
         Sufficient Techniques
@@ -355,38 +341,50 @@ situation.
 
  1.
 
+    ARIA14: Using aria-label to provide an invisible label where a
+    visible label cannot be used
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA14> (ARIA)
+
+ 2.
+
+    ARIA16: Using aria-labelledby to provide a name for user interface
+    controls
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA16> (ARIA)
+
+ 3.
+
     G108: Using markup features to expose the name and role, allow
     user-settable properties to be directly set, and provide
     notification of changes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G108> using
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G108> using
     technology-specific techniques below:
 
       *
 
         H91: Using HTML form controls and links
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H91> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H91> (HTML)
 
       *
 
         H44: Using label elements to associate text labels with form
         controls
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H44> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H44> (HTML)
 
       *
 
         H64: Using the title attribute of the frame and iframe elements
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H64> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H64> (HTML)
 
       *
 
         H65: Using the title attribute to identify form controls when
         the label element cannot be used
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H65> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H65> (HTML)
 
       *
 
         H88: Using HTML according to spec
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/H88> (HTML)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/H88> (HTML)
 
 
           Situation B: If using script or code to re-purpose a standard
@@ -398,7 +396,12 @@ situation.
     be directly set, and providing notification of changes using one of
     the following techniques:
 
-*
+      *
+
+        ARIA16: Using aria-labelledby to provide a name for user
+        interface controls
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA16>
+        (ARIA)
 
 
           Situation C: If using a standard user interface component in a
@@ -409,52 +412,52 @@ situation.
     G135: Using the accessibility API features of a technology to expose
     names and roles, to allow user-settable properties to be directly
     set, and to provide notification of changes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G135> using
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G135> using
     technology-specific techniques below:
 
       *
 
         FLASH32: Using auto labeling to associate text labels with form
         controls
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH32>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH32>
         (Flash)
 
       *
 
         FLASH29: Setting the label property for form components
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH29>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH29>
         (Flash)
 
       *
 
         FLASH30: Specifying accessible names for image buttons
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/FLASH30>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/FLASH30>
         (Flash)
 
       *
 
         PDF10: Providing labels for interactive form controls in PDF
         documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF10> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF10> (PDF)
 
       *
 
         PDF12: Providing name, role, value information for form fields
         in PDF documents
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/PDF12> (PDF)
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/PDF12> (PDF)
 
       *
 
         SL26: Using LabeledBy to Associate Labels and Targets in
         Silverlight
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL26>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL26>
         (Silverlight)
 
       *
 
         SL32: Using Silverlight Text Elements for Appropriate
         Accessibility Role
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL32>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL32>
         (Silverlight)
 
 
@@ -467,35 +470,54 @@ situation.
     accessibility API features of the platforms on which the user agents
     will be run to expose the names and roles, allow user-settable
     properties to be directly set, and provide notification of changes
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G10> using
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G10> using
     technology-specific techniques below:
+
+      *
+
+        ARIA4: Using a WAI-ARIA role to expose the role of a user
+        interface component
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA4> (ARIA)
+
+      *
+
+        ARIA5: Using WAI-ARIA state and property attributes to expose
+        the state of a user interface component
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA5> (ARIA)
+
+      *
+
+        ARIA16: Using aria-labelledby to provide a name for user
+        interface controls
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/ARIA16>
+        (ARIA)
 
       *
 
         SL6: Defining a UI Automation Peer for a Custom Silverlight
         Control
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL6>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL6>
         (Silverlight)
 
       *
 
         SL18: Providing Text Equivalent for Nontext Silverlight Controls
         With AutomationProperties.Name
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL18>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL18>
         (Silverlight)
 
       *
 
         SL20: Relying on Silverlight AutomationPeer Behavior to Set
         AutomationProperties.Name
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL20>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL20>
         (Silverlight)
 
       *
 
         SL30: Using Silverlight Control Compositing and
         AutomationProperties.Name
-        <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SL30>
+        <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SL30>
         (Silverlight)
 
 
@@ -520,8 +542,9 @@ Success Criterion 4.1.2 by the WCAG Working Group.
   *
 
     F59: Failure of Success Criterion 4.1.2 due to using script to make
-    div or span a user interface control in HTML
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F59>
+    div or span a user interface control in HTML without providing a
+    role for the control
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F59>
 
     /Note: /This failure may be solved in the future using DHTML roadmap
     techniques.
@@ -531,39 +554,38 @@ Success Criterion 4.1.2 by the WCAG Working Group.
     F15: Failure of Success Criterion 4.1.2 due to implementing custom
     controls that do not use an accessibility API for the technology, or
     do so incompletely
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F15>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F15>
 
   *
 
     F20: Failure of Success Criterion 1.1.1 and 4.1.2 due to not
     updating text alternatives when changes to non-text content occur
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F20>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F20>
 
   *
 
-    F68: Failure of Success Criterion 1.3.1 and 4.1.2 due to the
-    association of label and user interface controls not being
-    programmatically determinable
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F68>
+    F68: Failure of Success Criterion 4.1.2 due to a user interface
+    control not having a programmatically determined name
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F68>
 
   *
 
     F79: Failure of Success Criterion 4.1.2 due to the focus state of a
     user interface component not being programmatically determinable or
     no notification of change of focus state available
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F79>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F79>
 
   *
 
     F86: Failure of Success Criterion 4.1.2 due to not providing names
     for each part of a multi-part form field, such as a US telephone
-    number <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F86>
+    number <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F86>
 
   *
 
-    F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to using
-    null alt on an image where the image is the only content in a link
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F89>
+    F89: Failure of Success Criteria 2.4.4, 2.4.9 and 4.1.2 due to not
+    providing an accessible name for an image which is the only content
+    in a link <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F89>
 
 
       Key Terms
@@ -850,7 +872,7 @@ and all information and function is available elsewhere on or from the page.
 
 /Note 2: /It is possible to include non-conforming content. See
 Understanding Conformance Requirement 5
-<https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/conformance.html#uc-conf-req5-head>.
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-conf-req5-head>.
 
 
         Understanding Requirement 3
@@ -889,12 +911,12 @@ buying process do not conform.
     is provided in a way that is not accessibility supported is also
     available in a way that is accessibility supported. (See
     Understanding accessibility support
-    <https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/conformance.html#uc-accessibility-support-head>.)
+    <https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head>.)
 
 
 This conformance requirement is explained below under Understanding
 Accessibility Support
-<https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/conformance.html#uc-accessibility-support-head>.
+<https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-accessibility-support-head>.
 
 
         Understanding Requirement 5
@@ -998,6 +1020,31 @@ not user agents (browsers, assistive technologies, etc.).
 
 /Note 2: /Conformance claims are not usually located on each Web page
 within the scope of conformance.
+
+
+        Partial conformance claims due to third party content
+
+When an author makes a decision to use a third party implementation,
+they should choose products that meet WCAG requirements. If all content
+on a page, including third party content, meets all WCAG success
+criteria then the page conforms to WCAG. However, if the page does not
+conform to WCAG only for reasons that are legitimately outside the
+author's control then the author can make a claim of partial
+conformance. It is important to recognize that this is a statement of
+non-conformance and there are users who may not be able to access some
+of the content this page.
+
+One reason that content may be outside the author's control is because
+it is being provided by a third party (blogs, portals, news sites). Web
+pages may also include content via third party libraries, plugins, or
+widgets.
+
+Be sure to monitor any content that can change without approval from the
+web page author, as a page which once conformed may suddenly fail to
+conform. If it is not possible to monitor and repair the third party
+content, it is necessary to identify the non-conforming parts of the
+page for users. If the rest of the web page conforms to WCAG, such a
+page qualifies for a statement of partial conformance, third party content.
 
 
         Information about any additional steps taken that go beyond the
@@ -1428,7 +1475,7 @@ accessibility supported
     particular use of a Web technology in order for it to be classified
     as accessibility supported. (See Level of Assistive Technology
     Support Needed for "Accessibility Support"
-    <https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/conformance.html#uc-support-level-head>.)
+    <https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-support-level-head>.)
 
     /Note 2: /Web technologies can be used in ways that are not
     accessibility supported as long as they are not relied upon
@@ -1456,7 +1503,7 @@ accessibility supported
     are accessibility supported would be to consult compilations of uses
     that are documented to be accessibility supported. (See
     Understanding Accessibility-Supported Web Technology Uses
-    <https://www.w3.org/TR/2012/NOTE-UNDERSTANDING-WCAG20-20120103/conformance.html#uc-documented-lists-head>.)
+    <https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html#uc-documented-lists-head>.)
     Authors, companies, technology vendors, or others may document
     accessibility-supported ways of using Web content technologies.
     However, all ways of using technologies in the documentation would
@@ -1806,45 +1853,55 @@ them to an alternate version.
           Sufficient Techniques for Providing Conforming Alternative
           Versions of Web pages
 
-Each numbered item below represents a technique or combination of
-techniques that the WCAG Working Group deems sufficient for providing
-conforming alternate versions.
+Each numbered item in this section represents a technique or combination
+of techniques that the WCAG Working Group deems sufficient for meeting
+this Success Criterion. However, it is not necessary to use these
+particular techniques. For information on using other techniques, see
+/Understanding Techniques for WCAG Success Criteria
+<#understanding-techniques>/, particularly the "Other Techniques" section.
 
  1.
 
     G136: Providing a link at the beginning of a nonconforming Web page
     that points to a conforming alternate version
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G136>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G136>
 
  2.
 
     G190: Providing a link adjacent to or associated with a
     non-conforming object that links to a conforming alternate version
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/G190>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/G190>
 
  3.
 
     C29: Using a style switcher to provide a conforming alternate
-    version <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/C29>
+    version <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/C29>
     (CSS)
 
  4.
 
-    SVR2: Using .htaccess to ensure that the only way to access
-    non-conforming content is from conforming content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR2> (SERVER)
+    SCR38: Creating a conforming alternate version for a web page
+    designed with progressive enhancement
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SCR38>
+    (Scripting)
 
  5.
 
-    SVR3: Using HTTP referer to ensure that the only way to access
+    SVR2: Using .htaccess to ensure that the only way to access
     non-conforming content is from conforming content
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR3> (SERVER)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SVR2> (SERVER)
 
  6.
 
+    SVR3: Using HTTP referer to ensure that the only way to access
+    non-conforming content is from conforming content
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SVR3> (SERVER)
+
+ 7.
+
     SVR4: Allowing users to provide preferences for the display of
     conforming alternate versions
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/SVR4> (SERVER)
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/SVR4> (SERVER)
 
 
           Common Failures Identified by the Working Group
@@ -1854,7 +1911,7 @@ conforming alternate versions.
     F19: Failure of Conformance Requirement 1 due to not providing a
     method for the user to find the alternative conforming version of a
     non-conforming Web page
-    <http://www.w3.org/TR/2012/NOTE-WCAG20-TECHS-20120103/F19>
+    <http://www.w3.org/TR/2016/NOTE-WCAG20-TECHS-20160317/F19>
 
 
           Additional Techniques (Advisory) for providing conforming
@@ -1990,4 +2047,3 @@ cannot use. To accomplish this, we say that the text must be
 the user must be able to use their assistive technology to find the
 alternative text (that they can use) when they land on the non-text
 content (that they can't use).
-
